@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: en-AU
+name: Mincotec
+primary: true
+siteGroup: d00639d5-ee6c-4da6-a184-e8d522d3111f
+sortOrder: 1
