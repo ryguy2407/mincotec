@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: d02f32f2-f820-46c5-9608-74584920a700
+handle: productTitle
+instructions: ''
+name: 'Product title'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

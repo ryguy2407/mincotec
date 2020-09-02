@@ -1,0 +1,96 @@
+field: 84f72373-7818-40d1-94a1-7bed11823504
+fieldLayouts:
+  61a0a5b4-55e8-42ec-bb6a-965491a63166:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 916c429d-5d44-44c2-937d-1ccd2fc54779
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 6b3127e6-cade-4347-b5e2-3f6696e87d21
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: d26e2a93-ce87-496e-8644-063d945e8dcc
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  6b3127e6-cade-4347-b5e2-3f6696e87d21:
+    contentColumnType: text
+    fieldGroup: null
+    handle: CTAtext
+    instructions: ''
+    name: Text
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: '1'
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  916c429d-5d44-44c2-937d-1ccd2fc54779:
+    contentColumnType: text
+    fieldGroup: null
+    handle: heading
+    instructions: ''
+    name: Heading
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  d26e2a93-ce87-496e-8644-063d945e8dcc:
+    contentColumnType: text
+    fieldGroup: null
+    handle: form
+    instructions: ''
+    name: Form
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: callToAction
+name: 'Call to action'
+sortOrder: 4

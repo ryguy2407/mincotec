@@ -1,0 +1,40 @@
+field: 84f72373-7818-40d1-94a1-7bed11823504
+fieldLayouts:
+  5f45d9cf-c4f7-40cf-b9a6-50bb5d890979:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 7e358e6c-31c0-4b58-a4c4-60abe0302443
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  7e358e6c-31c0-4b58-a4c4-60abe0302443:
+    contentColumnType: text
+    fieldGroup: null
+    handle: plainText
+    instructions: 'Insert your text here in markdown, it is very easy syntax to learn and is available everywhere!'
+    name: 'Plain text'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: '1'
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: plainText
+name: 'Plain text'
+sortOrder: 1

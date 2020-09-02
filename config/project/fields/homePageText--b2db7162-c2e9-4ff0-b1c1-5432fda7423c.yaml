@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: 793dbda0-2249-4c66-8b41-6bcabe91bdb3
+handle: homePageText
+instructions: ''
+name: 'Home page text'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: '1'
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

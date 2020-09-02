@@ -1,0 +1,80 @@
+field: 6efe897a-82bc-431e-bc24-8590f3b66163
+fieldLayouts:
+  957ab6a6-b4e0-4365-9a90-6e9601f6c59e:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: e55cebd3-bc75-4761-a6ef-3a197583ea3e
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 78e93ae5-9945-44e7-bdcc-978f6e813d78
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  78e93ae5-9945-44e7-bdcc-978f6e813d78:
+    contentColumnType: string
+    fieldGroup: null
+    handle: backgroundImage
+    instructions: ''
+    name: 'Background image'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: ''
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: '1'
+      selectionLabel: 'Add a background image'
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: ''
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  e55cebd3-bc75-4761-a6ef-3a197583ea3e:
+    contentColumnType: text
+    fieldGroup: null
+    handle: headline
+    instructions: ''
+    name: Headline
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: pageHeading
+name: 'Page heading'
+sortOrder: 1

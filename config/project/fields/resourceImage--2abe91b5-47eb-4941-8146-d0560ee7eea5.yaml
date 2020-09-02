@@ -1,0 +1,30 @@
+contentColumnType: string
+fieldGroup: 1ec61136-2f61-415d-b611-53f0d990dd34
+handle: resourceImage
+instructions: ''
+name: 'Resource image'
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowedKinds:
+    - image
+  defaultUploadLocationSource: ''
+  defaultUploadLocationSubpath: ''
+  limit: '1'
+  localizeRelations: false
+  restrictFiles: '1'
+  selectionLabel: 'Add a resource image'
+  showSiteMenu: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  singleUploadLocationSource: ''
+  singleUploadLocationSubpath: ''
+  source: null
+  sources: '*'
+  targetSiteId: null
+  useSingleFolder: false
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

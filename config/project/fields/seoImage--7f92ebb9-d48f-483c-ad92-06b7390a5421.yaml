@@ -1,0 +1,30 @@
+contentColumnType: string
+fieldGroup: bd1a122e-69e2-4d18-b94b-59798d4f3041
+handle: seoImage
+instructions: ''
+name: 'SEO Image'
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowedKinds:
+    - image
+  defaultUploadLocationSource: ''
+  defaultUploadLocationSubpath: ''
+  limit: '1'
+  localizeRelations: false
+  restrictFiles: '1'
+  selectionLabel: 'Add an image'
+  showSiteMenu: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  singleUploadLocationSource: ''
+  singleUploadLocationSubpath: ''
+  source: null
+  sources: '*'
+  targetSiteId: null
+  useSingleFolder: false
+  validateRelatedElements: false
+  viewMode: large
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

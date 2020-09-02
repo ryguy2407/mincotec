@@ -1,0 +1,30 @@
+contentColumnType: string
+fieldGroup: 60d265fe-4e19-4fb7-8444-54d559d58ef3
+handle: projectImages
+instructions: ''
+name: 'Project images'
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowedKinds:
+    - image
+  defaultUploadLocationSource: ''
+  defaultUploadLocationSubpath: ''
+  limit: ''
+  localizeRelations: false
+  restrictFiles: '1'
+  selectionLabel: ''
+  showSiteMenu: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  singleUploadLocationSource: ''
+  singleUploadLocationSubpath: ''
+  source: null
+  sources: '*'
+  targetSiteId: null
+  useSingleFolder: false
+  validateRelatedElements: false
+  viewMode: large
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

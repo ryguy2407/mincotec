@@ -1,0 +1,80 @@
+field: 84f72373-7818-40d1-94a1-7bed11823504
+fieldLayouts:
+  b91070a5-1f15-4431-9046-78ad8e745ed4:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 6f1492d9-0f87-4c61-bd5f-4d8abf37f874
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: cc1963c0-6459-4b22-8f18-49c2306d7d82
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  6f1492d9-0f87-4c61-bd5f-4d8abf37f874:
+    contentColumnType: string
+    fieldGroup: null
+    handle: logos
+    instructions: 'Here is where you can upload client logos'
+    name: Logos
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: ''
+      defaultUploadLocationSubpath: ''
+      limit: ''
+      localizeRelations: false
+      restrictFiles: '1'
+      selectionLabel: 'Add a logo'
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: ''
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  cc1963c0-6459-4b22-8f18-49c2306d7d82:
+    contentColumnType: text
+    fieldGroup: null
+    handle: logoLink
+    instructions: 'Does this logo need to link somewhere?'
+    name: 'Logo link'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: logoGrid
+name: 'Logo grid'
+sortOrder: 3

@@ -1,0 +1,86 @@
+field: d1f2332a-0c65-4469-9fa4-5f2ca4f0d6be
+fieldLayouts:
+  a1a62bf7-ed0d-48a7-b8e4-bb18df958bb5:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 0546cab2-4aa7-412a-a2d4-684d0b81f987
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: deb57009-5e25-4ff9-ba2a-a6056170b51f
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  0546cab2-4aa7-412a-a2d4-684d0b81f987:
+    contentColumnType: string
+    fieldGroup: null
+    handle: relatedEntries
+    instructions: ''
+    name: 'Related entries'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      limit: ''
+      localizeRelations: false
+      selectionLabel: ''
+      showSiteMenu: true
+      source: null
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+  deb57009-5e25-4ff9-ba2a-a6056170b51f:
+    contentColumnType: string
+    fieldGroup: null
+    handle: layoutType
+    instructions: ''
+    name: 'Layout type'
+    searchable: false
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Card
+            -
+              - value
+              - card
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'Split screen'
+            -
+              - value
+              - splitScreen
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+handle: relatedEntries
+name: 'Related entries'
+sortOrder: 1

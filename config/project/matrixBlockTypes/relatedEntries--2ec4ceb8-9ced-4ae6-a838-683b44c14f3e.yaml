@@ -1,0 +1,86 @@
+field: 84f72373-7818-40d1-94a1-7bed11823504
+fieldLayouts:
+  e3d32580-176f-446b-b4d2-a5365d33b016:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 18daf619-738b-4576-9cd6-6c76e9587d9c
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: dfc0d4fc-ef48-49be-9dc7-3c44a5da6d32
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  18daf619-738b-4576-9cd6-6c76e9587d9c:
+    contentColumnType: string
+    fieldGroup: null
+    handle: relatedEntries
+    instructions: ''
+    name: Entries
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      limit: ''
+      localizeRelations: false
+      selectionLabel: 'Find an entry'
+      showSiteMenu: true
+      source: null
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+  dfc0d4fc-ef48-49be-9dc7-3c44a5da6d32:
+    contentColumnType: string
+    fieldGroup: null
+    handle: layout
+    instructions: 'What layout would you like the related entries to have?'
+    name: Layout
+    searchable: false
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Cards
+            -
+              - value
+              - cards
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - 'Split screen'
+            -
+              - value
+              - splitScreen
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+handle: relatedEntries
+name: 'Related entries'
+sortOrder: 2
