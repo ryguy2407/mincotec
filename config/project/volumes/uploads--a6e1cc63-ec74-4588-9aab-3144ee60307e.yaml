@@ -33,7 +33,7 @@ hasUrls: true
 name: Uploads
 settings:
   bucket: $DO_BUCKET
-  contentDisposition: ''
+  contentDisposition: inline
   endpoint: $DO_ENDPOINT
   expires: '3 months'
   keyId: $DO_ACCESS_KEY

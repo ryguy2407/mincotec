@@ -19,7 +19,6 @@ fieldLayouts:
             placeholder: null
             readonly: false
             requirable: false
-            required: false
             size: null
             step: null
             tip: null
@@ -28,7 +27,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 6efe897a-82bc-431e-bc24-8590f3b66163
+            fieldUid: e2175f04-ca8b-48c2-b4e8-552b41e48033
             instructions: null
             label: null
             required: false

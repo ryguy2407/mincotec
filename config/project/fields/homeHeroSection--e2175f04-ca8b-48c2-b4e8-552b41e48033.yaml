@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: 793dbda0-2249-4c66-8b41-6bcabe91bdb3
+handle: homeHeroSection
+instructions: ''
+name: 'Home hero section'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_homeherosection}}'
+  maxBlocks: '1'
+  minBlocks: '1'
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix
