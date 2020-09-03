@@ -1,0 +1,11 @@
+@tailwind base;
+
+@font-face {
+  font-family: Neutrif Studio Regular;
+  font-weight: 400;
+  src: url(/assets/fonts/neutrifstudio-regular.woff) format("woff");
+}
+
+@tailwind components;
+
+@tailwind utilities;

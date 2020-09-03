@@ -99,19 +99,18 @@
             </div>
         </div>
 
-        <main class="lg:relative">
-            <div class="mx-auto max-w-7xl w-full pt-16 pb-20 text-center lg:py-48 lg:text-left">
-                <div class="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
-                    <h2 class="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl">
-                        Australia's wet prep
-                        <br class="xl:hidden">
-                        <span class="text-indigo-600">specialists</span>
+        <main class="lg:relative bg-navy">
+            <div class="relative mx-auto max-w-7xl w-full pt-16 pb-20 text-center lg:py-48 lg:text-left z-10">
+                <div class="px-4 lg:w-7/12 sm:px-8 xl:pr-16">
+                    {% set hero = entry.homeHeroSection.one() %}
+                    <h2 class="text-4xl tracking-tight leading-10 font-extrabold text-white sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl">
+                        {{ hero.heading }}
                     </h2>
-                    <p class="mt-3 max-w-md mx-auto text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
-                        Every day, we’re helping our network of global customers make the most from
-                        their mining. We've been servicing mines with exceptional wet prep products
-                        for more than 40 years. Let us help you make the most from yours.
-                    </p>
+                    <div class="w-full lg:w-2/3">
+                        <p class="mt-3 opacity-75 text-white max-w-md mx-auto text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
+                            {{ hero.heroText }}
+                        </p>
+                    </div>
                     <div class="mt-10 sm:flex sm:justify-center lg:justify-start">
                         <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
                             <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-indigo-600 bg-white hover:text-indigo-500 focus:outline-none focus:border-indigo-300 focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
@@ -121,8 +120,10 @@
                     </div>
                 </div>
             </div>
-            <div class="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
-                <img class="absolute inset-0 w-full h-full object-cover" src="https://images.unsplash.com/photo-1520333789090-1afc82db536a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80" alt="Woman on her phone">
+            <div class="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-8/12 lg:h-full">
+                {% set image = hero.heroImage.one() %}
+                <img class="absolute inset-0 w-full h-full object-cover" src="{{ image.url }}" alt="{{ image.title }}">
+                <img class="hidden lg:block absolute inset-0 h-full" src="/assets/img/angleoverlay.svg" alt="Angle overlay">
             </div>
         </main>
     </div>
