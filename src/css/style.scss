@@ -6,6 +6,10 @@
   src: url(/assets/fonts/neutrifstudio-regular.woff) format("woff");
 }
 
+@import "typography";
+@import "./blocks/plainText";
+@import "./blocks/textAndMedia";
+
 @tailwind components;
 
 @tailwind utilities;

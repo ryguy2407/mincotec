@@ -1,0 +1,25 @@
+<div class="relative textAndMedia {{ block.backgroundColour }}">
+    <div class="hidden md:block h-56 sm:h-64 md:absolute md:{{ block.mediaAlignment }}-0 md:h-full md:{{ block.mediaWidth }}">
+        {% if block.image | length %}
+            {% set img = block.image.one() %}
+            <img class="w-full h-full object-cover" src="{{ img.url }}" alt="{{ img.title }}">
+        {% endif %}
+    </div>
+    <div class="relative max-w-screen-xl mx-auto px-4 py-12 sm:px-6 lg:px-8 lg:py-24">
+        <div class="w-5/6 mx-auto">
+            <div class="{% if block.mediaAlignment == 'left' %}md:ml-auto{% endif %} {% if block.mediaWidth == 'w-1/2'%}md:w-5/12{% elseif block.mediaWidth == 'w-1/3' %}md:w-2/3{% else %}md:w-3/4{% endif %}">
+                {{ block.text | markdown }}
+                <div class="mt-8">
+                    <div class="inline-flex rounded-md">
+                        <a href="#" class="inline-flex uppercase items-center justify-center px-8 py-2 border {% if block.backgroundColour == 'bg-white' %}border-navy{% else %}border-white{% endif %} leading-6 font-medium rounded-md text-white font-bold text-sm">
+                            Learn more
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="block md:hidden h-56 sm:h-64 md:absolute md:{{ block.mediaAlignment }}-0 md:h-full md:w-2/6">
+        <img class="w-full h-full object-cover" src="/assets/img/pipe-placeholder.jpg" alt="Support team">
+    </div>
+</div>

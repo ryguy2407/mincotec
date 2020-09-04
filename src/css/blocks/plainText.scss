@@ -1,0 +1,18 @@
+.plainText {
+  h1,h2,h3,h4,h5,h6,p,a {
+    @apply text-white;
+  }
+}
+.plainText.bg-white {
+  h1,h2,h3,h4,h5,h6,p,a {
+    @apply text-navy;
+  }
+}
+.plainText {
+  h1,h2,h3,h4,h5,h6 {
+    @apply mb-4;
+  }
+  p {
+    @apply text-lg opacity-75 mb-4;
+  }
+}

@@ -1,0 +1,13 @@
+.textAndMedia {
+  h1,h2,h3,h4,h5,h6 {
+    @apply mb-4 text-white;
+  }
+  p {
+    @apply text-white text-lg opacity-75 mb-4;
+  }
+}
+.textAndMedia.bg-white {
+  h1, h2, h3, h4, h5, h6, p, a {
+    @apply text-navy;
+  }
+}
