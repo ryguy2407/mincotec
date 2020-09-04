@@ -259,6 +259,9 @@
     <script>
         mapboxgl.accessToken = 'pk.eyJ1Ijoicnlhbm53byIsImEiOiJja2VtbnlodW4wNWU1MnFsajQ1bTl2dnhvIn0.NMZP89hoKD1hVlPshKGY5g';
         var mapboxClient = mapboxSdk({ accessToken: mapboxgl.accessToken });
+
+        let center;
+
         mapboxClient.geocoding
             .forwardGeocode({
                 query: 'Cardiff, New South Wales',
@@ -281,15 +284,48 @@
                         center: feature.center,
                         zoom: 14
                     });
-                    new mapboxgl.Marker().setLngLat(feature.center).addTo(map);
                     map.scrollZoom.disable();
                     map.addControl(new mapboxgl.NavigationControl());
+
+                    map.on('load', function() {
+                        map.loadImage(
+                            '/assets/img/cardiff-icon.png',
+                            function(error, image) {
+                                if (error) throw error;
+                                map.addImage('micotech', image);
+                                map.addSource('point', {
+                                    'type': 'geojson',
+                                    'data': {
+                                        'type': 'FeatureCollection',
+                                        'features': [
+                                            {
+                                                'type': 'Feature',
+                                                'geometry': {
+                                                    'type': 'Point',
+                                                    'coordinates': feature.center
+                                                }
+                                            }
+                                        ]
+                                    }
+                                });
+                                map.addLayer({
+                                    'id': 'points',
+                                    'type': 'symbol',
+                                    'source': 'point',
+                                    'layout': {
+                                        'icon-image': 'micotech',
+                                        'icon-size': 0.5
+                                    }
+                                });
+                            }
+                        );
+                    });
                 }
             });
 
         mapboxClient.geocoding
             .forwardGeocode({
-                query: '205 Juliette Street, Brisbane',
+                query: 'Mackay Queensland',
                 autocomplete: false,
                 limit: 1
             })
@@ -309,9 +345,42 @@
                         center: feature.center,
                         zoom: 14
                     });
-                    new mapboxgl.Marker().setLngLat(feature.center).addTo(map);
                     map.scrollZoom.disable();
                     map.addControl(new mapboxgl.NavigationControl());
+
+                    map.on('load', function() {
+                        map.loadImage(
+                            '/assets/img/mackay-icon.png',
+                            function(error, image) {
+                                if (error) throw error;
+                                map.addImage('micotech', image);
+                                map.addSource('point', {
+                                    'type': 'geojson',
+                                    'data': {
+                                        'type': 'FeatureCollection',
+                                        'features': [
+                                            {
+                                                'type': 'Feature',
+                                                'geometry': {
+                                                    'type': 'Point',
+                                                    'coordinates': feature.center
+                                                }
+                                            }
+                                        ]
+                                    }
+                                });
+                                map.addLayer({
+                                    'id': 'points',
+                                    'type': 'symbol',
+                                    'source': 'point',
+                                    'layout': {
+                                        'icon-image': 'micotech',
+                                        'icon-size': 0.5
+                                    }
+                                });
+                            }
+                        );
+                    });
                 }
             });
     </script>
