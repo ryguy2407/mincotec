@@ -66,22 +66,22 @@
                 <div class="w-full lg:w-1/3 px-12 py-24 bg-gradient-to-l from-opaque_white flex flex-col group relative">
                     <img class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-25 transition duration-500 ease-in-out" src="/assets/img/resource-placeholder.jpg" alt="Coal">
                     <div class="relative">
-                        <h3 class="text-white text-3xl font-bold mb-8">Coal</h3>
+                        <h3 class="text-white text-3xl font-bold mb-8">Iron ore</h3>
                         <p class="text-white opacity-75 text-lg">
-                            We like to think if you work really hard at something, you get
-                            really good at it. Just like coal eventually becomes a diamond,
-                            we’ve become one of the world’s best in delivering coal.
+                            We bring our experience in excellence, quality, and long-lasting
+                            products along with our quality after-sales service, to deliver
+                            on Fe projects, pronto.
                         </p>
                     </div>
                 </div>
                 <div class="w-full lg:w-1/3 px-12 py-24 bg-gradient-to-l from-opaque_white flex flex-col group relative">
                     <img class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-25 transition duration-500 ease-in-out" src="/assets/img/resource-placeholder.jpg" alt="Coal">
                     <div class="relative">
-                        <h3 class="text-white text-3xl font-bold mb-8">Coal</h3>
+                        <h3 class="text-white text-3xl font-bold mb-8">Other minerals</h3>
                         <p class="text-white opacity-75 text-lg">
-                            We like to think if you work really hard at something, you get
-                            really good at it. Just like coal eventually becomes a diamond,
-                            we’ve become one of the world’s best in delivering coal.
+                            There’s not a problem that happens in washery where we can’t
+                            help—from navigating new terrains — to new thinking…
+                            we bring the solutions (and spare parts).
                         </p>
                     </div>
                 </div>
@@ -202,9 +202,118 @@
             </div>
         </div>
     </div>
+    
+    <div class="bg-white flex flex-col lg:flex-row space-x-4">
+        <div class="w-1/2">
+            <div id="map" class="google-map" style="min-height: 450px;width: 100%;">
+                <div class="responsive-embed">
+                </div><!-- /.responsive-embed -->
+            </div><!-- /#map.google-map -->
+        </div>
+        <div class="w-1/2">
+            <div id="map2" class="google-map" style="min-height: 450px;width: 100%;">
+                <div class="responsive-embed">
+                </div><!-- /.responsive-embed -->
+            </div><!-- /#map.google-map -->
+        </div>
+    </div>
 
+    <div class="relative bg-navy shadow">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="flex justify-between items-center py-6 md:justify-start md:space-x-10">
+                <div class="w-0 flex-1 flex">
+                    <a href="#" class="inline-flex">
+                        <img class="h-8 w-auto sm:h-10" src="/assets/img/logo-white.svg" alt="Mincotec">
+                    </a>
+                </div>
+                <div class="-mr-2 -my-2 md:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+                <nav class="hidden md:flex space-x-10">
+                    <a href="#" class="text-white inline-flex items-center space-x-2 text-base leading-6 font-medium hover:text-gray-900 transition ease-in-out duration-150">
+                        About
+                    </a>
+                    <a href="#" class="text-base leading-6 font-medium text-white hover:text-gray-900 transition ease-in-out duration-150">
+                        Resources
+                    </a>
+                    <a href="#" class="text-base leading-6 font-medium text-white hover:text-gray-900 transition ease-in-out duration-150">
+                        Products
+                    </a>
+                    <a href="#" class="text-white inline-flex items-center space-x-2 text-base leading-6 font-medium hover:text-gray-900 transition ease-in-out duration-150">
+                        Donwloads
+                    </a>
+                    <a href="#" class="text-white inline-flex items-center space-x-2 text-base leading-6 font-medium hover:text-gray-900 transition ease-in-out duration-150">
+                        Contact
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </div>
 
+    <script src="https://unpkg.com/es6-promise@4.2.4/dist/es6-promise.auto.min.js"></script>
+    <script src="https://unpkg.com/@mapbox/mapbox-sdk/umd/mapbox-sdk.min.js"></script>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1Ijoicnlhbm53byIsImEiOiJja2VtbnlodW4wNWU1MnFsajQ1bTl2dnhvIn0.NMZP89hoKD1hVlPshKGY5g';
+        var mapboxClient = mapboxSdk({ accessToken: mapboxgl.accessToken });
+        mapboxClient.geocoding
+            .forwardGeocode({
+                query: 'Cardiff, New South Wales',
+                autocomplete: false,
+                limit: 1
+            })
+            .send()
+            .then(function(response) {
+                if (
+                    response &&
+                    response.body &&
+                    response.body.features &&
+                    response.body.features.length
+                ) {
+                    var feature = response.body.features[0];
 
+                    var map = new mapboxgl.Map({
+                        container: 'map',
+                        style: 'mapbox://styles/ryannwo/ckemo757h2hf419o5ninz69gx',
+                        center: feature.center,
+                        zoom: 12
+                    });
+                    new mapboxgl.Marker().setLngLat(feature.center).addTo(map);
+                    map.scrollZoom.disable();
+                    map.addControl(new mapboxgl.NavigationControl());
+                }
+            });
 
+        mapboxClient.geocoding
+            .forwardGeocode({
+                query: '205 Juliette Street, Brisbane',
+                autocomplete: false,
+                limit: 1
+            })
+            .send()
+            .then(function(response) {
+                if (
+                    response &&
+                    response.body &&
+                    response.body.features &&
+                    response.body.features.length
+                ) {
+                    var feature = response.body.features[0];
+
+                    var map = new mapboxgl.Map({
+                        container: 'map2',
+                        style: 'mapbox://styles/ryannwo/ckemo757h2hf419o5ninz69gx',
+                        center: feature.center,
+                        zoom: 12
+                    });
+                    new mapboxgl.Marker().setLngLat(feature.center).addTo(map);
+                    map.scrollZoom.disable();
+                    map.addControl(new mapboxgl.NavigationControl());
+                }
+            });
+    </script>
 
 {% endblock %}
