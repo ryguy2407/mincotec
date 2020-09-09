@@ -1,0 +1,25 @@
+<div class="bg-white">
+    <div class="max-w-screen-xl mx-auto py-24 px-4 sm:px-6 lg:px-8">
+        <div class="w-5/6 mx-auto">
+            {% if block.galleryTitle %}
+                <h2 class="text-light_grey text-3xl text-center lg:text-5xl font-bold mb-8">
+                    {{ block.galleryTitle }}
+                </h2>
+            {% endif %}
+            {{ block.galleryIntro | markdown }}
+            {% if block.galleryTitle %}
+                <div class="mt-12"></div>
+            {% endif %}
+            <div class="grid grid-cols-2 gap-8 md:grid-cols-{{ block.itemsPerRow.value }} lg:grid-cols-{{ block.itemsPerRow.value }}">
+                {% set images = block.galleryImages.all() %}
+                {% for image in images %}
+                    <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+                        <a href="{{ image.linkUrl }}">
+                            <img class="h-24" src="{{ image.url }}" alt="{{ image.title }}">
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

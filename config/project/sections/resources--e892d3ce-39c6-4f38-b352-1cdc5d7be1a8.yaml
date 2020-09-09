@@ -18,6 +18,6 @@ siteSettings:
   3cc4705b-9d87-4251-bf19-e831c181126f:
     enabledByDefault: true
     hasUrls: true
-    template: null
+    template: resource/_entry
     uriFormat: 'resources/{slug}'
 type: channel

@@ -1,0 +1,25 @@
+    {% for entry in entries %}
+        <div class="flex flex-col overflow-hidden">
+            <div class="flex-shrink-0 mb-8">
+                {% set image = entry.seoImage.one() %}
+                <a href="{{ entry.url }}">
+                    <img class="h-48 w-full object-cover" src="{{ image.url }}" alt="{{ image.title }}">
+                </a>
+            </div>
+            <div class="flex-1 flex flex-col justify-between">
+                <div class="flex-1 {{ bgColour }} plainText">
+                    <a href="{{ entry.url }}" class="block">
+                        <h3 class="mt-2 text-xl leading-7 font-semibold text-gray-900">
+                            {{ entry.title }}
+                        </h3>
+                        <p class="mt-3 mb-4 opacity-75">
+                            {{ entry.seoDescription }}
+                        </p>
+                    </a>
+                </div>
+                <a href="{{ entry.url }}" class="inline-flex uppercase items-center justify-center px-8 py-2 border {% if bgColour == 'bg-white' %}border-navy hover:bg-navy hover:text-white{% else %}border-white hover:bg-white hover:text-navy{% endif %} transition duration-500 ease-in-out leading-6 font-medium rounded-md text-white font-bold text-sm">
+                    Learn more
+                </a>
+            </div>
+        </div>
+    {% endfor %}

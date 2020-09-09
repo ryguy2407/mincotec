@@ -1,0 +1,98 @@
+field: 84f72373-7818-40d1-94a1-7bed11823504
+fieldLayouts:
+  e0ebe028-6d2c-4a17-9f55-6eee29f7ebd3:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 4d693b5d-0903-4834-897e-761a87469c01
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 2e441d7e-9286-41ca-aaa9-c581778dda06
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: a7e44ad5-cc8e-4abe-9060-561b15a549fa
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  2e441d7e-9286-41ca-aaa9-c581778dda06:
+    contentColumnType: text
+    fieldGroup: null
+    handle: formDescription
+    instructions: ''
+    name: 'Form description'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: '1'
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  4d693b5d-0903-4834-897e-761a87469c01:
+    contentColumnType: text
+    fieldGroup: null
+    handle: formTitle
+    instructions: ''
+    name: 'Form title'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  a7e44ad5-cc8e-4abe-9060-561b15a549fa:
+    contentColumnType: string
+    fieldGroup: null
+    handle: form
+    instructions: ''
+    name: Form
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      limit: '1'
+      localizeRelations: false
+      selectionLabel: ''
+      showSiteMenu: true
+      source: null
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: verbb\formie\fields\Forms
+handle: formAndText
+name: 'Form and text'
+sortOrder: 7

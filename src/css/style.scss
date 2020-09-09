@@ -1,5 +1,7 @@
 @tailwind base;
 
+@tailwind components;
+
 @font-face {
   font-family: Neutrif Studio Regular;
   font-weight: 400;
@@ -9,7 +11,6 @@
 @import "typography";
 @import "./blocks/plainText";
 @import "./blocks/textAndMedia";
-
-@tailwind components;
+@import "./blocks/formAndText";
 
 @tailwind utilities;

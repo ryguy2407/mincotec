@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: 066213dd-5fa5-4164-ae9e-f0d636f41d32
+handle: linkUrl
+instructions: ''
+name: Link
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

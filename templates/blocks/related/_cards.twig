@@ -1,0 +1,11 @@
+<div class="relative {{ block.backgroundColour }} px-4 py-12 sm:px-6 lg:px-8 lg:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="w-full lg:w-5/6 mx-auto">
+            <div class="grid gap-5 max-w-lg mx-auto lg:grid-cols-3 lg:max-w-none">
+                {% if block.relatedEntries | length %}
+                    {% include 'blocks/partials/_card' with { entries: block.relatedEntries.all(), bgColour: block.backgroundColour } %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>

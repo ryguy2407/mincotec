@@ -1,11 +1,11 @@
 contentColumnType: string
-fieldGroup: 066213dd-5fa5-4164-ae9e-f0d636f41d32
-handle: relatedEntries
+fieldGroup: fcefe5a5-ffb6-4f9f-84d4-a386f43bd9a5
+handle: benefitsMatrix
 instructions: ''
-name: 'Related Entries'
+name: 'Benefits matrix'
 searchable: false
 settings:
-  contentTable: '{{%matrixcontent_relatedentries}}'
+  contentTable: '{{%matrixcontent_benefitsmatrix}}'
   maxBlocks: ''
   minBlocks: ''
   propagationMethod: all

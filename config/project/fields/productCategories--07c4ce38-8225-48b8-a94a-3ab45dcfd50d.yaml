@@ -1,0 +1,23 @@
+contentColumnType: string
+fieldGroup: d02f32f2-f820-46c5-9608-74584920a700
+handle: productCategories
+instructions: ''
+name: 'Product categories'
+searchable: false
+settings:
+  allowLimit: false
+  allowMultipleSources: false
+  allowSelfRelations: false
+  branchLimit: ''
+  limit: null
+  localizeRelations: false
+  selectionLabel: 'Add a product category'
+  showSiteMenu: true
+  source: 'group:383b76b2-e831-4eb6-bb22-34172a77784d'
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Categories

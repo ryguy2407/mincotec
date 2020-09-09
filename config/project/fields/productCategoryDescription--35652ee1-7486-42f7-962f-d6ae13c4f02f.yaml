@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: fcefe5a5-ffb6-4f9f-84d4-a386f43bd9a5
+handle: productCategoryDescription
+instructions: ''
+name: 'Product category description'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: '1'
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

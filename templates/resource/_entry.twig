@@ -1,0 +1,71 @@
+{% extends '/partials/_base.twig' %}
+
+{% block content %}
+
+    {% include '/partials/header/_nav.twig' %}
+
+    <header class="w-full h-64 relative flex flex-row justify-center items-center">
+        {% set headerImg = entry.resourceImage.one() %}
+        <img class="absolute inset-0 w-full h-full object-cover" src="{{ headerImg.url }}" alt="{{ headerImg.title }}">
+        <div class="absolute w-full h-full bg-navy bg-opacity-50"></div>
+        <img class="absolute h-full" src="/assets/img/header-logo-overlay.svg" alt="{{ entry.resourceTitle }}">
+        <h1 class="text-5xl text-white font-bold relative">{{ entry.resourceTitle }}</h1>
+    </header>
+
+    <section>
+        <div class="lg:relative {% if entry.relatedProjects | length %}lg:pt-24{% else %}py-16 lg:py-24{% endif %} plainText bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6">
+                <div class="w-full lg:w-5/6 mx-auto">
+                    <div class="w-full lg:w-3/4">
+                        {{ entry.resourceDescription | markdown }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% if entry.relatedProjects | length %}
+            {% include 'blocks/partials/_gridWithSmallImage.twig' with { entries: entry.relatedProjects.all() } %}
+        {% endif %}
+    </section>
+
+    {% if entry.resourceBlockquote %}
+
+        <section class="bg-mustard py-16 lg:py-24 w-full relative flex flex-row justify-center items-center">
+            <img class="hidden lg:block absolute mx-auto h-full object-cover inset-0" src="/assets/img/quotation.svg" alt="{{ entry.title }}">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6">
+                <div class="w-full lg:w-5/6 mx-auto">
+                    <div class="w-full text-center">
+                        <h5 class="text-white opacity-75 mb-0">
+                            {{ entry.resourceBlockquote }}
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    {% endif %}
+
+    {% if entry.relatedProducts | length %}
+        <section class="bg-white py-16 lg:py-24 w-full relative">
+            {% set product = entry.relatedProducts.all() %}
+            {% for product in product %}
+                <div class="max-w-7xl mx-auto px-4 sm:px-6">
+                    <div class="w-full lg:w-5/6 mx-auto">
+                        <div class="w-full lg:w-3/4 plainText bg-white">
+                            {{ product.relatedProductsText | markdown }}
+                        </div>
+
+                        {% if product.relatedProducts | length %}
+                            <div class="grid gap-8 max-w-lg mx-auto mt-8 lg:grid-cols-4 lg:max-w-none">
+                                {% set bgColour = 'bg-white' %}
+                                {% include 'blocks/partials/_card' with { entries: product.relatedProducts.all(), bgColour: bgColour } %}
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+            {% endfor %}
+        </section>
+    {% endif %}
+
+    {% include 'partials/footer/_footer.twig' %}
+
+{% endblock %}

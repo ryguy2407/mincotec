@@ -1,0 +1,13 @@
+<div class="bg-white formAndText border-light_grey border-t">
+    <div class="max-w-screen-xl mx-auto py-24 px-4 sm:px-6 lg:px-8">
+        <div class="w-5/6 mx-auto">
+            <h2 class="text-navy text-3xl text-center lg:text-5xl mb-4 font-bold">
+                {{ block.formTitle }}
+            </h2>
+            {{ block.formDescription | markdown }}
+
+            {{ craft.formie.renderForm(block.form.one()) }}
+
+        </div>
+    </div>
+</div>

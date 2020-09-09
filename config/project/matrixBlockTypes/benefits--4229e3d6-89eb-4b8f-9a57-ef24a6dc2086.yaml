@@ -1,11 +1,11 @@
-field: d1f2332a-0c65-4469-9fa4-5f2ca4f0d6be
+field: 0d1d3396-4421-42e8-85bd-cb65e886c293
 fieldLayouts:
-  a1a62bf7-ed0d-48a7-b8e4-bb18df958bb5:
+  b0ed0582-8eeb-4448-8d47-6ad5d5ca51c6:
     tabs:
       -
         elements:
           -
-            fieldUid: 0546cab2-4aa7-412a-a2d4-684d0b81f987
+            fieldUid: c72e1853-746d-4183-8f9c-525bc6f135c9
             instructions: null
             label: null
             required: false
@@ -14,7 +14,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: deb57009-5e25-4ff9-ba2a-a6056170b51f
+            fieldUid: 2f7f35e2-38a7-45f4-9a1b-cbdb84e72ae0
             instructions: null
             label: null
             required: false
@@ -25,33 +25,31 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  0546cab2-4aa7-412a-a2d4-684d0b81f987:
-    contentColumnType: string
+  2f7f35e2-38a7-45f4-9a1b-cbdb84e72ae0:
+    contentColumnType: text
     fieldGroup: null
-    handle: relatedEntries
+    handle: benefit
     instructions: ''
-    name: 'Related entries'
+    name: Benefit
     searchable: false
     settings:
-      allowSelfRelations: false
-      limit: ''
-      localizeRelations: false
-      selectionLabel: ''
-      showSiteMenu: true
-      source: null
-      sources: '*'
-      targetSiteId: null
-      validateRelatedElements: false
-      viewMode: null
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
     translationKeyFormat: null
-    translationMethod: site
-    type: craft\fields\Entries
-  deb57009-5e25-4ff9-ba2a-a6056170b51f:
+    translationMethod: none
+    type: craft\fields\PlainText
+  c72e1853-746d-4183-8f9c-525bc6f135c9:
     contentColumnType: string
     fieldGroup: null
-    handle: layoutType
+    handle: icon
     instructions: ''
-    name: 'Layout type'
+    name: Icon
     searchable: false
     settings:
       optgroups: true
@@ -60,10 +58,10 @@ fields:
           __assoc__:
             -
               - label
-              - Card
+              - Shield
             -
               - value
-              - card
+              - 'fal fa-shield-alt'
             -
               - default
               - ''
@@ -71,16 +69,38 @@ fields:
           __assoc__:
             -
               - label
-              - 'Split screen'
+              - Checklist
             -
               - value
-              - splitScreen
+              - 'fal fa-tasks'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Expand
+            -
+              - value
+              - 'fal fa-expand-arrows'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Sync
+            -
+              - value
+              - 'fal fa-sync'
             -
               - default
               - ''
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Dropdown
-handle: relatedEntries
-name: 'Related entries'
+handle: benefits
+name: Benefits
 sortOrder: 1

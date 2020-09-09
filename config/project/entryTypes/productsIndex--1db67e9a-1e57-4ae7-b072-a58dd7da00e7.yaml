@@ -1,5 +1,5 @@
 fieldLayouts:
-  99cc1b3a-5a62-4b87-9a18-338ff9165ca2:
+  fa0f8538-fac1-4b5e-a384-f7c8c046c3c7:
     tabs:
       -
         elements:
@@ -10,8 +10,8 @@ fieldLayouts:
             class: null
             disabled: false
             id: null
-            instructions: ''
-            label: ''
+            instructions: null
+            label: null
             max: null
             min: null
             name: null
@@ -27,25 +27,16 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: c62ac3d4-12da-4ff0-a209-618b66421c59
-            instructions: ''
-            label: ''
-            required: '1'
+            fieldUid: 6efe897a-82bc-431e-bc24-8590f3b66163
+            instructions: null
+            label: null
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
           -
-            fieldUid: b7e5e723-43d4-4f69-9839-44e1fdd8236b
-            instructions: ''
-            label: ''
-            required: '1'
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: 016dc978-ce9e-444d-bc08-bc17a911cc94
+            fieldUid: e82be625-ba7e-4423-855d-9a55d0af72a2
             instructions: null
             label: null
             required: false
@@ -104,11 +95,11 @@ fieldLayouts:
             width: 100
         name: SEO
         sortOrder: 2
-handle: projects
-hasTitleField: true
-name: Projects
-section: 9f8b8ea6-c2cc-40b6-a5ee-3da1e79ef5db
+handle: productsIndex
+hasTitleField: false
+name: 'Products listing page'
+section: 0e361d78-18b4-4398-9914-6b5fd697ff6e
 sortOrder: 1
-titleFormat: null
+titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

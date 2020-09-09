@@ -1,0 +1,30 @@
+<div class="lg:relative bg-white pb-16 lg:pb-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="w-full lg:w-5/6 mx-auto">
+            <div class="bg-white">
+                <div class="py-8">
+                    <div class="grid grid-cols-1 gap-12 lg:grid-cols-3 lg:gap-8">
+                        <div class="lg:col-span-3">
+                            <ul class="space-y-12 sm:grid sm:grid-cols-2 sm:gap-12 sm:space-y-0 lg:col-gap-8">
+                                {% for entry in entries %}
+                                    <li>
+                                        <div class="flex items-center space-x-4 lg:space-x-6">
+                                            {% set img = entry.seoImage.one() %}
+                                            <a href="{{ entry.url }}">
+                                                <img class="w-16 h-16 rounded-full lg:w-20 lg:h-20" src="{{ img.url }}" alt="{{ entry.title }}">
+                                            </a>
+                                            <div class="space-y-1">
+                                                <h6 class="uppercase font-bold text-lg mb-2">{{ entry.title }}</h6>
+                                                <p>{{ entry.seoDescription }}</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

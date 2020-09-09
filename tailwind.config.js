@@ -18,7 +18,7 @@ module.exports = {
     extend: {},
   },
   variants: {
-    display: ['responsive', 'hover', 'focus'],
+    display: ['responsive', 'hover', 'focus', 'group-hover'],
     opacity: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
     visibility: ['responsive', 'hover', 'focus', 'group-hover'],
   },

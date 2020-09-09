@@ -14,6 +14,15 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            fieldUid: c4f5b69d-0a3c-4f14-a93f-7d4236ba66b8
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+          -
             fieldUid: dfc0d4fc-ef48-49be-9dc7-3c44a5da6d32
             instructions: null
             label: null
@@ -21,7 +30,7 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
-            width: 100
+            width: 50
         name: Content
         sortOrder: 1
 fields:
@@ -46,6 +55,63 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Entries
+  c4f5b69d-0a3c-4f14-a93f-7d4236ba66b8:
+    contentColumnType: string
+    fieldGroup: null
+    handle: backgroundColour
+    instructions: ''
+    name: 'Background colour'
+    searchable: false
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - White
+            -
+              - value
+              - bg-white
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Navy
+            -
+              - value
+              - bg-navy
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Mustard
+            -
+              - value
+              - bg-mustard
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Blue
+            -
+              - value
+              - bg-blue
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
   dfc0d4fc-ef48-49be-9dc7-3c44a5da6d32:
     contentColumnType: string
     fieldGroup: null
@@ -71,10 +137,10 @@ fields:
           __assoc__:
             -
               - label
-              - 'Split screen'
+              - Tiles
             -
               - value
-              - splitScreen
+              - tiles
             -
               - default
               - ''
