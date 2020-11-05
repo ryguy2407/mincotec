@@ -139,12 +139,14 @@ fields:
     searchable: false
     settings:
       allowSelfRelations: false
+      allowUploads: true
       allowedKinds:
         - image
       defaultUploadLocationSource: 'volume:a6e1cc63-ec74-4588-9aab-3144ee60307e'
       defaultUploadLocationSubpath: ''
       limit: ''
       localizeRelations: false
+      previewMode: full
       restrictFiles: '1'
       selectionLabel: ''
       showSiteMenu: true
@@ -182,4 +184,4 @@ fields:
     type: craft\fields\PlainText
 handle: gallery
 name: Gallery
-sortOrder: 6
+sortOrder: 5

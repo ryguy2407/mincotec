@@ -95,4 +95,4 @@ fields:
     type: verbb\formie\fields\Forms
 handle: formAndText
 name: 'Form and text'
-sortOrder: 7
+sortOrder: 6

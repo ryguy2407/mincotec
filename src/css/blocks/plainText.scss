@@ -15,4 +15,8 @@
   p {
     @apply text-lg opacity-75 mb-4;
   }
+
+  hr {
+    @apply border-light_grey border-t my-8;
+  }
 }

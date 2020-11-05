@@ -1,5 +1,19 @@
+<div class="bg-white formAndText border-light_grey border-t">
+    <div class="max-w-screen-xl mx-auto py-24 px-4 sm:px-6 lg:px-8">
+        <div class="w-5/6 mx-auto">
+            <h2 class="text-navy text-3xl text-center lg:text-5xl mb-4 font-bold">
+                {{ callToAction.formTitle }}
+            </h2>
+            {{ callToAction.formDescription | markdown }}
+
+            {{ craft.formie.renderForm(callToAction.form.one()) }}
+
+        </div>
+    </div>
+</div>
+
 <div class="relative bg-navy shadow">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="w-full mx-auto px-4 sm:px-6">
         <div class="flex justify-between items-center py-6 md:justify-start md:space-x-10">
             <div class="w-0 flex-1 flex">
                 <a href="#" class="inline-flex">

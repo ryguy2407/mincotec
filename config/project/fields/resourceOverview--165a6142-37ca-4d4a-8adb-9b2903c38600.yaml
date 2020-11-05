@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: 1ec61136-2f61-415d-b611-53f0d990dd34
+handle: resourceOverview
+instructions: ''
+name: 'Resource overview'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: '1'
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

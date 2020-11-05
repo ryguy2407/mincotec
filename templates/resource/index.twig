@@ -1,0 +1,40 @@
+{% extends '/partials/_base.twig' %}
+
+{% block content %}
+
+    {% include '/partials/header/_nav.twig' %}
+
+    <header class="w-full h-64 relative flex flex-row justify-center items-center">
+        {% set heading = entry.pageHeading.one() %}
+        {% if heading.backgroundImage | length %}
+            {% set headerImg = heading.backgroundImage.one() %}
+            <img class="absolute inset-0 w-full h-full object-cover" src="{{ headerImg.url }}" alt="{{ headerImg.title }}">
+            <div class="absolute w-full h-full bg-navy bg-opacity-50"></div>
+        {% else %}
+            <div class="absolute w-full h-full bg-navy"></div>
+        {% endif %}
+        <img class="absolute h-full" src="/assets/img/header-logo-overlay.svg" alt="{{ heading.headline }}">
+        <h1 class="text-5xl text-white font-bold relative">{{ heading.headline }}</h1>
+    </header>
+
+    <section class="relative">
+        <div class="lg:relative pt-16 lg:py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6">
+                <div class="w-full lg:w-5/6 mx-auto">
+                    <div class="w-full lg:w-3/4 plainText bg-white">
+                        {{ entry.productOverview | markdown }}
+                    </div>
+                    {% set entries = craft.entries().section('resources').all() %}
+                    {% set bgColour = 'bg-white' %}
+                    <div class="mt-8 flex flex-col lg:flex-row flex-wrap justify-center relative">
+                        {% include 'blocks/partials/_tile' with { entries: entries, bgColour: bgColour, alt:true } %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    {% include 'partials/footer/_footer.twig' %}
+
+{% endblock %}

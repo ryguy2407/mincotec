@@ -228,11 +228,13 @@ fields:
     searchable: false
     settings:
       allowSelfRelations: false
+      allowUploads: true
       allowedKinds: null
       defaultUploadLocationSource: 'volume:a6e1cc63-ec74-4588-9aab-3144ee60307e'
       defaultUploadLocationSubpath: ''
       limit: '1'
       localizeRelations: false
+      previewMode: full
       restrictFiles: ''
       selectionLabel: 'Add an image'
       showSiteMenu: true
@@ -297,4 +299,4 @@ fields:
     type: craft\fields\Dropdown
 handle: textAndMedia
 name: 'Text and media'
-sortOrder: 5
+sortOrder: 4

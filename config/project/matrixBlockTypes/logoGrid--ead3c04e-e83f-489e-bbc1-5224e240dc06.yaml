@@ -34,12 +34,14 @@ fields:
     searchable: false
     settings:
       allowSelfRelations: false
+      allowUploads: true
       allowedKinds:
         - image
       defaultUploadLocationSource: 'volume:a6e1cc63-ec74-4588-9aab-3144ee60307e'
       defaultUploadLocationSubpath: ''
       limit: ''
       localizeRelations: false
+      previewMode: full
       restrictFiles: '1'
       selectionLabel: 'Add a logo'
       showSiteMenu: true

@@ -1,0 +1,51 @@
+{% set attributes = {
+    id: "formie-p-#{page.id}",
+    class: [
+        'fui-page',
+        form.hasMultiplePages and form.settings.submitMethod == 'ajax' and page != form.getCurrentPage() ? 'fui-hidden',
+    ],
+    data: {
+        index: page.sortOrder,
+    },
+} %}
+
+<div {{ attr(attributes) }}>
+    {% set html %}
+        {% hook 'formie.page.start' %}
+
+        {% set displayCurrentPageTitle = form.settings.displayCurrentPageTitle %}
+
+        {% if displayCurrentPageTitle %}
+            <legend class="fui-page-title">{{ page.name | t }}</legend>
+        {% endif %}
+
+        {% for row in page.rows %}
+            <div class="fui-row fui-page-row">
+                {% for field in row.fields %}
+                    {{ craft.formie.renderField(form, field, options) }}
+                {% endfor %}
+                {{ formieInclude('_includes/submit') }}
+            </div>
+        {% endfor %}
+
+        {% hook 'formie.page.end' %}
+    {% endset %}
+
+    {{ tag(displayCurrentPageTitle ? 'fieldset' : 'div', {
+        class: [
+            'fui-page-container',
+            displayCurrentPageTitle ? 'fui-fieldset',
+        ],
+        html: html,
+    }) }}
+
+    {% if submission is defined %}
+        {% set flashError = craft.formie.plugin.service.getFlash(form.id, 'error') %}
+
+        {% if flashError and form.settings.errorMessagePosition == 'bottom-form' %}
+            <div class="fui-alert fui-alert-error fui-alert-{{ form.settings.errorMessagePosition }}" role="alert">
+                {{ flashError | t | raw }}
+            </div>
+        {% endif %}
+    {% endif %}
+</div>

@@ -1,4 +1,4 @@
-dateModified: 1599625967
+dateModified: 1603155662
 email:
   fromEmail: ryan@newwordorder.com.au
   fromName: Mincotec
@@ -11,7 +11,37 @@ plugins:
   formie:
     edition: standard
     enabled: true
-    schemaVersion: 1.0.9
+    schemaVersion: 1.0.13
+    settings:
+      captchas:
+        duplicate:
+          enabled: false
+          settings:
+            handle: duplicate
+          type: verbb\formie\integrations\captchas\Duplicate
+        honeypot:
+          enabled: true
+          settings:
+            handle: honeypot
+          type: verbb\formie\integrations\captchas\Honeypot
+        javascript:
+          enabled: false
+          settings:
+            handle: javascript
+          type: verbb\formie\integrations\captchas\Javascript
+        recaptcha:
+          enabled: false
+          settings:
+            badge: bottomright
+            handle: recaptcha
+            language: en
+            minScore: '0.5'
+            secretKey: ''
+            siteKey: ''
+            size: normal
+            theme: light
+            type: v3
+          type: verbb\formie\integrations\captchas\Recaptcha
   image-optimize:
     edition: standard
     enabled: true

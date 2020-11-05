@@ -1,0 +1,36 @@
+fieldLayouts:
+  c5604829-604f-4545-90ea-e8575eea2c3f:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: e832cff2-c266-4684-8edb-ef87f2fece4a
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: dd550f12-608f-41f1-8dd7-38b9ee687b37
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: b442e8d9-3f6d-4be7-8aff-07e31db53b19
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Call to action'
+        sortOrder: 1
+handle: callToAction
+name: 'Call to action'
