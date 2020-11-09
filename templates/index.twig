@@ -122,6 +122,7 @@
                         zoom: 14
                     });
                     map.scrollZoom.disable();
+                    map.tap.disable();
                     map.addControl(new mapboxgl.NavigationControl());
 
                     map.on('load', function() {
