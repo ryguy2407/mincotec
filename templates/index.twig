@@ -63,6 +63,10 @@
                     map.scrollZoom.disable();
                     map.addControl(new mapboxgl.NavigationControl());
 
+                    map.on('touchstart', function(){
+                        map.dragging.disable();
+                    });
+
                     map.on('load', function() {
                         map.loadImage(
                             '/assets/img/cardiff-icon.png',
@@ -122,8 +126,11 @@
                         zoom: 14
                     });
                     map.scrollZoom.disable();
-                    map.tap.disable();
                     map.addControl(new mapboxgl.NavigationControl());
+
+                    map.on('touchstart', function(){
+                        map.dragging.disable();
+                    });
 
                     map.on('load', function() {
                         map.loadImage(
