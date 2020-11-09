@@ -11,3 +11,8 @@
     @apply text-navy;
   }
 }
+.formAndText.bg-blue {
+  input {
+    @apply border-white border bg-blue border-opacity-50;
+  }
+}

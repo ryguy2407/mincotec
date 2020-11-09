@@ -20,7 +20,7 @@
         {% endif %}
 
         {% for row in page.rows %}
-            <div class="fui-row fui-page-row">
+            <div class="fui-page-row flex-col pl-0 lg:flex-row">
                 {% for field in row.fields %}
                     {{ craft.formie.renderField(form, field, options) }}
                 {% endfor %}

@@ -1,4 +1,6 @@
-<div class="bg-white formAndText border-light_grey border-t">
+{% set url = craft.app.request.url %}
+
+<div class="{% if url == '/' %}bg-white{% else %}bg-blue{% endif %} formAndText border-light_grey border-t">
     <div class="max-w-screen-xl mx-auto py-24 px-4 sm:px-6 lg:px-8">
         <div class="w-5/6 mx-auto">
             <h2 class="text-navy text-3xl text-center lg:text-5xl mb-4 font-bold">
@@ -21,7 +23,7 @@
                 </a>
             </div>
             <div class="-mr-2 -my-2 md:hidden">
-                <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
+                <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-light_grey hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
                     <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                     </svg>

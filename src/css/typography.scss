@@ -17,8 +17,14 @@ h6 {
   @apply text-xl;
 }
 
-.bg-white {
+.textAndMedia.bg-white {
   h1,h2,h3,h4,h5,h6,p,a {
     @apply text-navy;
+  }
+}
+
+.nav.bg-navy {
+  a {
+    @apply text-white;
   }
 }

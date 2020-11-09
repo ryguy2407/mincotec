@@ -1,37 +1,43 @@
 <div class="relative bg-white shadow">
-    <div class="mx-auto px-4 sm:px-6">
-        <div class="flex justify-between items-center py-6 md:justify-start md:space-x-10">
+    <div class="mx-auto px-16 hidden md:block">
+        <div class="flex justify-between items-center md:justify-start md:space-x-10">
             <div class="w-0 flex-1 flex">
                 <a href="/" class="inline-flex">
                     <img class="h-8 w-auto sm:h-10" src="/assets/img/logo.svg" alt="Mincotec">
                 </a>
             </div>
             <div class="-mr-2 -my-2 md:hidden">
-                <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
+                <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-navy hover:text-blue focus:outline-none focus:text-blue transition duration-150 ease-in-out">
                     <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                     </svg>
                 </button>
             </div>
-            <nav class="hidden md:flex space-x-10">
-                <a href="/about" class="text-gray-500 inline-flex items-center space-x-2 text-base leading-6 font-medium hover:text-gray-900 transition ease-in-out duration-150">
-                    About
-                </a>
-                <a href="/resources" class="text-base leading-6 font-medium text-gray-500 hover:text-gray-900 transition ease-in-out duration-150">
-                    Resources
-                </a>
-                <a href="/products" class="text-base leading-6 font-medium text-gray-500 hover:text-gray-900 transition ease-in-out duration-150">
-                    Products
-                </a>
-                <a href="/solutions" class="text-base leading-6 font-medium text-gray-500 hover:text-gray-900 transition ease-in-out duration-150">
-                    Solutions
-                </a>
-                <a href="#" class="text-gray-500 inline-flex items-center space-x-2 text-base leading-6 font-medium hover:text-gray-900 transition ease-in-out duration-150">
-                    Downloads
-                </a>
-                <a href="#" class="text-gray-500 inline-flex items-center space-x-2 text-base leading-6 font-medium hover:text-gray-900 transition ease-in-out duration-150">
-                    Contact
-                </a>
+
+                {% set nodes = craft.navigation.nodes('mainNavigation').level(1).all() %}
+
+                <ul class="flex flex-col md:flex-row space-x-8 items-center text-xl h-full">
+                    {% nav node in nodes %}
+                        <li class="h-full {% if node.classes | length %}{{ node.classes }}{% endif %} group relative">
+                            <a {% if node.url %}href="{{ node.url }}"{% endif %} class="py-8 {% if node.active or node.hasActiveChild %}bg-darkHover text-opaque_navy font-bold{% endif %} text-navy inline-flex items-center space-x-2 text-base leading-6 font-medium hover:text-gray-900 transition ease-in-out duration-150"{% if node.newWindow %} target="_blank" rel="noopener"{% endif %} {% for attribute in node.customAttributes %}{{ attribute.attribute }}="{{ attribute.value }}"{% endfor %}>
+                            {{- node.title -}}
+                            </a>
+
+                            <div class="{% if not node.active %}hidden{% endif %} group-hover:block bg-navy absolute left-0 w-full" style="bottom:30px;height: 2px;"></div>
+
+                            {% if node.hasDescendants() %}
+                                <ul class="hidden absolute left-0 hover:flex group-hover:flex flex-col bg-navy w-40 overflow-hidden shadow-lg z-50">
+                                    {% set children = node.children.all() %}
+                                    {% for child in children %}
+                                        <li class="w-full ml-0">
+                                            <a class="{% if child.active %}bg-white text-navy{% endif %} w-full py-2 px-3 hover:bg-white hover:text-navy text-sm text-white block {% if not loop.last %}border-b border-white border-opacity-25{% endif %}" href="{{ child.url }}">{{ child.title }}</a>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            {% endif %}
+                        </li>
+                    {% endnav %}
+                </ul>
             </nav>
         </div>
     </div>
@@ -46,22 +52,22 @@
         From: "opacity-100 scale-100"
         To: "opacity-0 scale-95"
     -->
-    <div x-data="{ open: false }" class="absolute top-0 inset-x-0 z-50 p-2 transition transform origin-top-right md:hidden">
+    <div x-data="{ open: false }" class="relative transition transform origin-top-right md:hidden">
         <div class="rounded-lg shadow-lg">
-            <div class="rounded-lg shadow-xs bg-white divide-y-2 divide-gray-50">
+            <div class="bg-white divide-y-2 divide-gray-50">
                 <div class="pt-5 pb-6 px-5 space-y-6">
                     <div class="flex items-center justify-between">
-                        <div>
+                        <a href="/">
                             <img class="h-8 w-auto sm:h-10" src="/assets/img/logo.svg" alt="Mincotec">
-                        </div>
+                        </a>
                         <div class="-mr-2">
-                            <button @click="open = !open" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-navy hover:text-navy hover:bg-gray-100 focus:outline-none focus:bg-white focus:text-white transition duration-150 ease-in-out">
-                                <svg x-show="!open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="#000000">
+                            <button @click="open = !open" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-navy hover:text-navy hover:bg-gray-100 focus:outline-none transition duration-150 ease-in-out">
+                                <svg x-show="!open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                                 </svg>
                                 <!-- Icon when menu is open. -->
                                 <!-- Menu open: "block", Menu closed: "hidden" -->
-                                <svg x-show="open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="#000000">
+                                <svg x-show="open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                                 </svg>
                             </button>
@@ -70,31 +76,14 @@
                     <div x-show="open"
                          @click.away="open = false">
                         <nav class="grid row-gap-8">
-                            <a href="#" class="-m-3 p-3 flex items-center space-x-3 rounded-md hover:bg-gray-50 transition ease-in-out duration-150">
-                                <div class="text-base leading-6 font-medium text-gray-900">
-                                    About
-                                </div>
-                            </a>
-                            <a href="#" class="-m-3 p-3 flex items-center space-x-3 rounded-md hover:bg-gray-50 transition ease-in-out duration-150">
-                                <div class="text-base leading-6 font-medium text-gray-900">
-                                    Resources
-                                </div>
-                            </a>
-                            <a href="#" class="-m-3 p-3 flex items-center space-x-3 rounded-md hover:bg-gray-50 transition ease-in-out duration-150">
-                                <div class="text-base leading-6 font-medium text-gray-900">
-                                    Products
-                                </div>
-                            </a>
-                            <a href="#" class="-m-3 p-3 flex items-center space-x-3 rounded-md hover:bg-gray-50 transition ease-in-out duration-150">
-                                <div class="text-base leading-6 font-medium text-gray-900">
-                                    Downloads
-                                </div>
-                            </a>
-                            <a href="#" class="-m-3 p-3 flex items-center space-x-3 rounded-md hover:bg-gray-50 transition ease-in-out duration-150">
-                                <div class="text-base leading-6 font-medium text-gray-900">
-                                    Contact
-                                </div>
-                            </a>
+                            {% set nodes = craft.navigation.nodes('mobileNavigation').level(1).all() %}
+                            {% nav node in nodes %}
+                                <a {% if node.url %}href="{{ node.url }}"{% endif %} class="py-2 flex items-center space-x-3 block hover:bg-blue hover:pl-2 hover:text-white transition ease-in-out duration-150" {% if node.newWindow %} target="_blank" rel="noopener"{% endif %} {% for attribute in node.customAttributes %}{{ attribute.attribute }}="{{ attribute.value }}"{% endfor %}>
+                                    <div class="text-base leading-6 font-medium">
+                                        {{- node.title -}}
+                                    </div>
+                                </a>
+                            {% endnav %}
                         </nav>
                     </div>
                 </div>

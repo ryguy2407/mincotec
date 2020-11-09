@@ -8,9 +8,9 @@
   src: url(/assets/fonts/neutrifstudio-regular.woff) format("woff");
 }
 
+@tailwind utilities;
+
 @import "typography";
 @import "./blocks/plainText";
 @import "./blocks/textAndMedia";
 @import "./blocks/formAndText";
-
-@tailwind utilities;

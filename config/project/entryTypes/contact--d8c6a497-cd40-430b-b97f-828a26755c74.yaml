@@ -1,5 +1,5 @@
 fieldLayouts:
-  fa0f8538-fac1-4b5e-a384-f7c8c046c3c7:
+  3028403c-cb75-4a37-8e7c-1960887f86ee:
     tabs:
       -
         elements:
@@ -27,16 +27,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 6efe897a-82bc-431e-bc24-8590f3b66163
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: e82be625-ba7e-4423-855d-9a55d0af72a2
+            fieldUid: 84f72373-7818-40d1-94a1-7bed11823504
             instructions: null
             label: null
             required: false
@@ -77,9 +68,9 @@ fieldLayouts:
             width: 100
           -
             fieldUid: 7f92ebb9-d48f-483c-ad92-06b7390a5421
-            instructions: ''
-            label: ''
-            required: '1'
+            instructions: null
+            label: null
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
@@ -93,12 +84,12 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
-        name: SEO
+        name: 'SEO Fields'
         sortOrder: 2
-handle: productsIndex
+handle: contact
 hasTitleField: false
-name: 'Products listing page'
-section: 0e361d78-18b4-4398-9914-6b5fd697ff6e
+name: Contact
+section: 7195e45b-bba6-4d74-99d9-b6f407e3f1cd
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

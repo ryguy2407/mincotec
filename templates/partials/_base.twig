@@ -15,11 +15,39 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
     <link rel="manifest" href="/assets/favicon/site.webmanifest">
     <script src="https://kit.fontawesome.com/87623a05c4.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
 <body class="font-sans antialiased">
 
     {% block content %}
     {% endblock %}
+
+    <script>
+        jQuery(document).ready(function($){
+
+            $('.accordionTrigger').on('click', function(){
+
+
+                //Close any open siblings
+                $(this).closest('.accordionParent').siblings().find('.panel').slideUp();
+                //Reset all sibling icons to be a blue plus icon
+                $(this).closest('.accordionParent').siblings().find('.toggleIcon').find('.fas').removeClass().addClass('fas fa-plus-circle text-4xl text-navy');
+
+                $(this).closest('.accordionParent').find('.panel').slideToggle();
+                $(this).closest('.accordionParent').find('.toggleIcon').find('.fas').toggleClass('fa-plus-circle fa-minus-circle');
+                $(this).closest('.accordionParent').find('.toggleIcon').find('.fas').toggleClass('text-navy text-mustard');
+            });
+
+            $('a.triggerForm').on('click', function(e){
+                e.preventDefault();
+                $(this).next('div.form').fadeToggle();
+            });
+            $('a.closeForm').on('click', function(e){
+                e.preventDefault();
+                $('div.form').fadeOut();
+            });
+        });
+    </script>
 
 </body>
 </html>

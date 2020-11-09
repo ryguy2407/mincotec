@@ -1,10 +1,14 @@
-dateModified: 1603155662
+dateModified: 1604880849
 email:
   fromEmail: ryan@newwordorder.com.au
   fromName: Mincotec
   transportType: craft\mail\transportadapters\Sendmail
 plugins:
   dospaces:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  field-manager:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
@@ -46,6 +50,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+  navigation:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.21
   seomatic:
     edition: standard
     enabled: true
@@ -53,7 +61,8 @@ plugins:
 system:
   edition: pro
   live: true
-  name: Mincotec
+  name: Mincotech
+  retryDuration: null
   schemaVersion: 3.5.13
   timeZone: Australia/Brisbane
 users:

@@ -1,5 +1,5 @@
 fieldLayouts:
-  b5c2c8e7-2c9c-447f-a319-829e4e2c4c94:
+  144ccf66-c8ea-4778-b169-d6abe3190a8d:
     tabs:
       -
         elements:
@@ -26,28 +26,6 @@ fieldLayouts:
             type: craft\fieldlayoutelements\EntryTitleField
             warning: null
             width: 100
-          -
-            fieldUid: 6efe897a-82bc-431e-bc24-8590f3b66163
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: 165a6142-37ca-4d4a-8adb-9b2903c38600
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-        name: Content
-        sortOrder: 1
-      -
-        elements:
           -
             fieldUid: 27a6b2f7-125f-4435-89f3-c86ece6fae10
             instructions: ''
@@ -77,9 +55,9 @@ fieldLayouts:
             width: 100
           -
             fieldUid: 7f92ebb9-d48f-483c-ad92-06b7390a5421
-            instructions: ''
-            label: ''
-            required: '1'
+            instructions: null
+            label: null
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
@@ -93,12 +71,12 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
-        name: SEO
-        sortOrder: 2
-handle: resourcesListingPage
+        name: Content
+        sortOrder: 1
+handle: downloads
 hasTitleField: false
-name: 'Resources listing page'
-section: 64468d3a-ae6b-4ef9-8878-a43a2693229d
+name: Downloads
+section: 186e1d97-3ea9-4f22-8186-24d79ce8972f
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

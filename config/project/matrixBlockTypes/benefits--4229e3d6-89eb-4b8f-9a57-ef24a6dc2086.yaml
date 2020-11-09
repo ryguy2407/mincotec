@@ -5,7 +5,7 @@ fieldLayouts:
       -
         elements:
           -
-            fieldUid: c72e1853-746d-4183-8f9c-525bc6f135c9
+            fieldUid: 2f7f35e2-38a7-45f4-9a1b-cbdb84e72ae0
             instructions: null
             label: null
             required: false
@@ -14,7 +14,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 2f7f35e2-38a7-45f4-9a1b-cbdb84e72ae0
+            fieldUid: acf421ad-05b0-4496-a152-aa4784ffbc14
             instructions: null
             label: null
             required: false
@@ -44,12 +44,12 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  c72e1853-746d-4183-8f9c-525bc6f135c9:
+  acf421ad-05b0-4496-a152-aa4784ffbc14:
     contentColumnType: string
     fieldGroup: null
     handle: icon
     instructions: ''
-    name: Icon
+    name: 'Benefit icon'
     searchable: false
     settings:
       optgroups: true
@@ -58,10 +58,10 @@ fields:
           __assoc__:
             -
               - label
-              - Shield
+              - Clock
             -
               - value
-              - 'fal fa-shield-alt'
+              - 'fal fa-clock'
             -
               - default
               - ''
@@ -69,10 +69,10 @@ fields:
           __assoc__:
             -
               - label
-              - Checklist
+              - Cog
             -
               - value
-              - 'fal fa-tasks'
+              - 'fal fa-cog'
             -
               - default
               - ''
@@ -80,10 +80,10 @@ fields:
           __assoc__:
             -
               - label
-              - Expand
+              - Users
             -
               - value
-              - 'fal fa-expand-arrows'
+              - 'fal fa-users'
             -
               - default
               - ''
@@ -91,10 +91,87 @@ fields:
           __assoc__:
             -
               - label
-              - Sync
+              - 'Australia Globe'
             -
               - value
-              - 'fal fa-sync'
+              - 'fal fa-globe-asia'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Chart
+            -
+              - value
+              - 'fal fa-chart-line'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Microscope
+            -
+              - value
+              - 'fal fa-microscope'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Mountains
+            -
+              - value
+              - 'fal fa-mountains'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Fast
+            -
+              - value
+              - 'fal fa-rabbit-fast'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Hourglass
+            -
+              - value
+              - 'fal fa-hourglass'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Crosshairs
+            -
+              - value
+              - 'fal fa-crosshairs'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'Set square'
+            -
+              - value
+              - 'fal fa-ruler-combined'
             -
               - default
               - ''

@@ -1,18 +1,18 @@
 contentColumnType: string
 fieldGroup: 1ec61136-2f61-415d-b611-53f0d990dd34
-handle: relatedProjects
+handle: relatedResource
 instructions: ''
-name: 'Related projects'
+name: 'Related resource'
 searchable: false
 settings:
   allowSelfRelations: false
   limit: ''
   localizeRelations: false
-  selectionLabel: 'Add a project'
+  selectionLabel: 'Relate a resource'
   showSiteMenu: true
   source: null
   sources:
-    - 'section:9f8b8ea6-c2cc-40b6-a5ee-3da1e79ef5db'
+    - 'section:e892d3ce-39c6-4f38-b352-1cdc5d7be1a8'
   targetSiteId: null
   validateRelatedElements: false
   viewMode: null

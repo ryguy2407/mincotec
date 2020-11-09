@@ -1,0 +1,28 @@
+handle: mainNavigation
+instructions: ''
+maxNodes: ''
+name: 'Main navigation'
+permissions:
+  craft\elements\Asset:
+    enabled: '1'
+    permissions: '*'
+  craft\elements\Category:
+    enabled: '1'
+    permissions: '*'
+  craft\elements\Entry:
+    enabled: '1'
+    permissions: '*'
+  craft\elements\Tag:
+    enabled: ''
+    permissions: '*'
+  custom:
+    enabled: '1'
+  verbb\navigation\nodetypes\PassiveType:
+    enabled: '1'
+propagateNodes: false
+siteSettings:
+  3cc4705b-9d87-4251-bf19-e831c181126f: null
+sortOrder: 1
+structure:
+  maxLevels: null
+  uid: 258b2ea5-7bfc-4de8-8ad5-99115c8f0039

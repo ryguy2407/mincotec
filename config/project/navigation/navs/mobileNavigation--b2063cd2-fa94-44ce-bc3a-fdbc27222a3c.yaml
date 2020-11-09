@@ -1,0 +1,28 @@
+handle: mobileNavigation
+instructions: ''
+maxNodes: ''
+name: 'Mobile Navigation'
+permissions:
+  craft\elements\Asset:
+    enabled: '1'
+    permissions: '*'
+  craft\elements\Category:
+    enabled: '1'
+    permissions: '*'
+  craft\elements\Entry:
+    enabled: '1'
+    permissions: '*'
+  craft\elements\Tag:
+    enabled: ''
+    permissions: '*'
+  custom:
+    enabled: '1'
+  verbb\navigation\nodetypes\PassiveType:
+    enabled: '1'
+propagateNodes: false
+siteSettings:
+  3cc4705b-9d87-4251-bf19-e831c181126f: null
+sortOrder: 2
+structure:
+  maxLevels: '1'
+  uid: 8db125c5-e8ae-4a85-853a-13b155de2377
