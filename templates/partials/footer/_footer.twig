@@ -8,7 +8,22 @@
             </h2>
             {{ callToAction.formDescription | markdown }}
 
-            {{ craft.formie.renderForm(callToAction.form.one()) }}
+            {% set form = craft.formie.forms({ handle: 'letSCollaborate' }).one() %}
+
+            <form id="{{ form.formId }}" method="post" data-config="{{ form.configJson }}">
+                {{ csrfInput() }}
+                {{ actionInput('formie/submissions/submit') }}
+                {{ hiddenInput('handle', form.handle) }}
+
+                <div class="flex flex-col md:flex-row justify-between space-x-0 space-y-4 md:space-x-6 md:space-y-0">
+                    {% for field in form.getFields() %}
+                        {{ craft.formie.renderField(form, field) }}
+                    {% endfor %}
+                    <div class="fui-field w-full md:w-1/3">
+                        <button class="w-full py-4 px-6 bg-navy text-sm uppercase tracking-widest text-white border border-white rounded font-bold" type="submit">Let's collaborate</button>
+                    </div>
+                </div>
+            </form>
 
         </div>
     </div>

@@ -11,8 +11,8 @@
                 {{ block.text | markdown }}
                 {% if block.linkUrl %}
                     <div class="mt-8">
-                        <div class="inline-flex rounded-md">
-                            <a href="{{ block.linkUrl }}" class="inline-flex uppercase items-center justify-center px-8 py-2 border {% if block.backgroundColour == 'bg-white' %}border-navy{% else %}border-white{% endif %} leading-6 font-medium rounded-md text-white font-bold text-sm">
+                        <div class="inline-flex">
+                            <a href="{{ block.linkUrl }}" class="btn-white {% if block.backgroundColour == 'bg-white' %}border-navy{% else %}border-white{% endif %}">
                                 {{ block.linkText }}
                             </a>
                         </div>

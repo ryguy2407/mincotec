@@ -8,8 +8,8 @@
                 {{ entry.seoDescription }}
             </p>
             <div class="mt-8">
-                <div class="inline-flex rounded-md">
-                    <a href="{{ entry.url }}" class="{% if bgColour == 'bg-white' %}text-navy{% else %}text-white{% endif %} inline-flex uppercase items-center justify-center px-8 py-2 border {% if bgColour == 'bg-white' %}border-navy hover:bg-navy hover:text-white{% else %}border-white hover:bg-white hover:text-navy{% endif %} transition duration-500 ease-in-out leading-6 font-medium rounded-md text-white font-bold text-sm">
+                <div class="inline-flex">
+                    <a href="{{ entry.url }}" class="{% if bgColour == 'bg-white' %}text-navy{% else %}text-white{% endif %} btn-white {% if bgColour == 'bg-white' %}border-navy hover:bg-navy hover:text-white{% else %}border-white hover:bg-white hover:text-navy{% endif %}">
                         Learn more
                     </a>
                 </div>

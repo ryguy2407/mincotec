@@ -11,8 +11,8 @@
                 </p>
             </div>
             <div class="mt-10 sm:flex sm:justify-center lg:justify-start">
-                <div class="mt-3 rounded-md shadow sm:mt-0">
-                    <a href="#" class="btn-white w-full flex items-center justify-center px-8 py-3 border border-transparent text-navy leading-6 font-medium rounded-md text-indigo-600 bg-white hover:bg-light_grey focus:outline-none transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
+                <div class="mt-3 sm:mt-0">
+                    <a href="#" class="btn-white">
                         Learn more
                     </a>
                 </div>
@@ -23,6 +23,7 @@
         {% set image = hero.heroImage.one() %}
         {% if image | length %}
             <img class="absolute inset-0 w-full h-full object-cover animate" src="{{ image.url }}" alt="{{ image.title }}">
+            <img class="absolute w-full h-full object-cover right-0 top-0" src="/assets/img/main-watermark.svg" alt="MincoTech">
             <img class="hidden lg:block absolute inset-0 h-full" src="/assets/img/angleoverlay.svg" alt="Angle overlay">
         {% endif %}
     </div>
