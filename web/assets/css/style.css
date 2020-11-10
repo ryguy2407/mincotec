@@ -26642,6 +26642,46 @@ h6 {
   color: rgba(255, 255, 255, var(--text-opacity));
 }
 
+.kenburns {
+  overflow: hidden;
+}
+
+.kenburns img.animate {
+  width: 100%;
+  animation: move 40s ease;
+  /* Add infinite to loop. */
+  -ms-animation: move 40s ease;
+  -webkit-animation: move 40s ease;
+  -moz-animation: move 40s ease;
+}
+
+@-webkit-keyframes move {
+  0% {
+    transform-origin: bottom left;
+    transform: scale(1);
+    -ms-transform: scale(1);
+    /* IE 9 */
+    -webkit-transform: scale(1);
+    /* Safari and Chrome */
+    -o-transform: scale(1);
+    /* Opera */
+    -moz-transform: scale(1);
+    /* Firefox */
+  }
+
+  100% {
+    transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    /* IE 9 */
+    -webkit-transform: scale(1.2);
+    /* Safari and Chrome */
+    -o-transform: scale(1.2);
+    /* Opera */
+    -moz-transform: scale(1.2);
+    /* Firefox */
+  }
+}
+
 .plainText h1, .plainText h2, .plainText h3, .plainText h4, .plainText h5, .plainText h6, .plainText p, .plainText a {
   --text-opacity: 1;
   color: #FFFFFF;
