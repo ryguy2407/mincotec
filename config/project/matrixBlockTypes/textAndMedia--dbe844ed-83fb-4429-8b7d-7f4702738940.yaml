@@ -299,4 +299,4 @@ fields:
     type: craft\fields\Dropdown
 handle: textAndMedia
 name: 'Text and media'
-sortOrder: 4
+sortOrder: 3
