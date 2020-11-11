@@ -26850,6 +26850,10 @@ hr {
   color: rgba(255, 255, 255, var(--text-opacity));
 }
 
+.fui-field-container {
+  padding: 0;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
