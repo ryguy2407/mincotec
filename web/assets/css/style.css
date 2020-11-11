@@ -26630,6 +26630,15 @@ h6 {
   font-size: 1.25rem;
 }
 
+hr {
+  --border-opacity: 1;
+  border-color: #0F2D52;
+  border-color: rgba(15, 45, 82, var(--border-opacity));
+  --border-opacity: 0.5;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .textAndMedia.bg-white h1, .textAndMedia.bg-white h2, .textAndMedia.bg-white h3, .textAndMedia.bg-white h4, .textAndMedia.bg-white h5, .textAndMedia.bg-white h6, .textAndMedia.bg-white p, .textAndMedia.bg-white a {
   --text-opacity: 1;
   color: #0F2D52;

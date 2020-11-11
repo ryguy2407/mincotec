@@ -17,6 +17,10 @@ h6 {
   @apply text-xl;
 }
 
+hr {
+  @apply border-navy border-opacity-50 my-8;
+}
+
 .textAndMedia.bg-white {
   h1,h2,h3,h4,h5,h6,p,a {
     @apply text-navy;
