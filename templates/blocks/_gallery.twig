@@ -14,9 +14,13 @@
                 {% set images = block.galleryImages.all() %}
                 {% for image in images %}
                     <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+                        {% if image.linkUrl | length %}
                         <a href="{{ image.linkUrl }}">
                             <img class="h-16" src="{{ image.url }}" alt="{{ image.title }}">
                         </a>
+                        {% else %}
+                            <img class="h-16" src="{{ image.url }}" alt="{{ image.title }}">
+                        {% endif %}
                     </div>
                 {% endfor %}
             </div>

@@ -8,11 +8,9 @@
                 {{ entry.seoDescription }}
             </p>
             <div class="mt-8">
-                <div class="inline-flex">
-                    <a href="{{ entry.url }}" class="{% if bgColour == 'bg-white' %}text-navy{% else %}text-white{% endif %} btn-white {% if bgColour == 'bg-white' %}border-navy hover:bg-navy hover:text-white{% else %}border-white hover:bg-white hover:text-navy{% endif %}">
-                        Learn more
-                    </a>
-                </div>
+                <a href="{{ entry.url }}" class="{% if bgColour == 'bg-white' %}text-navy{% else %}text-white{% endif %} btn-white {% if bgColour == 'bg-white' %}border-navy hover:bg-navy hover:text-white{% else %}border-white hover:bg-white hover:text-navy{% endif %}">
+                    Learn more
+                </a>
             </div>
         </div>
         {% if alt %}

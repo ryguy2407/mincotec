@@ -26645,6 +26645,21 @@ hr {
   color: rgba(15, 45, 82, var(--text-opacity));
 }
 
+.textAndMedia.bg-white .btn-white {
+  --border-opacity: 1;
+  border-color: #0F2D52;
+  border-color: rgba(15, 45, 82, var(--border-opacity));
+}
+
+.textAndMedia.bg-white .btn-white:hover {
+  --bg-opacity: 1;
+  background-color: #0F2D52;
+  background-color: rgba(15, 45, 82, var(--bg-opacity));
+  --text-opacity: 1;
+  color: #FFFFFF;
+  color: rgba(255, 255, 255, var(--text-opacity));
+}
+
 .nav.bg-navy a {
   --text-opacity: 1;
   color: #FFFFFF;
@@ -26848,10 +26863,6 @@ hr {
   --text-opacity: 1;
   color: #FFFFFF;
   color: rgba(255, 255, 255, var(--text-opacity));
-}
-
-.fui-field-container {
-  padding: 0;
 }
 
 @media (min-width: 640px) {

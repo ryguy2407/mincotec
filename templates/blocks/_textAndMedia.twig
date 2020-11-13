@@ -11,11 +11,9 @@
                 {{ block.text | markdown }}
                 {% if block.linkUrl %}
                     <div class="mt-8">
-                        <div class="inline-flex">
-                            <a href="{{ block.linkUrl }}" class="btn-white {% if block.backgroundColour == 'bg-white' %}border-navy{% else %}border-white{% endif %}">
-                                {{ block.linkText }}
-                            </a>
-                        </div>
+                        <a href="{{ block.linkUrl }}" class="btn-white {% if block.backgroundColour == 'bg-white' %}border-navy{% else %}border-white{% endif %}">
+                            {{ block.linkText }}
+                        </a>
                     </div>
                 {% endif %}
             </div>
