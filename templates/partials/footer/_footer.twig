@@ -61,6 +61,9 @@
                 </a>
             </div>
             <nav class="hidden md:flex space-x-10">
+                <a href="#" class="text-white inline-flex items-center space-x-2 text-base leading-6 font-medium hover:text-gray-900 transition ease-in-out duration-150">
+                    &copy; {{ 'now'|date('Y') }} - MincoTech
+                </a>
                 {% set nodes = craft.navigation.nodes('footerNavigation').level(1).all() %}
                 {% nav node in nodes %}
                     <a {% if node.url %}href="{{ node.url }}"{% endif %} class="text-white inline-flex items-center space-x-2 text-base leading-6 font-medium hover:text-gray-900 transition ease-in-out duration-150" {% if node.newWindow %} target="_blank" rel="noopener"{% endif %} {% for attribute in node.customAttributes %}{{ attribute.attribute }}="{{ attribute.value }}"{% endfor %}>
