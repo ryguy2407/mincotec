@@ -26737,13 +26737,31 @@ hr {
   }
 }
 
-.plainText h1, .plainText h2, .plainText h3, .plainText h4, .plainText h5, .plainText h6, .plainText p, .plainText a {
+.plainText h1, .plainText h2, .plainText h3, .plainText h4, .plainText h5, .plainText h6, .plainText p, .plainText a, .plainText li, .plainText ol {
   --text-opacity: 1;
   color: #FFFFFF;
   color: rgba(255, 255, 255, var(--text-opacity));
 }
 
-.plainText.bg-white h1, .plainText.bg-white h2, .plainText.bg-white h3, .plainText.bg-white h4, .plainText.bg-white h5, .plainText.bg-white h6, .plainText.bg-white p, .plainText.bg-white a {
+.plainText ul {
+  margin-bottom: 1rem;
+}
+
+.plainText ul li {
+  font-size: 1.125rem;
+  opacity: 0.75;
+  list-style-type: disc;
+  margin-left: 1rem;
+}
+
+.plainText ul ol {
+  font-size: 1.125rem;
+  opacity: 0.75;
+  list-style-type: decimal;
+  margin-left: 1rem;
+}
+
+.plainText.bg-white h1, .plainText.bg-white h2, .plainText.bg-white h3, .plainText.bg-white h4, .plainText.bg-white h5, .plainText.bg-white h6, .plainText.bg-white p, .plainText.bg-white a, .plainText.bg-white li, .plainText.bg-white ol {
   --text-opacity: 1;
   color: #0F2D52;
   color: rgba(15, 45, 82, var(--text-opacity));

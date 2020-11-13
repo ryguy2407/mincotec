@@ -1,10 +1,19 @@
 .plainText {
-  h1,h2,h3,h4,h5,h6,p,a {
+  h1,h2,h3,h4,h5,h6,p,a,li,ol {
     @apply text-white;
+  }
+  ul {
+    @apply mb-4;
+    li {
+      @apply text-lg opacity-75 list-disc ml-4;
+    }
+    ol {
+      @apply text-lg opacity-75 list-decimal ml-4;
+    }
   }
 }
 .plainText.bg-white {
-  h1,h2,h3,h4,h5,h6,p,a {
+  h1,h2,h3,h4,h5,h6,p,a,li,ol {
     @apply text-navy;
   }
 }
