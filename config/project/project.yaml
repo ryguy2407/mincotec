@@ -1,4 +1,4 @@
-dateModified: 1604979491
+dateModified: 1608615561
 email:
   fromEmail: ryan@newwordorder.com.au
   fromName: Mincotec
@@ -15,7 +15,7 @@ plugins:
   formie:
     edition: standard
     enabled: true
-    schemaVersion: 1.0.13
+    schemaVersion: 1.1.5
     settings:
       captchas:
         duplicate:
