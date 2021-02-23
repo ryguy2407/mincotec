@@ -1,0 +1,23 @@
+enableVersioning: true
+handle: resource
+name: 'Resources page'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  3cc4705b-9d87-4251-bf19-e831c181126f:
+    enabledByDefault: true
+    hasUrls: true
+    template: resource/index
+    uriFormat: resources
+type: single

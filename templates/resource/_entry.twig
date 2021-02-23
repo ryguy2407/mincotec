@@ -70,57 +70,36 @@
 
                     {# Loop through the categories that are related to the products we loaded #}
                     {% for category in productCategories %}
-                        <div class="accordionParent w-full block text-left flex flex-row space-x-6 py-8 border-light_grey border-b hover:cursor-pointer {% if loop.first %}border-t pt-8{% endif %}">
-                            <div class="accordionTrigger toggleIcon">
-                                <i class="fas fa-plus-circle text-4xl text-navy"></i>
-                            </div>
+                        <div class="w-full block text-left flex flex-row space-x-6 py-8 border-light_grey border-b hover:cursor-pointer {% if loop.first %}border-t pt-8{% endif %}">
                             <div class="flex flex-col space-y-4">
-                                <h5 class="accordionTrigger uppercase leading-none mt-1 text-navy font-bold">{{ category.title }}</h5>
+                                <h5 class="uppercase leading-none mt-1 text-navy font-bold">{{ category.title }}</h5>
 
-                                <div class="flex flex-col panel" style="display: none;">
+                                <div class="flex flex-col panel">
 
                                     <div class="mb-4 text-navy opacity-75">
                                         {{ category.productCategoryDescription | markdown }}
                                     </div>
 
-                                    <div class="mb-4">
-                                        {% for benefit in category.benefitsMatrix.all() %}
-                                            <p class="bg-navy bg-opacity-10 text-navy opacity-50 font-bold p-2 inline-block uppercase text-sm">{{ benefit.benefit }}</p>
-                                        {% endfor %}
-                                    </div>
-
                                     {# Loop through the products that are related to the current category in the main loop and related to the resource we are looking at #}
                                     {% set entries = craft.entries().section('products').relatedTo(category).relatedResource(entry).all() %}
-                                    {% for product in entries %}
-                                        <div class="flex flex-col lg:flex-row mb-4 lg:mb-0 space-x-0 space-y-4 lg:space-y-0 lg:space-x-8 items-center border-light_grey border-b">
-                                            <div class="w-full lg:w-1/5">
-                                                <p class="uppercase text-sm text-navy text-navy font-bold">
-                                                    {{ product.title }}
-                                                </p>
-                                            </div>
-                                            {% set optimizedImages = product.seoImage.one().optimizedimages %}
+                                    <div class="flex flex-row space-x-8">
+                                        {% for product in entries %}
+                                            <a href="{{ category.url }}" class="flex flex-col w-1/4">
+                                                {% set optimizedImages = product.seoImage.one().optimizedimages %}
 
-                                            <div class="relative w-full lg:w-1/5 h-full" style="padding-bottom: 15%;">
-                                                <img class="absolute inset-0 w-full h-full object-cover" src="{{ optimizedImages.src() }}"
-                                                     srcset="{{ optimizedImages.srcset() }}"
-                                                     sizes="100vw" />
-                                            </div>
-                                            <div class="w-full lg:w-2/5">
-                                                <p class="text-navy opacity-50">
-                                                    {{ product.seoDescription }}
-                                                </p>
-                                            </div>
-                                            {% set download = product.downloads.one() %}
-                                            {% if download | length %}
-                                                <a class="triggerForm w-full lg:w-1/5 text-sm text-navy font-bold border text-center border-navy rounded p-2 hover:bg-navy hover:text-white transition duration-500 ease-in-out tracking-widest" href="#">
-                                                    DOWNLOAD
-                                                </a>
-                                                {% include 'partials/_popupForm.twig' %}
-                                            {% else %}
-                                                <div class="w-1/5"></div>
-                                            {% endif %}
-                                        </div>
-                                    {% endfor %}
+                                                <div class="relative w-full h-40">
+                                                    <img class="absolute inset-0 w-full h-full object-cover" src="{{ optimizedImages.src() }}"
+                                                         srcset="{{ optimizedImages.srcset() }}"
+                                                         sizes="100vw" />
+                                                </div>
+                                                <div class="w-full bg-input_bg text-center p-4">
+                                                    <p class="uppercase text-sm text-navy text-navy font-bold">
+                                                        {{ product.title }}
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        {% endfor %}
+                                    </div>
                                 </div>
                             </div>
                         </div>

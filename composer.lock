@@ -4,15 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "65fbb9102d559e2a8ce9b8a0252609f2",
+    "content-hash": "0b1840494a06e72e37062adcdad087f9",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.171.3",
+            "version": "3.173.14",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aws/aws-sdk-php.git",
+                "reference": "ff2b3623adc6781da48ee017e7042a363cd65955"
+            },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/7469c8e7f8db5dec544937677d08d8fff4f2f4e9",
-                "reference": "7469c8e7f8db5dec544937677d08d8fff4f2f4e9",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/ff2b3623adc6781da48ee017e7042a363cd65955",
+                "reference": "ff2b3623adc6781da48ee017e7042a363cd65955",
                 "shasum": ""
             },
             "require": {
@@ -87,9 +92,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.171.3"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.173.14"
             },
-            "time": "2020-12-21T19:14:02+00:00"
+            "time": "2021-02-22T19:22:33+00:00"
         },
         {
             "name": "cebe/markdown",
@@ -103,11 +108,6 @@
             "require": {
                 "lib-pcre": "*",
                 "php": ">=5.4.0"
-            },
-            "require-dev": {
-                "cebe/indent": "*",
-                "facebook/xhprof": "*@dev",
-                "phpunit/phpunit": "4.1.*"
             },
             "bin": [
                 "bin/markdown"
@@ -123,7 +123,6 @@
                     "cebe\\markdown\\": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -144,10 +143,6 @@
                 "markdown",
                 "markdown-extra"
             ],
-            "support": {
-                "issues": "https://github.com/cebe/markdown/issues",
-                "source": "https://github.com/cebe/markdown"
-            },
             "time": "2018-03-26T11:24:36+00:00"
         },
         {
@@ -374,9 +369,6 @@
             "require": {
                 "php": "^5.3.2 || ^7.0 || ^8.0"
             },
-            "require-dev": {
-                "phpunit/phpunit": "^4.8.35 || ^5.7 || 6.5 - 7"
-            },
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -388,7 +380,6 @@
                     "Composer\\Spdx\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -415,25 +406,6 @@
                 "spdx",
                 "validator"
             ],
-            "support": {
-                "irc": "irc://irc.freenode.org/composer",
-                "issues": "https://github.com/composer/spdx-licenses/issues",
-                "source": "https://github.com/composer/spdx-licenses/tree/1.5.5"
-            },
-            "funding": [
-                {
-                    "url": "https://packagist.com",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/composer",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/composer/composer",
-                    "type": "tidelift"
-                }
-            ],
             "time": "2020-12-03T16:04:16+00:00"
         },
         {
@@ -449,16 +421,12 @@
                 "php": "^5.3.2 || ^7.0 || ^8.0",
                 "psr/log": "^1.0"
             },
-            "require-dev": {
-                "phpunit/phpunit": "^4.8.35 || ^5.7 || 6.5 - 8"
-            },
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "Composer\\XdebugHandler\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -472,25 +440,6 @@
             "keywords": [
                 "Xdebug",
                 "performance"
-            ],
-            "support": {
-                "irc": "irc://irc.freenode.org/composer",
-                "issues": "https://github.com/composer/xdebug-handler/issues",
-                "source": "https://github.com/composer/xdebug-handler/tree/1.4.5"
-            },
-            "funding": [
-                {
-                    "url": "https://packagist.com",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/composer",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/composer/composer",
-                    "type": "tidelift"
-                }
             ],
             "time": "2020-11-13T08:04:11+00:00"
         },
@@ -592,18 +541,12 @@
             "require": {
                 "league/oauth2-client": "^2.2.1"
             },
-            "require-dev": {
-                "phpunit/phpunit": "^5.0",
-                "satooshi/php-coveralls": "^1.0",
-                "squizlabs/php_codesniffer": "^2.0"
-            },
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "craftcms\\oauth2\\client\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -624,27 +567,20 @@
                 "oauth",
                 "oauth2"
             ],
-            "support": {
-                "issues": "https://github.com/craftcms/oauth2-craftid/issues",
-                "source": "https://github.com/craftcms/oauth2-craftid/tree/1.0.0.1"
-            },
             "time": "2017-11-22T19:46:18+00:00"
         },
         {
             "name": "craftcms/plugin-installer",
-            "version": "1.5.6",
+            "version": "1.5.7",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/plugin-installer/zipball/4d24e227a086db3d8784a705f59060c49cf989ad",
-                "reference": "4d24e227a086db3d8784a705f59060c49cf989ad",
+                "url": "https://api.github.com/repos/craftcms/plugin-installer/zipball/23ec472acd4410b70b07d5a02b2b82db9ee3f66b",
+                "reference": "23ec472acd4410b70b07d5a02b2b82db9ee3f66b",
                 "shasum": ""
             },
             "require": {
                 "composer-plugin-api": "^1.0 || ^2.0",
                 "php": ">=5.4"
-            },
-            "require-dev": {
-                "composer/composer": "^1.0 || ^2.0"
             },
             "type": "composer-plugin",
             "extra": {
@@ -655,7 +591,6 @@
                     "craft\\composer\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -668,15 +603,7 @@
                 "installer",
                 "plugin"
             ],
-            "support": {
-                "docs": "https://craftcms.com/docs",
-                "email": "support@craftcms.com",
-                "forum": "https://craftcms.stackexchange.com/",
-                "issues": "https://github.com/craftcms/cms/issues?state=open",
-                "rss": "https://craftcms.com/changelog.rss",
-                "source": "https://github.com/craftcms/cms"
-            },
-            "time": "2020-10-26T23:34:21+00:00"
+            "time": "2021-02-18T02:01:38+00:00"
         },
         {
             "name": "craftcms/server-check",
@@ -724,7 +651,6 @@
                     "creocoder\\nestedsets\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -739,15 +665,16 @@
                 "nested sets",
                 "yii2"
             ],
-            "support": {
-                "issues": "https://github.com/creocoder/yii2-nested-sets/issues",
-                "source": "https://github.com/creocoder/yii2-nested-sets/tree/master"
-            },
             "time": "2015-01-27T10:53:51+00:00"
         },
         {
             "name": "davechild/textstatistics",
             "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/DaveChild/Text-Statistics.git",
+                "reference": "dd16252a5c78fad6f8ea4fcd7e55d14fd07b1382"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/DaveChild/Text-Statistics/zipball/dd16252a5c78fad6f8ea4fcd7e55d14fd07b1382",
@@ -809,10 +736,6 @@
                 "paragonie/random_compat": ">= 2",
                 "php": ">=5.4.0"
             },
-            "require-dev": {
-                "nikic/php-parser": "^2.0|^3.0|^4.0",
-                "phpunit/phpunit": "^4|^5"
-            },
             "bin": [
                 "bin/generate-defuse-key"
             ],
@@ -822,7 +745,6 @@
                     "Defuse\\Crypto\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -851,10 +773,6 @@
                 "security",
                 "symmetric key cryptography"
             ],
-            "support": {
-                "issues": "https://github.com/defuse/php-encryption/issues",
-                "source": "https://github.com/defuse/php-encryption/tree/master"
-            },
             "time": "2018-07-24T23:27:56+00:00"
         },
         {
@@ -1079,9 +997,6 @@
             "require": {
                 "php": ">=5.2"
             },
-            "require-dev": {
-                "simpletest/simpletest": "dev-master#72de02a7b80c6bb8864ef9bf66d41d2f58f826bd"
-            },
             "type": "library",
             "autoload": {
                 "psr-0": {
@@ -1094,7 +1009,6 @@
                     "/library/HTMLPurifier/Language/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "LGPL-2.1-or-later"
             ],
@@ -1110,10 +1024,6 @@
             "keywords": [
                 "html"
             ],
-            "support": {
-                "issues": "https://github.com/ezyang/htmlpurifier/issues",
-                "source": "https://github.com/ezyang/htmlpurifier/tree/master"
-            },
             "time": "2020-06-29T00:56:53+00:00"
         },
         {
@@ -1136,18 +1046,12 @@
                 "ergebnis/faker": "1.9.1",
                 "fzaninotto/faker": "1.9.1"
             },
-            "require-dev": {
-                "ext-intl": "*",
-                "phpunit/phpunit": "^4.8.35 || ^5.7",
-                "squizlabs/php_codesniffer": "^2.9.2"
-            },
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "Faker\\": "src/Faker/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1162,10 +1066,6 @@
                 "faker",
                 "fixtures"
             ],
-            "support": {
-                "issues": "https://github.com/FakerPHP/Faker/issues",
-                "source": "https://github.com/FakerPHP/Faker/tree/v1.9.1"
-            },
             "time": "2020-10-27T12:08:29+00:00"
         },
         {
@@ -1233,25 +1133,12 @@
             "require": {
                 "php": ">=5.3.2"
             },
-            "require-dev": {
-                "pear/pear-core-minimal": "^1.9",
-                "pear/pear_exception": "^1.0",
-                "pear/versioncontrol_git": "^0.5",
-                "phing/phing": "~2.7",
-                "php-coveralls/php-coveralls": "^1.0|^2.0",
-                "phpunit/phpunit": "^4.8|^5.0",
-                "symfony/console": "^2.8|^3.0|^4.0",
-                "symfony/filesystem": "^2.8|^3.0|^4.0",
-                "symfony/finder": "^2.8|^3.0|^4.0",
-                "symfony/process": "^2.8|^3.0|^4.0"
-            },
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "Giggsey\\Locale\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1263,10 +1150,6 @@
                 }
             ],
             "description": "Locale functions required by libphonenumber-for-php",
-            "support": {
-                "issues": "https://github.com/giggsey/Locale/issues",
-                "source": "https://github.com/giggsey/Locale/tree/master"
-            },
             "time": "2020-07-07T11:16:24+00:00"
         },
         {
@@ -1285,11 +1168,6 @@
                 "php": ">=5.5",
                 "symfony/polyfill-intl-idn": "^1.17.0"
             },
-            "require-dev": {
-                "ext-curl": "*",
-                "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.4 || ^7.0",
-                "psr/log": "^1.1"
-            },
             "suggest": {
                 "psr/log": "Required for using the Log middleware"
             },
@@ -1307,7 +1185,6 @@
                     "src/functions_include.php"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1329,10 +1206,6 @@
                 "rest",
                 "web service"
             ],
-            "support": {
-                "issues": "https://github.com/guzzle/guzzle/issues",
-                "source": "https://github.com/guzzle/guzzle/tree/6.5"
-            },
             "time": "2020-06-16T21:01:06+00:00"
         },
         {
@@ -1348,9 +1221,6 @@
                 "guzzlehttp/guzzle": "~6.0",
                 "php": ">=5.5.0"
             },
-            "require-dev": {
-                "phpunit/phpunit": "~4.0"
-            },
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1362,7 +1232,6 @@
                     "GuzzleHttp\\Subscriber\\Oauth\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1379,10 +1248,6 @@
                 "Guzzle",
                 "oauth"
             ],
-            "support": {
-                "issues": "https://github.com/guzzle/oauth-subscriber/issues",
-                "source": "https://github.com/guzzle/oauth-subscriber/tree/master"
-            },
             "time": "2015-08-15T19:44:28+00:00"
         },
         {
@@ -1396,9 +1261,6 @@
             },
             "require": {
                 "php": ">=5.5"
-            },
-            "require-dev": {
-                "symfony/phpunit-bridge": "^4.4 || ^5.1"
             },
             "type": "library",
             "extra": {
@@ -1414,7 +1276,6 @@
                     "src/functions_include.php"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1429,10 +1290,6 @@
             "keywords": [
                 "promise"
             ],
-            "support": {
-                "issues": "https://github.com/guzzle/promises/issues",
-                "source": "https://github.com/guzzle/promises/tree/1.4.0"
-            },
             "time": "2020-09-30T07:37:28+00:00"
         },
         {
@@ -1452,10 +1309,6 @@
             "provide": {
                 "psr/http-message-implementation": "1.0"
             },
-            "require-dev": {
-                "ext-zlib": "*",
-                "phpunit/phpunit": "~4.8.36 || ^5.7.27 || ^6.5.14 || ^7.5.20 || ^8.5.8 || ^9.3.10"
-            },
             "suggest": {
                 "laminas/laminas-httphandlerrunner": "Emit PSR-7 responses"
             },
@@ -1473,7 +1326,6 @@
                     "src/functions_include.php"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1499,10 +1351,6 @@
                 "uri",
                 "url"
             ],
-            "support": {
-                "issues": "https://github.com/guzzle/psr7/issues",
-                "source": "https://github.com/guzzle/psr7/tree/1.7.0"
-            },
             "time": "2020-09-30T07:37:11+00:00"
         },
         {
@@ -1524,10 +1372,6 @@
                 "hoa/regex": "~1.0",
                 "hoa/visitor": "~2.0"
             },
-            "require-dev": {
-                "hoa/json": "~2.0",
-                "hoa/test": "~2.0"
-            },
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1539,7 +1383,6 @@
                     "Hoa\\Compiler\\": "."
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -1580,14 +1423,6 @@
                 "trace",
                 "uniform"
             ],
-            "support": {
-                "docs": "https://central.hoa-project.net/Documentation/Library/Compiler",
-                "email": "support@hoa-project.net",
-                "forum": "https://users.hoa-project.net/",
-                "irc": "irc://chat.freenode.net/hoaproject",
-                "issues": "https://github.com/hoaproject/Compiler/issues",
-                "source": "https://central.hoa-project.net/Resource/Library/Compiler"
-            },
             "time": "2017-08-08T07:44:07+00:00"
         },
         {
@@ -1603,10 +1438,6 @@
                 "hoa/exception": "~1.0",
                 "php": ">=5.5.0"
             },
-            "require-dev": {
-                "hoa/stream": "~1.0",
-                "hoa/test": "~2.0"
-            },
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1621,7 +1452,6 @@
                     "Prelude.php"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -1646,14 +1476,6 @@
                 "keyword",
                 "library"
             ],
-            "support": {
-                "docs": "https://central.hoa-project.net/Documentation/Library/Consistency",
-                "email": "support@hoa-project.net",
-                "forum": "https://users.hoa-project.net/",
-                "irc": "irc://chat.freenode.net/hoaproject",
-                "issues": "https://github.com/hoaproject/Consistency/issues",
-                "source": "https://central.hoa-project.net/Resource/Library/Consistency"
-            },
             "time": "2017-05-02T12:18:12+00:00"
         },
         {
@@ -1669,9 +1491,6 @@
                 "hoa/consistency": "~1.0",
                 "hoa/exception": "~1.0"
             },
-            "require-dev": {
-                "hoa/test": "~2.0"
-            },
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1683,7 +1502,6 @@
                     "Hoa\\Event\\": "."
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -1705,14 +1523,6 @@
                 "listener",
                 "observer"
             ],
-            "support": {
-                "docs": "https://central.hoa-project.net/Documentation/Library/Event",
-                "email": "support@hoa-project.net",
-                "forum": "https://users.hoa-project.net/",
-                "irc": "irc://chat.freenode.net/hoaproject",
-                "issues": "https://github.com/hoaproject/Event/issues",
-                "source": "https://central.hoa-project.net/Resource/Library/Event"
-            },
             "time": "2017-01-13T15:30:50+00:00"
         },
         {
@@ -1728,9 +1538,6 @@
                 "hoa/consistency": "~1.0",
                 "hoa/event": "~1.0"
             },
-            "require-dev": {
-                "hoa/test": "~2.0"
-            },
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1742,7 +1549,6 @@
                     "Hoa\\Exception\\": "."
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -1762,14 +1568,6 @@
                 "exception",
                 "library"
             ],
-            "support": {
-                "docs": "https://central.hoa-project.net/Documentation/Library/Exception",
-                "email": "support@hoa-project.net",
-                "forum": "https://users.hoa-project.net/",
-                "irc": "irc://chat.freenode.net/hoaproject",
-                "issues": "https://github.com/hoaproject/Exception/issues",
-                "source": "https://central.hoa-project.net/Resource/Library/Exception"
-            },
             "time": "2017-01-16T07:53:27+00:00"
         },
         {
@@ -1788,9 +1586,6 @@
                 "hoa/iterator": "~2.0",
                 "hoa/stream": "~1.0"
             },
-            "require-dev": {
-                "hoa/test": "~2.0"
-            },
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1802,7 +1597,6 @@
                     "Hoa\\File\\": "."
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -1827,14 +1621,6 @@
                 "link",
                 "temporary"
             ],
-            "support": {
-                "docs": "https://central.hoa-project.net/Documentation/Library/File",
-                "email": "support@hoa-project.net",
-                "forum": "https://users.hoa-project.net/",
-                "irc": "irc://chat.freenode.net/hoaproject",
-                "issues": "https://github.com/hoaproject/File/issues",
-                "source": "https://central.hoa-project.net/Resource/Library/File"
-            },
             "time": "2017-07-11T07:42:15+00:00"
         },
         {
@@ -1850,9 +1636,6 @@
                 "hoa/consistency": "~1.0",
                 "hoa/exception": "~1.0"
             },
-            "require-dev": {
-                "hoa/test": "~2.0"
-            },
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1864,7 +1647,6 @@
                     "Hoa\\Iterator\\": "."
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -1884,14 +1666,6 @@
                 "iterator",
                 "library"
             ],
-            "support": {
-                "docs": "https://central.hoa-project.net/Documentation/Library/Iterator",
-                "email": "support@hoa-project.net",
-                "forum": "https://users.hoa-project.net/",
-                "irc": "irc://chat.freenode.net/hoaproject",
-                "issues": "https://github.com/hoaproject/Iterator/issues",
-                "source": "https://central.hoa-project.net/Resource/Library/Iterator"
-            },
             "time": "2017-01-10T10:34:47+00:00"
         },
         {
@@ -1911,9 +1685,6 @@
                 "hoa/protocol": "~1.0",
                 "hoa/zformat": "~1.0"
             },
-            "require-dev": {
-                "hoa/test": "~2.0"
-            },
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1925,7 +1696,6 @@
                     "Hoa\\Math\\": "."
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -1952,14 +1722,6 @@
                 "sampler",
                 "set"
             ],
-            "support": {
-                "docs": "https://central.hoa-project.net/Documentation/Library/Math",
-                "email": "support@hoa-project.net",
-                "forum": "https://users.hoa-project.net/",
-                "irc": "irc://chat.freenode.net/hoaproject",
-                "issues": "https://github.com/hoaproject/Math/issues",
-                "source": "https://central.hoa-project.net/Resource/Library/Math"
-            },
             "time": "2017-05-16T08:02:17+00:00"
         },
         {
@@ -1975,9 +1737,6 @@
                 "hoa/consistency": "~1.0",
                 "hoa/exception": "~1.0"
             },
-            "require-dev": {
-                "hoa/test": "~2.0"
-            },
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1992,7 +1751,6 @@
                     "Wrapper.php"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -2015,14 +1773,6 @@
                 "stream",
                 "wrapper"
             ],
-            "support": {
-                "docs": "https://central.hoa-project.net/Documentation/Library/Protocol",
-                "email": "support@hoa-project.net",
-                "forum": "https://users.hoa-project.net/",
-                "irc": "irc://chat.freenode.net/hoaproject",
-                "issues": "https://github.com/hoaproject/Protocol/issues",
-                "source": "https://central.hoa-project.net/Resource/Library/Protocol"
-            },
             "time": "2017-01-14T12:26:10+00:00"
         },
         {
@@ -2053,7 +1803,6 @@
                     "Hoa\\Regex\\": "."
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -2074,14 +1823,6 @@
                 "library",
                 "regex"
             ],
-            "support": {
-                "docs": "https://central.hoa-project.net/Documentation/Library/Regex",
-                "email": "support@hoa-project.net",
-                "forum": "https://users.hoa-project.net/",
-                "irc": "irc://chat.freenode.net/hoaproject",
-                "issues": "https://github.com/hoaproject/Regex/issues",
-                "source": "https://central.hoa-project.net/Resource/Library/Regex"
-            },
             "time": "2017-01-13T16:10:24+00:00"
         },
         {
@@ -2101,9 +1842,6 @@
                 "hoa/protocol": "~1.0",
                 "hoa/visitor": "~2.0"
             },
-            "require-dev": {
-                "hoa/test": "~2.0"
-            },
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -2115,7 +1853,6 @@
                     "Hoa\\Ruler\\": "."
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -2135,14 +1872,6 @@
                 "library",
                 "ruler"
             ],
-            "support": {
-                "docs": "https://central.hoa-project.net/Documentation/Library/Ruler",
-                "email": "support@hoa-project.net",
-                "forum": "https://users.hoa-project.net/",
-                "irc": "irc://chat.freenode.net/hoaproject",
-                "issues": "https://github.com/hoaproject/Ruler/issues",
-                "source": "https://central.hoa-project.net/Resource/Library/Ruler"
-            },
             "time": "2017-05-16T07:52:21+00:00"
         },
         {
@@ -2160,9 +1889,6 @@
                 "hoa/exception": "~1.0",
                 "hoa/protocol": "~1.0"
             },
-            "require-dev": {
-                "hoa/test": "~2.0"
-            },
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -2174,7 +1900,6 @@
                     "Hoa\\Stream\\": "."
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -2202,14 +1927,6 @@
                 "stream",
                 "wrapper"
             ],
-            "support": {
-                "docs": "https://central.hoa-project.net/Documentation/Library/Stream",
-                "email": "support@hoa-project.net",
-                "forum": "https://users.hoa-project.net/",
-                "irc": "irc://chat.freenode.net/hoaproject",
-                "issues": "https://github.com/hoaproject/Stream/issues",
-                "source": "https://central.hoa-project.net/Resource/Library/Stream"
-            },
             "time": "2017-02-21T16:01:06+00:00"
         },
         {
@@ -2224,9 +1941,6 @@
             "require": {
                 "hoa/consistency": "~1.0",
                 "hoa/exception": "~1.0"
-            },
-            "require-dev": {
-                "hoa/test": "~2.0"
             },
             "suggest": {
                 "ext-iconv": "ext/iconv must be present (or a third implementation) to use Hoa\\Ustring::transcode().",
@@ -2243,7 +1957,6 @@
                     "Hoa\\Ustring\\": "."
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -2265,14 +1978,6 @@
                 "string",
                 "unicode"
             ],
-            "support": {
-                "docs": "https://central.hoa-project.net/Documentation/Library/Ustring",
-                "email": "support@hoa-project.net",
-                "forum": "https://users.hoa-project.net/",
-                "irc": "irc://chat.freenode.net/hoaproject",
-                "issues": "https://github.com/hoaproject/Ustring/issues",
-                "source": "https://central.hoa-project.net/Resource/Library/Ustring"
-            },
             "time": "2017-01-16T07:08:25+00:00"
         },
         {
@@ -2287,9 +1992,6 @@
             "require": {
                 "hoa/consistency": "~1.0"
             },
-            "require-dev": {
-                "hoa/test": "~2.0"
-            },
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -2301,7 +2003,6 @@
                     "Hoa\\Visitor\\": "."
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -2323,14 +2024,6 @@
                 "visit",
                 "visitor"
             ],
-            "support": {
-                "docs": "https://central.hoa-project.net/Documentation/Library/Visitor",
-                "email": "support@hoa-project.net",
-                "forum": "https://users.hoa-project.net/",
-                "irc": "irc://chat.freenode.net/hoaproject",
-                "issues": "https://github.com/hoaproject/Visitor/issues",
-                "source": "https://central.hoa-project.net/Resource/Library/Visitor"
-            },
             "time": "2017-01-16T07:02:03+00:00"
         },
         {
@@ -2357,7 +2050,6 @@
                     "Hoa\\Zformat\\": "."
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -2378,14 +2070,6 @@
                 "parameter",
                 "zformat"
             ],
-            "support": {
-                "docs": "https://central.hoa-project.net/Documentation/Library/Zformat",
-                "email": "support@hoa-project.net",
-                "forum": "https://users.hoa-project.net/",
-                "irc": "irc://chat.freenode.net/hoaproject",
-                "issues": "https://github.com/hoaproject/Zformat/issues",
-                "source": "https://central.hoa-project.net/Resource/Library/Zformat"
-            },
             "time": "2017-01-10T10:39:54+00:00"
         },
         {
@@ -2396,9 +2080,6 @@
                 "url": "https://api.github.com/repos/mtibben/html2text/zipball/61ad68e934066a6f8df29a3d23a6460536d0855c",
                 "reference": "61ad68e934066a6f8df29a3d23a6460536d0855c",
                 "shasum": ""
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4"
             },
             "suggest": {
                 "ext-mbstring": "For best performance",
@@ -2413,15 +2094,10 @@
                     ]
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-2.0-or-later"
             ],
             "description": "Converts HTML to formatted plain text",
-            "support": {
-                "issues": "https://github.com/mtibben/html2text/issues",
-                "source": "https://github.com/mtibben/html2text/tree/4.3.1"
-            },
             "time": "2020-04-16T23:44:31+00:00"
         },
         {
@@ -2436,16 +2112,12 @@
             "require": {
                 "php": ">=5.3"
             },
-            "require-dev": {
-                "phpunit/phpunit": "*"
-            },
             "type": "library",
             "autoload": {
                 "psr-0": {
                     "Imgix\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-2-Clause"
             ],
@@ -2453,10 +2125,6 @@
             "keywords": [
                 "imgix"
             ],
-            "support": {
-                "issues": "https://github.com/imgix/imgix-php/issues",
-                "source": "https://github.com/imgix/imgix-php/tree/3.3.0"
-            },
             "time": "2020-06-05T21:57:36+00:00"
         },
         {
@@ -2470,11 +2138,6 @@
             },
             "require": {
                 "php": ">=5.3.3"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "~2.2.20||~2.15.1",
-                "json-schema/json-schema-test-suite": "1.2.0",
-                "phpunit/phpunit": "^4.8.35"
             },
             "bin": [
                 "bin/validate-json"
@@ -2490,7 +2153,6 @@
                     "JsonSchema\\": "src/JsonSchema/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2518,10 +2180,6 @@
                 "json",
                 "schema"
             ],
-            "support": {
-                "issues": "https://github.com/justinrainbow/json-schema/issues",
-                "source": "https://github.com/justinrainbow/json-schema/tree/5.2.10"
-            },
             "time": "2020-05-27T16:41:55+00:00"
         },
         {
@@ -2536,10 +2194,6 @@
             "require": {
                 "php": ">=5.4.0"
             },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.13",
-                "phpunit/phpunit": "~4.8|~5.7"
-            },
             "suggest": {
                 "ext-gd": "to use the GD image adapter.",
                 "ext-gmagick": "to use the Gmagick image adapter.",
@@ -2551,7 +2205,6 @@
                     "ColorThief\\": "lib/ColorThief"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "CC-BY-2.5"
             ],
@@ -2570,10 +2223,6 @@
                 "php",
                 "thief"
             ],
-            "support": {
-                "issues": "https://github.com/ksubileau/color-thief-php/issues",
-                "source": "https://github.com/ksubileau/color-thief-php/tree/master"
-            },
             "time": "2018-10-27T18:57:38+00:00"
         },
         {
@@ -2592,10 +2241,6 @@
             "replace": {
                 "zendframework/zend-escaper": "self.version"
             },
-            "require-dev": {
-                "laminas/laminas-coding-standard": "~1.0.0",
-                "phpunit/phpunit": "^5.7.27 || ^6.5.8 || ^7.1.2"
-            },
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -2608,7 +2253,6 @@
                     "Laminas\\Escaper\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -2618,14 +2262,6 @@
                 "escaper",
                 "laminas"
             ],
-            "support": {
-                "chat": "https://laminas.dev/chat",
-                "docs": "https://docs.laminas.dev/laminas-escaper/",
-                "forum": "https://discourse.laminas.dev",
-                "issues": "https://github.com/laminas/laminas-escaper/issues",
-                "rss": "https://github.com/laminas/laminas-escaper/releases.atom",
-                "source": "https://github.com/laminas/laminas-escaper"
-            },
             "time": "2019-12-31T16:43:30+00:00"
         },
         {
@@ -2648,16 +2284,6 @@
             "replace": {
                 "zendframework/zend-feed": "^2.12.0"
             },
-            "require-dev": {
-                "laminas/laminas-cache": "^2.7.2",
-                "laminas/laminas-coding-standard": "~1.0.0",
-                "laminas/laminas-db": "^2.8.2",
-                "laminas/laminas-http": "^2.7",
-                "laminas/laminas-servicemanager": "^2.7.8 || ^3.3",
-                "laminas/laminas-validator": "^2.10.1",
-                "phpunit/phpunit": "^5.7.27 || ^6.5.14 || ^7.5.20",
-                "psr/http-message": "^1.0.1"
-            },
             "suggest": {
                 "laminas/laminas-cache": "Laminas\\Cache component, for optionally caching feeds between requests",
                 "laminas/laminas-db": "Laminas\\Db component, for use with PubSubHubbub",
@@ -2678,7 +2304,6 @@
                     "Laminas\\Feed\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -2687,20 +2312,6 @@
             "keywords": [
                 "feed",
                 "laminas"
-            ],
-            "support": {
-                "chat": "https://laminas.dev/chat",
-                "docs": "https://docs.laminas.dev/laminas-feed/",
-                "forum": "https://discourse.laminas.dev",
-                "issues": "https://github.com/laminas/laminas-feed/issues",
-                "rss": "https://github.com/laminas/laminas-feed/releases.atom",
-                "source": "https://github.com/laminas/laminas-feed"
-            },
-            "funding": [
-                {
-                    "url": "https://funding.communitybridge.org/projects/laminas-project",
-                    "type": "community_bridge"
-                }
             ],
             "time": "2020-08-18T13:45:04+00:00"
         },
@@ -2720,11 +2331,6 @@
             "replace": {
                 "zendframework/zend-stdlib": "self.version"
             },
-            "require-dev": {
-                "laminas/laminas-coding-standard": "~1.0.0",
-                "phpbench/phpbench": "^0.13",
-                "phpunit/phpunit": "^5.7.27 || ^6.5.8 || ^7.1.2"
-            },
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -2737,7 +2343,6 @@
                     "Laminas\\Stdlib\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -2747,14 +2352,6 @@
                 "laminas",
                 "stdlib"
             ],
-            "support": {
-                "chat": "https://laminas.dev/chat",
-                "docs": "https://docs.laminas.dev/laminas-stdlib/",
-                "forum": "https://discourse.laminas.dev",
-                "issues": "https://github.com/laminas/laminas-stdlib/issues",
-                "rss": "https://github.com/laminas/laminas-stdlib/releases.atom",
-                "source": "https://github.com/laminas/laminas-stdlib"
-            },
             "time": "2019-12-31T17:51:15+00:00"
         },
         {
@@ -2768,10 +2365,6 @@
             },
             "require": {
                 "php": "^5.6 || ^7.0 || ^8.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^5.7 || ^6.5 || ^7.5 || ^8.1 || ^9.3",
-                "squizlabs/php_codesniffer": "^3.5"
             },
             "type": "library",
             "extra": {
@@ -2787,7 +2380,6 @@
                     "Laminas\\ZendFrameworkBridge\\": "src//"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -2797,18 +2389,6 @@
                 "autoloading",
                 "laminas",
                 "zf"
-            ],
-            "support": {
-                "forum": "https://discourse.laminas.dev/",
-                "issues": "https://github.com/laminas/laminas-zendframework-bridge/issues",
-                "rss": "https://github.com/laminas/laminas-zendframework-bridge/releases.atom",
-                "source": "https://github.com/laminas/laminas-zendframework-bridge"
-            },
-            "funding": [
-                {
-                    "url": "https://funding.communitybridge.org/projects/laminas-project",
-                    "type": "community_bridge"
-                }
             ],
             "time": "2020-09-14T14:23:00+00:00"
         },
@@ -2890,6 +2470,11 @@
         {
             "name": "league/flysystem-aws-s3-v3",
             "version": "1.0.29",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/flysystem-aws-s3-v3.git",
+                "reference": "4e25cc0582a36a786c31115e419c6e40498f6972"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/thephpleague/flysystem-aws-s3-v3/zipball/4e25cc0582a36a786c31115e419c6e40498f6972",
@@ -2947,11 +2532,6 @@
                 "ext-xml": "*",
                 "php": ">=5.3.3"
             },
-            "require-dev": {
-                "mikehaertl/php-shellcommand": "~1.1.0",
-                "phpunit/phpunit": "^4.8|^5.7",
-                "scrutinizer/ocular": "~1.1"
-            },
             "bin": [
                 "bin/html-to-markdown"
             ],
@@ -2966,7 +2546,6 @@
                     "League\\HTMLToMarkdown\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2989,28 +2568,6 @@
             "keywords": [
                 "html",
                 "markdown"
-            ],
-            "support": {
-                "issues": "https://github.com/thephpleague/html-to-markdown/issues",
-                "source": "https://github.com/thephpleague/html-to-markdown/tree/4.10.0"
-            },
-            "funding": [
-                {
-                    "url": "https://www.colinodell.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://www.paypal.me/colinpodell/10.00",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/colinodell",
-                    "type": "github"
-                },
-                {
-                    "url": "https://www.patreon.com/colinodell",
-                    "type": "patreon"
-                }
             ],
             "time": "2020-07-01T00:34:03+00:00"
         },
@@ -3117,12 +2674,6 @@
                 "paragonie/random_compat": "^1 || ^2 || ^9.99",
                 "php": "^5.6 || ^7.0 || ^8.0"
             },
-            "require-dev": {
-                "mockery/mockery": "^1.3",
-                "php-parallel-lint/php-parallel-lint": "^1.2",
-                "phpunit/phpunit": "^5.7 || ^6.0 || ^9.3",
-                "squizlabs/php_codesniffer": "^2.3 || ^3.0"
-            },
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -3134,7 +2685,6 @@
                     "League\\OAuth2\\Client\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3162,10 +2712,6 @@
                 "oauth2",
                 "single sign on"
             ],
-            "support": {
-                "issues": "https://github.com/thephpleague/oauth2-client/issues",
-                "source": "https://github.com/thephpleague/oauth2-client/tree/2.6.0"
-            },
             "time": "2020-10-28T02:03:40+00:00"
         },
         {
@@ -3180,19 +2726,12 @@
             "require": {
                 "league/oauth2-client": "^2.0"
             },
-            "require-dev": {
-                "eloquent/phony-phpunit": "^2.0",
-                "php-coveralls/php-coveralls": "^2.1",
-                "phpunit/phpunit": "^6.0",
-                "squizlabs/php_codesniffer": "^2.0"
-            },
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "League\\OAuth2\\Client\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3212,10 +2751,6 @@
                 "oauth",
                 "oauth2"
             ],
-            "support": {
-                "issues": "https://github.com/thephpleague/oauth2-google/issues",
-                "source": "https://github.com/thephpleague/oauth2-google/tree/3.0.3"
-            },
             "time": "2020-07-24T15:16:12+00:00"
         },
         {
@@ -3230,16 +2765,12 @@
             "require": {
                 "php": ">= 5.3.0"
             },
-            "require-dev": {
-                "phpunit/phpunit": ">4.0 <=9.4"
-            },
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "mikehaertl\\shellcommand\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3253,15 +2784,16 @@
             "keywords": [
                 "shell"
             ],
-            "support": {
-                "issues": "https://github.com/mikehaertl/php-shellcommand/issues",
-                "source": "https://github.com/mikehaertl/php-shellcommand/tree/1.6.3"
-            },
             "time": "2020-11-23T17:31:15+00:00"
         },
         {
             "name": "mtdowling/jmespath.php",
             "version": "2.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jmespath/jmespath.php.git",
+                "reference": "42dae2cbd13154083ca6d70099692fef8ca84bfb"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/jmespath/jmespath.php/zipball/42dae2cbd13154083ca6d70099692fef8ca84bfb",
@@ -3317,11 +2849,11 @@
         },
         {
             "name": "nystudio107/craft-imageoptimize",
-            "version": "1.6.23",
+            "version": "1.6.24",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/853b2beaa1a7a5e7b39e3632f1c29dc03cde9ebd",
-                "reference": "853b2beaa1a7a5e7b39e3632f1c29dc03cde9ebd",
+                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/a4a2871c1e20164fa7565fd8df3d072aac604b6f",
+                "reference": "a4a2871c1e20164fa7565fd8df3d072aac604b6f",
                 "shasum": ""
             },
             "require": {
@@ -3377,7 +2909,7 @@
                 "docs": "https://nystudio107.com/plugins/imageoptimize/documentation",
                 "issues": "https://nystudio107.com/plugins/imageoptimize/support"
             },
-            "time": "2021-02-14T03:42:18+00:00"
+            "time": "2021-02-20T04:10:08+00:00"
         },
         {
             "name": "nystudio107/craft-imageoptimize-imgix",
@@ -3399,7 +2931,6 @@
                     "nystudio107\\imageoptimizeimgix\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "proprietary"
             ],
@@ -3418,8 +2949,7 @@
             ],
             "support": {
                 "docs": "https://github.com/nystudio107/craft-imageoptimize-imgix/blob/v1/README.md",
-                "issues": "https://github.com/nystudio107/craft-imageoptimize-imgix/issues",
-                "source": "https://github.com/nystudio107/craft-imageoptimize-imgix/tree/1.1.3"
+                "issues": "https://github.com/nystudio107/craft-imageoptimize-imgix/issues"
             },
             "time": "2020-10-08T02:39:57+00:00"
         },
@@ -3480,7 +3010,6 @@
                     "nystudio107\\imageoptimizethumbor\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "proprietary"
             ],
@@ -3499,14 +3028,18 @@
             ],
             "support": {
                 "docs": "https://github.com/nystudio107/craft-imageoptimize-thumbor/blob/v1/README.md",
-                "issues": "https://github.com/nystudio107/craft-imageoptimize-thumbor/issues",
-                "source": "https://github.com/nystudio107/craft-imageoptimize-thumbor/tree/1.3.0"
+                "issues": "https://github.com/nystudio107/craft-imageoptimize-thumbor/issues"
             },
             "time": "2019-07-05T15:23:47+00:00"
         },
         {
             "name": "nystudio107/craft-seomatic",
             "version": "3.3.32",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nystudio107/craft-seomatic.git",
+                "reference": "41d80ebc35368d3a42732db5dba0ccfdb617296b"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/41d80ebc35368d3a42732db5dba0ccfdb617296b",
@@ -3518,6 +3051,10 @@
                 "davechild/textstatistics": "1.0.2",
                 "php-science/textrank": "^1.0.3",
                 "sunra/php-simple-html-dom-parser": "^1.5.2"
+            },
+            "require-dev": {
+                "codeception/codeception": "^3.0",
+                "vlucas/phpdotenv": "^3.0"
             },
             "type": "craft-plugin",
             "extra": {
@@ -3546,6 +3083,7 @@
                     "nystudio107\\seomatic\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "proprietary"
             ],
@@ -3557,22 +3095,23 @@
             ],
             "description": "SEOmatic facilitates modern SEO best practices & implementation for Craft CMS 3. It is a turnkey SEO system that is comprehensive, powerful, and flexible.",
             "keywords": [
+                "Craft",
+                "JSON-LD",
+                "Sitemap",
                 "cms",
-                "craft",
                 "craft-plugin",
                 "craftcms",
                 "facebook",
-                "json-ld",
                 "meta",
                 "seo",
                 "seomatic",
-                "sitemap",
                 "tags",
                 "twitter"
             ],
             "support": {
                 "docs": "https://nystudio107.com/plugins/seomatic/documentation",
-                "issues": "https://nystudio107.com/plugins/seomatic/support"
+                "issues": "https://nystudio107.com/plugins/seomatic/support",
+                "source": "https://github.com/nystudio107/craft-seomatic/tree/3.3.32"
             },
             "time": "2021-02-12T15:49:13+00:00"
         },
@@ -3588,10 +3127,6 @@
             "require": {
                 "php": "^5.4 || ^7.0 || ^8.0"
             },
-            "require-dev": {
-                "jeremeamia/superclosure": "^2.0",
-                "phpunit/phpunit": "^4.0 || ^5.0 || ^6.0 || ^7.0 || ^8.0 || ^9.0"
-            },
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -3606,7 +3141,6 @@
                     "functions.php"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3630,10 +3164,6 @@
                 "serialization",
                 "serialize"
             ],
-            "support": {
-                "issues": "https://github.com/opis/closure/issues",
-                "source": "https://github.com/opis/closure/tree/3.6.1"
-            },
             "time": "2020-11-07T02:01:34+00:00"
         },
         {
@@ -3648,15 +3178,10 @@
             "require": {
                 "php": ">= 7"
             },
-            "require-dev": {
-                "phpunit/phpunit": "4.*|5.*",
-                "vimeo/psalm": "^1"
-            },
             "suggest": {
                 "ext-libsodium": "Provides a modern crypto API that can be used to generate random bytes."
             },
             "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3674,16 +3199,16 @@
                 "pseudorandom",
                 "random"
             ],
-            "support": {
-                "email": "info@paragonie.com",
-                "issues": "https://github.com/paragonie/random_compat/issues",
-                "source": "https://github.com/paragonie/random_compat"
-            },
             "time": "2020-10-15T08:29:30+00:00"
         },
         {
             "name": "php-science/textrank",
             "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PHP-Science/TextRank.git",
+                "reference": "c20457d51f500512684ff9eb2e1ce3c40f7f8cb9"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/PHP-Science/TextRank/zipball/c20457d51f500512684ff9eb2e1ce3c40f7f8cb9",
@@ -3695,6 +3220,9 @@
                 "ext-mbstring": "*",
                 "php": ">=7.2"
             },
+            "require-dev": {
+                "phpunit/phpunit": "9.*"
+            },
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -3704,6 +3232,7 @@
                     ]
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3723,6 +3252,10 @@
                 "summarization",
                 "textrank"
             ],
+            "support": {
+                "issues": "https://github.com/PHP-Science/TextRank/issues",
+                "source": "https://github.com/PHP-Science/TextRank/tree/1.2.0"
+            },
             "time": "2020-11-28T17:25:11+00:00"
         },
         {
@@ -3850,6 +3383,11 @@
         {
             "name": "phpoption/phpoption",
             "version": "1.7.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schmittjoh/php-option.git",
+                "reference": "994ecccd8f3283ecf5ac33254543eb0ac946d525"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/994ecccd8f3283ecf5ac33254543eb0ac946d525",
@@ -3923,10 +3461,6 @@
             "require": {
                 "php": ">=5.3.2"
             },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.2",
-                "phpunit/phpunit": "^4.8 || ^5.7 || ^6.5 || ^7.5 || ^8.4 || ^9.3"
-            },
             "suggest": {
                 "ext-gd": "to use the GD implementation",
                 "ext-gmagick": "to use the Gmagick implementation",
@@ -3943,7 +3477,6 @@
                     "Imagine\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3962,9 +3495,6 @@
                 "image manipulation",
                 "image processing"
             ],
-            "support": {
-                "source": "https://github.com/pixelandtonic/Imagine/tree/1.2.4.1"
-            },
             "time": "2020-11-05T18:36:18+00:00"
         },
         {
@@ -3990,7 +3520,6 @@
                     "Psr\\Container\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -4009,10 +3538,6 @@
                 "container-interop",
                 "psr"
             ],
-            "support": {
-                "issues": "https://github.com/php-fig/container/issues",
-                "source": "https://github.com/php-fig/container/tree/master"
-            },
             "time": "2017-02-14T16:28:37+00:00"
         },
         {
@@ -4038,7 +3563,6 @@
                     "Psr\\Http\\Message\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -4058,9 +3582,6 @@
                 "request",
                 "response"
             ],
-            "support": {
-                "source": "https://github.com/php-fig/http-message/tree/master"
-            },
             "time": "2016-08-06T14:39:51+00:00"
         },
         {
@@ -4086,7 +3607,6 @@
                     "Psr\\Log\\": "Psr/Log/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -4103,9 +3623,6 @@
                 "psr",
                 "psr-3"
             ],
-            "support": {
-                "source": "https://github.com/php-fig/log/tree/1.1.3"
-            },
             "time": "2020-03-23T09:12:05+00:00"
         },
         {
@@ -4120,17 +3637,12 @@
             "require": {
                 "php": ">=5.6"
             },
-            "require-dev": {
-                "php-coveralls/php-coveralls": "^2.1",
-                "phpunit/phpunit": "^5 || ^6.5"
-            },
             "type": "library",
             "autoload": {
                 "files": [
                     "src/getallheaders.php"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -4141,10 +3653,6 @@
                 }
             ],
             "description": "A polyfill for getallheaders.",
-            "support": {
-                "issues": "https://github.com/ralouphie/getallheaders/issues",
-                "source": "https://github.com/ralouphie/getallheaders/tree/develop"
-            },
             "time": "2019-03-08T08:55:37+00:00"
         },
         {
@@ -4196,9 +3704,6 @@
             "require": {
                 "php": ">=5.3"
             },
-            "require-dev": {
-                "phpstan/phpstan": "^0.12.63"
-            },
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -4210,7 +3715,6 @@
                     "Seld\\CliPrompt\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -4228,10 +3732,6 @@
                 "input",
                 "prompt"
             ],
-            "support": {
-                "issues": "https://github.com/Seldaek/cli-prompt/issues",
-                "source": "https://github.com/Seldaek/cli-prompt/tree/1.0.4"
-            },
             "time": "2020-12-15T21:32:01+00:00"
         },
         {
@@ -4246,9 +3746,6 @@
             "require": {
                 "php": "^5.3 || ^7.0 || ^8.0"
             },
-            "require-dev": {
-                "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.0"
-            },
             "bin": [
                 "bin/jsonlint"
             ],
@@ -4258,7 +3755,6 @@
                     "Seld\\JsonLint\\": "src/Seld/JsonLint/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -4275,20 +3771,6 @@
                 "linter",
                 "parser",
                 "validator"
-            ],
-            "support": {
-                "issues": "https://github.com/Seldaek/jsonlint/issues",
-                "source": "https://github.com/Seldaek/jsonlint/tree/1.8.3"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/Seldaek",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/seld/jsonlint",
-                    "type": "tidelift"
-                }
             ],
             "time": "2020-11-11T09:19:24+00:00"
         },
@@ -4315,7 +3797,6 @@
                     "Seld\\PharUtils\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -4329,15 +3810,16 @@
             "keywords": [
                 "phar"
             ],
-            "support": {
-                "issues": "https://github.com/Seldaek/phar-utils/issues",
-                "source": "https://github.com/Seldaek/phar-utils/tree/master"
-            },
             "time": "2020-07-07T18:42:57+00:00"
         },
         {
             "name": "sunra/php-simple-html-dom-parser",
             "version": "v1.5.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sunra/php-simple-html-dom-parser.git",
+                "reference": "75b9b1cb64502d8f8c04dc11b5906b969af247c6"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/sunra/php-simple-html-dom-parser/zipball/75b9b1cb64502d8f8c04dc11b5906b969af247c6",
@@ -5352,17 +4834,12 @@
                 "php": ">=5.3.0",
                 "symfony/polyfill-mbstring": "^1.3"
             },
-            "require-dev": {
-                "phpunit/phpunit": "~4.7",
-                "squizlabs/php_codesniffer": "~2.0"
-            },
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "TrueBV\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -5378,10 +4855,6 @@
                 "idna",
                 "punycode"
             ],
-            "support": {
-                "issues": "https://github.com/true/php-punycode/issues",
-                "source": "https://github.com/true/php-punycode/tree/master"
-            },
             "time": "2016-11-16T10:37:54+00:00"
         },
         {
@@ -5442,6 +4915,11 @@
         {
             "name": "vaersaagod/dospaces",
             "version": "1.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vaersaagod/dospaces.git",
+                "reference": "7f16553db44a7df127233f843467c6e70fa9655c"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/vaersaagod/dospaces/zipball/7f16553db44a7df127233f843467c6e70fa9655c",
@@ -5510,7 +4988,6 @@
                     "verbb\\base\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -5521,18 +4998,16 @@
                 }
             ],
             "description": "Common utilities and building-blocks for Verbb plugins for Craft CMS.",
-            "support": {
-                "docs": "https://github.com/verbb/verbb-base",
-                "email": "support@verbb.io",
-                "issues": "https://github.com/verbb/verbb-base/issues?state=open",
-                "rss": "https://github.com/verbb/verbb-base/commits/v2.atom",
-                "source": "https://github.com/verbb/verbb-base"
-            },
             "time": "2020-04-14T23:40:29+00:00"
         },
         {
             "name": "verbb/field-manager",
             "version": "2.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/verbb/field-manager.git",
+                "reference": "ebb8020a2220cd0bc28652b9cf9e4b11a293c278"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/verbb/field-manager/zipball/ebb8020a2220cd0bc28652b9cf9e4b11a293c278",
@@ -5555,6 +5030,7 @@
                     "verbb\\fieldmanager\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -5566,28 +5042,34 @@
             ],
             "description": "Manage your fields and field groups with ease with simple field or group cloning and quicker overall management.",
             "keywords": [
+                "Craft",
                 "cms",
-                "craft",
                 "craft-plugin",
                 "craftcms",
                 "field manager"
             ],
             "support": {
+                "docs": "https://github.com/verbb/field-manager",
                 "email": "support@verbb.io",
                 "issues": "https://github.com/verbb/field-manager/issues?state=open",
-                "source": "https://github.com/verbb/field-manager",
-                "docs": "https://github.com/verbb/field-manager",
-                "rss": "https://github.com/verbb/field-manager/commits/v2.atom"
+                "rss": "https://github.com/verbb/field-manager/commits/v2.atom",
+                "source": "https://github.com/verbb/field-manager"
             },
+            "funding": [
+                {
+                    "url": "https://github.com/verbb",
+                    "type": "github"
+                }
+            ],
             "time": "2021-01-05T05:16:51+00:00"
         },
         {
             "name": "verbb/formie",
-            "version": "1.3.17",
+            "version": "1.3.18",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/verbb/formie/zipball/0e6db5cf6a2e3be981268f60639b58b3e7d6127c",
-                "reference": "0e6db5cf6a2e3be981268f60639b58b3e7d6127c",
+                "url": "https://api.github.com/repos/verbb/formie/zipball/8acef08f94276c744244ce8386ed03139308ff4a",
+                "reference": "8acef08f94276c744244ce8386ed03139308ff4a",
                 "shasum": ""
             },
             "require": {
@@ -5642,11 +5124,16 @@
                 "docs": "https://github.com/verbb/formie",
                 "rss": "https://github.com/verbb/formie/commits/v2.atom"
             },
-            "time": "2021-02-13T02:24:46+00:00"
+            "time": "2021-02-19T23:36:00+00:00"
         },
         {
             "name": "verbb/navigation",
             "version": "1.4.13",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/verbb/navigation.git",
+                "reference": "d1ae5f0c55ed4d5632209a1162cfdff1c9eb3c10"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/verbb/navigation/zipball/d1ae5f0c55ed4d5632209a1162cfdff1c9eb3c10",
@@ -5669,6 +5156,7 @@
                     "verbb\\navigation\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "proprietary"
             ],
@@ -5680,29 +5168,34 @@
             ],
             "description": "A Craft CMS plugin to create navigation menus for your site.",
             "keywords": [
+                "Craft",
                 "cms",
-                "craft",
                 "craft-plugin",
                 "craftcms",
                 "menu",
                 "navigation"
             ],
             "support": {
+                "docs": "https://github.com/verbb/navigation",
                 "email": "support@verbb.io",
                 "issues": "https://github.com/verbb/navigation/issues?state=open",
-                "source": "https://github.com/verbb/navigation",
-                "docs": "https://github.com/verbb/navigation",
-                "rss": "https://github.com/verbb/navigation/commits/v2.atom"
+                "rss": "https://github.com/verbb/navigation/commits/v2.atom",
+                "source": "https://github.com/verbb/navigation"
             },
             "time": "2021-01-26T01:11:17+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v3.6.7",
+            "version": "v3.6.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vlucas/phpdotenv.git",
+                "reference": "5e679f7616db829358341e2d5cccbd18773bdab8"
+            },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/2065beda6cbe75e2603686907b2e45f6f3a5ad82",
-                "reference": "2065beda6cbe75e2603686907b2e45f6f3a5ad82",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/5e679f7616db829358341e2d5cccbd18773bdab8",
+                "reference": "5e679f7616db829358341e2d5cccbd18773bdab8",
                 "shasum": ""
             },
             "require": {
@@ -5713,7 +5206,7 @@
             "require-dev": {
                 "ext-filter": "*",
                 "ext-pcre": "*",
-                "phpunit/phpunit": "^4.8.35 || ^5.7.27 || ^6.5.6 || ^7.0"
+                "phpunit/phpunit": "^4.8.36 || ^5.7.27 || ^6.5.14 || ^7.5.20"
             },
             "suggest": {
                 "ext-filter": "Required to use the boolean validator.",
@@ -5754,7 +5247,7 @@
             ],
             "support": {
                 "issues": "https://github.com/vlucas/phpdotenv/issues",
-                "source": "https://github.com/vlucas/phpdotenv/tree/v3.6.7"
+                "source": "https://github.com/vlucas/phpdotenv/tree/v3.6.8"
             },
             "funding": [
                 {
@@ -5766,7 +5259,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-07-14T19:04:52+00:00"
+            "time": "2021-01-20T14:39:46+00:00"
         },
         {
             "name": "voku/anti-xss",
@@ -5781,9 +5274,6 @@
                 "php": ">=7.0.0",
                 "voku/portable-utf8": "~5.4.51"
             },
-            "require-dev": {
-                "phpunit/phpunit": "~6.0 || ~7.0 || ~9.0"
-            },
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -5795,7 +5285,6 @@
                     "voku\\helper\\": "src/voku/helper/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -5817,32 +5306,6 @@
                 "clean",
                 "security",
                 "xss"
-            ],
-            "support": {
-                "issues": "https://github.com/voku/anti-xss/issues",
-                "source": "https://github.com/voku/anti-xss/tree/4.1.31"
-            },
-            "funding": [
-                {
-                    "url": "https://www.paypal.me/moelleken",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/voku",
-                    "type": "github"
-                },
-                {
-                    "url": "https://opencollective.com/anti-xss",
-                    "type": "open_collective"
-                },
-                {
-                    "url": "https://www.patreon.com/voku",
-                    "type": "patreon"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/voku/anti-xss",
-                    "type": "tidelift"
-                }
             ],
             "time": "2020-12-02T02:10:30+00:00"
         },
@@ -5949,9 +5412,6 @@
             "require": {
                 "php": ">=7.0.0"
             },
-            "require-dev": {
-                "phpunit/phpunit": "~6.0 || ~7.0 || ~9.0"
-            },
             "suggest": {
                 "ext-intl": "Use Intl for transliterator_transliterate() support"
             },
@@ -5961,7 +5421,6 @@
                     "voku\\": "src/voku/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -5977,32 +5436,6 @@
                 "ascii",
                 "clean",
                 "php"
-            ],
-            "support": {
-                "issues": "https://github.com/voku/portable-ascii/issues",
-                "source": "https://github.com/voku/portable-ascii/tree/1.5.6"
-            },
-            "funding": [
-                {
-                    "url": "https://www.paypal.me/moelleken",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/voku",
-                    "type": "github"
-                },
-                {
-                    "url": "https://opencollective.com/portable-ascii",
-                    "type": "open_collective"
-                },
-                {
-                    "url": "https://www.patreon.com/voku",
-                    "type": "patreon"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/voku/portable-ascii",
-                    "type": "tidelift"
-                }
             ],
             "time": "2020-11-12T00:07:28+00:00"
         },
@@ -6024,9 +5457,6 @@
                 "symfony/polyfill-php72": "~1.0",
                 "voku/portable-ascii": "~1.5.6"
             },
-            "require-dev": {
-                "phpunit/phpunit": "~6.0 || ~7.0 || ~9.0"
-            },
             "suggest": {
                 "ext-ctype": "Use Ctype for e.g. hexadecimal digit detection",
                 "ext-fileinfo": "Use Fileinfo for better binary file detection",
@@ -6044,7 +5474,6 @@
                     "bootstrap.php"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "(Apache-2.0 or GPL-2.0)"
             ],
@@ -6072,32 +5501,6 @@
                 "utf-8",
                 "utf8"
             ],
-            "support": {
-                "issues": "https://github.com/voku/portable-utf8/issues",
-                "source": "https://github.com/voku/portable-utf8/tree/5.4.51"
-            },
-            "funding": [
-                {
-                    "url": "https://www.paypal.me/moelleken",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/voku",
-                    "type": "github"
-                },
-                {
-                    "url": "https://opencollective.com/portable-utf8",
-                    "type": "open_collective"
-                },
-                {
-                    "url": "https://www.patreon.com/voku",
-                    "type": "patreon"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/voku/portable-utf8",
-                    "type": "tidelift"
-                }
-            ],
             "time": "2020-12-02T01:58:49+00:00"
         },
         {
@@ -6112,16 +5515,12 @@
             "require": {
                 "php": ">=7.0.0"
             },
-            "require-dev": {
-                "phpunit/phpunit": "~6.0"
-            },
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "voku\\": "src/voku/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -6136,10 +5535,6 @@
                 "stop words",
                 "stop-words"
             ],
-            "support": {
-                "issues": "https://github.com/voku/stop-words/issues",
-                "source": "https://github.com/voku/stop-words/tree/master"
-            },
             "time": "2018-11-23T01:37:27+00:00"
         },
         {
@@ -6165,9 +5560,6 @@
             "replace": {
                 "danielstjules/stringy": "~3.0"
             },
-            "require-dev": {
-                "phpunit/phpunit": "~6.0 || ~7.0"
-            },
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -6177,7 +5569,6 @@
                     "src/Create.php"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -6208,28 +5599,6 @@
                 "utility",
                 "utils"
             ],
-            "support": {
-                "issues": "https://github.com/voku/Stringy/issues",
-                "source": "https://github.com/voku/Stringy"
-            },
-            "funding": [
-                {
-                    "url": "https://www.paypal.me/moelleken",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/voku",
-                    "type": "github"
-                },
-                {
-                    "url": "https://www.patreon.com/voku",
-                    "type": "patreon"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/voku/stringy",
-                    "type": "tidelift"
-                }
-            ],
             "time": "2020-09-27T21:32:36+00:00"
         },
         {
@@ -6247,16 +5616,12 @@
                 "voku/portable-utf8": "~5.4",
                 "voku/stop-words": "~2.0"
             },
-            "require-dev": {
-                "phpunit/phpunit": "~6.0 || ~7.0"
-            },
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "voku\\helper\\": "src/voku/helper/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -6285,10 +5650,6 @@
                 "url",
                 "urlify"
             ],
-            "support": {
-                "issues": "https://github.com/voku/urlify/issues",
-                "source": "https://github.com/voku/urlify/tree/master"
-            },
             "time": "2019-12-13T02:57:54+00:00"
         },
         {
@@ -6303,16 +5664,12 @@
             "replace": {
                 "99designs/phumbor": "*"
             },
-            "require-dev": {
-                "phpunit/phpunit": "^4.8|^5.0"
-            },
             "type": "library",
             "autoload": {
                 "psr-0": {
                     "Thumbor": "lib"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -6334,9 +5691,6 @@
                 "thumbor",
                 "webfactory"
             ],
-            "support": {
-                "source": "https://github.com/webfactory/phumbor/tree/1.3.0"
-            },
             "time": "2020-12-12T16:12:01+00:00"
         },
         {
@@ -6356,16 +5710,12 @@
                 "phpstan/phpstan": "<0.12.20",
                 "vimeo/psalm": "<3.9.1"
             },
-            "require-dev": {
-                "phpunit/phpunit": "^4.8.36 || ^7.5.13"
-            },
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "Webmozart\\Assert\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -6381,10 +5731,6 @@
                 "check",
                 "validate"
             ],
-            "support": {
-                "issues": "https://github.com/webmozart/assert/issues",
-                "source": "https://github.com/webmozart/assert/tree/master"
-            },
             "time": "2020-07-08T17:02:28+00:00"
         },
         {
@@ -6434,9 +5780,6 @@
             "require": {
                 "yiisoft/yii2": "~2.0.13"
             },
-            "require-dev": {
-                "phpunit/phpunit": "4.8.27|^5.0|^6.0"
-            },
             "type": "yii2-extension",
             "extra": {
                 "branch-alias": {
@@ -6448,7 +5791,6 @@
                     "yii2tech\\ar\\softdelete\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -6468,12 +5810,6 @@
                 "soft",
                 "yii2"
             ],
-            "support": {
-                "forum": "http://www.yiiframework.com/forum/",
-                "issues": "https://github.com/yii2tech/ar-softdelete/issues",
-                "source": "https://github.com/yii2tech/ar-softdelete",
-                "wiki": "https://github.com/yii2tech/ar-softdelete/wiki"
-            },
             "time": "2019-07-30T11:05:57+00:00"
         },
         {
@@ -6582,10 +5918,6 @@
             "require": {
                 "composer-plugin-api": "^1.0 | ^2.0"
             },
-            "require-dev": {
-                "composer/composer": "^1.0 | ^2.0@dev",
-                "phpunit/phpunit": "<7"
-            },
             "type": "composer-plugin",
             "extra": {
                 "class": "yii\\composer\\Plugin",
@@ -6598,7 +5930,6 @@
                     "yii\\composer\\": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -6617,27 +5948,6 @@
                 "composer",
                 "extension installer",
                 "yii2"
-            ],
-            "support": {
-                "forum": "http://www.yiiframework.com/forum/",
-                "irc": "irc://irc.freenode.net/yii",
-                "issues": "https://github.com/yiisoft/yii2-composer/issues",
-                "source": "https://github.com/yiisoft/yii2-composer",
-                "wiki": "http://www.yiiframework.com/wiki/"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/yiisoft",
-                    "type": "github"
-                },
-                {
-                    "url": "https://opencollective.com/yiisoft",
-                    "type": "open_collective"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/yiisoft/yii2-composer",
-                    "type": "tidelift"
-                }
             ],
             "time": "2020-06-24T00:04:01+00:00"
         },
@@ -6791,7 +6101,6 @@
                     "yii\\swiftmailer\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -6810,13 +6119,6 @@
                 "swiftmailer",
                 "yii2"
             ],
-            "support": {
-                "forum": "http://www.yiiframework.com/forum/",
-                "irc": "irc://irc.freenode.net/yii",
-                "issues": "https://github.com/yiisoft/yii2-swiftmailer/issues",
-                "source": "https://github.com/yiisoft/yii2-swiftmailer",
-                "wiki": "http://www.yiiframework.com/wiki/"
-            },
             "time": "2018-09-23T22:00:47+00:00"
         }
     ],
@@ -6857,387 +6159,6 @@
                 "source": "https://github.com/dnoegel/php-xdg-base-dir/tree/v0.1.1"
             },
             "time": "2019-12-04T15:06:13+00:00"
-        },
-        {
-            "name": "intervention/httpauth",
-            "version": "2.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Intervention/httpauth.git",
-                "reference": "3d67894b28b9ff3887fb9e4474c6b81ca5614543"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Intervention/httpauth/zipball/3d67894b28b9ff3887fb9e4474c6b81ca5614543",
-                "reference": "3d67894b28b9ff3887fb9e4474c6b81ca5614543",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Intervention\\Httpauth\\HttpauthServiceProvider"
-                    ],
-                    "aliases": {
-                        "Httpauth": "Intervention\\Httpauth\\Facades\\Httpauth"
-                    }
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Intervention\\Httpauth\\": "src/Intervention/Httpauth"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Oliver Vogel",
-                    "email": "oliver@olivervogel.com",
-                    "homepage": "http://olivervogel.com/"
-                }
-            ],
-            "description": "HTTP authentication (Basic & Digest) including ServiceProviders for easy Laravel integration",
-            "homepage": "https://github.com/Intervention/httpauth",
-            "keywords": [
-                "Authentication",
-                "http",
-                "laravel"
-            ],
-            "support": {
-                "issues": "https://github.com/Intervention/httpauth/issues",
-                "source": "https://github.com/Intervention/httpauth/tree/master"
-            },
-            "time": "2019-09-09T11:59:51+00:00"
-        },
-        {
-            "name": "marcusschwarz/lesserphp",
-            "version": "v0.5.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/MarcusSchwarz/lesserphp.git",
-                "reference": "3a0f5ae0d63cbb661b5f4afd2f96875e73b3ad7e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/MarcusSchwarz/lesserphp/zipball/3a0f5ae0d63cbb661b5f4afd2f96875e73b3ad7e",
-                "reference": "3a0f5ae0d63cbb661b5f4afd2f96875e73b3ad7e",
-                "shasum": ""
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4.3"
-            },
-            "bin": [
-                "plessc"
-            ],
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.5.1-dev"
-                }
-            },
-            "autoload": {
-                "classmap": [
-                    "lessc.inc.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT",
-                "GPL-3.0"
-            ],
-            "authors": [
-                {
-                    "name": "Leaf Corcoran",
-                    "email": "leafot@gmail.com",
-                    "homepage": "http://leafo.net"
-                },
-                {
-                    "name": "Marcus Schwarz",
-                    "email": "github@maswaba.de",
-                    "homepage": "https://www.maswaba.de"
-                }
-            ],
-            "description": "lesserphp is a compiler for LESS written in PHP based on leafo's lessphp.",
-            "homepage": "http://leafo.net/lessphp/",
-            "support": {
-                "issues": "https://github.com/MarcusSchwarz/lesserphp/issues",
-                "source": "https://github.com/MarcusSchwarz/lesserphp/tree/v0.5.4"
-            },
-            "time": "2020-01-19T19:18:49+00:00"
-        },
-        {
-            "name": "monolog/monolog",
-            "version": "1.26.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "2209ddd84e7ef1256b7af205d0717fb62cfc9c33"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/2209ddd84e7ef1256b7af205d0717fb62cfc9c33",
-                "reference": "2209ddd84e7ef1256b7af205d0717fb62cfc9c33",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0",
-                "psr/log": "~1.0"
-            },
-            "provide": {
-                "psr/log-implementation": "1.0.0"
-            },
-            "require-dev": {
-                "aws/aws-sdk-php": "^2.4.9 || ^3.0",
-                "doctrine/couchdb": "~1.0@dev",
-                "graylog2/gelf-php": "~1.0",
-                "php-amqplib/php-amqplib": "~2.4",
-                "php-console/php-console": "^3.1.3",
-                "phpstan/phpstan": "^0.12.59",
-                "phpunit/phpunit": "~4.5",
-                "ruflin/elastica": ">=0.90 <3.0",
-                "sentry/sentry": "^0.13",
-                "swiftmailer/swiftmailer": "^5.3|^6.0"
-            },
-            "suggest": {
-                "aws/aws-sdk-php": "Allow sending log messages to AWS services like DynamoDB",
-                "doctrine/couchdb": "Allow sending log messages to a CouchDB server",
-                "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
-                "ext-mongo": "Allow sending log messages to a MongoDB server",
-                "graylog2/gelf-php": "Allow sending log messages to a GrayLog2 server",
-                "mongodb/mongodb": "Allow sending log messages to a MongoDB server via PHP Driver",
-                "php-amqplib/php-amqplib": "Allow sending log messages to an AMQP server using php-amqplib",
-                "php-console/php-console": "Allow sending log messages to Google Chrome",
-                "rollbar/rollbar": "Allow sending log messages to Rollbar",
-                "ruflin/elastica": "Allow sending log messages to an Elastic Search server",
-                "sentry/sentry": "Allow sending log messages to a Sentry server"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Monolog\\": "src/Monolog"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Jordi Boggiano",
-                    "email": "j.boggiano@seld.be",
-                    "homepage": "http://seld.be"
-                }
-            ],
-            "description": "Sends your logs to files, sockets, inboxes, databases and various web services",
-            "homepage": "http://github.com/Seldaek/monolog",
-            "keywords": [
-                "log",
-                "logging",
-                "psr-3"
-            ],
-            "support": {
-                "issues": "https://github.com/Seldaek/monolog/issues",
-                "source": "https://github.com/Seldaek/monolog/tree/1.26.0"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/Seldaek",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/monolog/monolog",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2020-12-14T12:56:38+00:00"
-        },
-        {
-            "name": "mrclay/jsmin-php",
-            "version": "2.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mrclay/jsmin-php.git",
-                "reference": "bb05febc9440852d39899255afd5569b7f21a72c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/mrclay/jsmin-php/zipball/bb05febc9440852d39899255afd5569b7f21a72c",
-                "reference": "bb05febc9440852d39899255afd5569b7f21a72c",
-                "shasum": ""
-            },
-            "require": {
-                "ext-pcre": "*",
-                "php": ">=5.3.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "4.2"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "JSMin\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Stephen Clay",
-                    "email": "steve@mrclay.org",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Ryan Grove",
-                    "email": "ryan@wonko.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Provides a modified port of Douglas Crockford's jsmin.c, which removes unnecessary whitespace from JavaScript files.",
-            "homepage": "https://github.com/mrclay/jsmin-php/",
-            "keywords": [
-                "compress",
-                "jsmin",
-                "minify"
-            ],
-            "support": {
-                "email": "minify@googlegroups.com",
-                "issues": "https://github.com/mrclay/jsmin-php/issues",
-                "source": "https://github.com/mrclay/jsmin-php/tree/master"
-            },
-            "time": "2018-12-06T15:03:38+00:00"
-        },
-        {
-            "name": "mrclay/minify",
-            "version": "3.0.10",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mrclay/minify.git",
-                "reference": "8dba84a2d24ae6382057a1215ad3af25202addb9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/mrclay/minify/zipball/8dba84a2d24ae6382057a1215ad3af25202addb9",
-                "reference": "8dba84a2d24ae6382057a1215ad3af25202addb9",
-                "shasum": ""
-            },
-            "require": {
-                "ext-pcre": "*",
-                "intervention/httpauth": "^2.0|^3.0",
-                "marcusschwarz/lesserphp": "^0.5.1",
-                "monolog/monolog": "~1.1|~2.0",
-                "mrclay/jsmin-php": "~2",
-                "mrclay/props-dic": "^2.2|^3.0",
-                "php": "^5.3.0 || ^7.0",
-                "tubalmartin/cssmin": "~4"
-            },
-            "require-dev": {
-                "firephp/firephp-core": "~0.4.0",
-                "leafo/scssphp": "^0.3 || ^0.6 || ^0.7",
-                "meenie/javascript-packer": "~1.1",
-                "phpunit/phpunit": "^4.8.36",
-                "tedivm/jshrink": "~1.1.0"
-            },
-            "suggest": {
-                "firephp/firephp-core": "Use FirePHP for Log messages",
-                "meenie/javascript-packer": "Keep track of the Packer PHP port using Composer"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.0.x-dev"
-                }
-            },
-            "autoload": {
-                "classmap": [
-                    "lib/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Stephen Clay",
-                    "email": "steve@mrclay.org",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Minify is a PHP app that helps you follow several rules for client-side performance. It combines multiple CSS or Javascript files, removes unnecessary whitespace and comments, and serves them with gzip encoding and optimal client-side cache headers",
-            "homepage": "https://github.com/mrclay/minify",
-            "support": {
-                "email": "minify@googlegroups.com",
-                "issues": "https://github.com/mrclay/minify/issues",
-                "source": "https://github.com/mrclay/minify/tree/3.0.10",
-                "wiki": "https://github.com/mrclay/minify/blob/master/docs"
-            },
-            "time": "2020-04-02T19:47:26+00:00"
-        },
-        {
-            "name": "mrclay/props-dic",
-            "version": "3.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mrclay/Props.git",
-                "reference": "0b0fd254e33e2d60bc2bcd7867f2ab3cdd05a843"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/mrclay/Props/zipball/0b0fd254e33e2d60bc2bcd7867f2ab3cdd05a843",
-                "reference": "0b0fd254e33e2d60bc2bcd7867f2ab3cdd05a843",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3",
-                "pimple/pimple": "~3.0",
-                "psr/container": "^1.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4.8"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Props\\": [
-                        "src/"
-                    ]
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Steve Clay",
-                    "email": "steve@mrclay.org",
-                    "homepage": "http://www.mrclay.org/"
-                }
-            ],
-            "description": "Props is a simple DI container that allows retrieving values via custom property and method names",
-            "keywords": [
-                "container",
-                "dependency injection",
-                "dependency injection container",
-                "di",
-                "di container"
-            ],
-            "support": {
-                "issues": "https://github.com/mrclay/Props/issues",
-                "source": "https://github.com/mrclay/Props/tree/master"
-            },
-            "time": "2019-11-26T17:56:10+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -7296,71 +6217,17 @@
             "time": "2020-12-20T10:01:03+00:00"
         },
         {
-            "name": "pimple/pimple",
-            "version": "v3.2.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/silexphp/Pimple.git",
-                "reference": "9e403941ef9d65d20cba7d54e29fe906db42cf32"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/silexphp/Pimple/zipball/9e403941ef9d65d20cba7d54e29fe906db42cf32",
-                "reference": "9e403941ef9d65d20cba7d54e29fe906db42cf32",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0",
-                "psr/container": "^1.0"
-            },
-            "require-dev": {
-                "symfony/phpunit-bridge": "^3.2"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.2.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Pimple": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                }
-            ],
-            "description": "Pimple, a simple Dependency Injection Container",
-            "homepage": "http://pimple.sensiolabs.org",
-            "keywords": [
-                "container",
-                "dependency injection"
-            ],
-            "support": {
-                "issues": "https://github.com/silexphp/Pimple/issues",
-                "source": "https://github.com/silexphp/Pimple/tree/master"
-            },
-            "time": "2018-01-21T07:42:36+00:00"
-        },
-        {
             "name": "psy/psysh",
-            "version": "v0.10.5",
+            "version": "v0.10.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "7c710551d4a2653afa259c544508dc18a9098956"
+                "reference": "6f990c19f91729de8b31e639d6e204ea59f19cf3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/7c710551d4a2653afa259c544508dc18a9098956",
-                "reference": "7c710551d4a2653afa259c544508dc18a9098956",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/6f990c19f91729de8b31e639d6e204ea59f19cf3",
+                "reference": "6f990c19f91729de8b31e639d6e204ea59f19cf3",
                 "shasum": ""
             },
             "require": {
@@ -7389,7 +6256,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.10.x-dev"
+                    "dev-main": "0.10.x-dev"
                 }
             },
             "autoload": {
@@ -7421,101 +6288,48 @@
             ],
             "support": {
                 "issues": "https://github.com/bobthecow/psysh/issues",
-                "source": "https://github.com/bobthecow/psysh/tree/v0.10.5"
+                "source": "https://github.com/bobthecow/psysh/tree/v0.10.6"
             },
-            "time": "2020-12-04T02:51:30+00:00"
-        },
-        {
-            "name": "sebastian/diff",
-            "version": "2.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/diff.git",
-                "reference": "347c1d8b49c5c3ee30c7040ea6fc446790e6bddd"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/347c1d8b49c5c3ee30c7040ea6fc446790e6bddd",
-                "reference": "347c1d8b49c5c3ee30c7040ea6fc446790e6bddd",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^6.2"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.0-dev"
-                }
-            },
-            "autoload": {
-                "classmap": [
-                    "src/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Kore Nordmann",
-                    "email": "mail@kore-nordmann.de"
-                },
-                {
-                    "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de"
-                }
-            ],
-            "description": "Diff implementation",
-            "homepage": "https://github.com/sebastianbergmann/diff",
-            "keywords": [
-                "diff"
-            ],
-            "support": {
-                "issues": "https://github.com/sebastianbergmann/diff/issues",
-                "source": "https://github.com/sebastianbergmann/diff/tree/master"
-            },
-            "time": "2017-08-03T08:09:46+00:00"
+            "time": "2021-01-18T15:53:43+00:00"
         },
         {
             "name": "symfony/var-dumper",
-            "version": "v3.3.6",
+            "version": "v5.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "b2623bccb969ad595c2090f9be498b74670d0663"
+                "reference": "72ca213014a92223a5d18651ce79ef441c12b694"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/b2623bccb969ad595c2090f9be498b74670d0663",
-                "reference": "b2623bccb969ad595c2090f9be498b74670d0663",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/72ca213014a92223a5d18651ce79ef441c12b694",
+                "reference": "72ca213014a92223a5d18651ce79ef441c12b694",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5.9",
-                "symfony/polyfill-mbstring": "~1.0"
+                "php": ">=7.2.5",
+                "symfony/polyfill-mbstring": "~1.0",
+                "symfony/polyfill-php80": "^1.15"
             },
             "conflict": {
-                "phpunit/phpunit": "<4.8.35|<5.4.3,>=5.0"
+                "phpunit/phpunit": "<5.4.3",
+                "symfony/console": "<4.4"
             },
             "require-dev": {
                 "ext-iconv": "*",
-                "twig/twig": "~1.34|~2.4"
+                "symfony/console": "^4.4|^5.0",
+                "symfony/process": "^4.4|^5.0",
+                "twig/twig": "^2.13|^3.0.4"
             },
             "suggest": {
                 "ext-iconv": "To convert non-UTF-8 strings to UTF-8 (or symfony/polyfill-iconv in case ext-iconv cannot be used).",
-                "ext-symfony_debug": ""
+                "ext-intl": "To show region name in time zone dump",
+                "symfony/console": "To use the ServerDumpCommand and/or the bin/var-dump-server script"
             },
+            "bin": [
+                "Resources/bin/var-dump-server"
+            ],
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.3-dev"
-                }
-            },
             "autoload": {
                 "files": [
                     "Resources/functions/dump.php"
@@ -7541,73 +6355,30 @@
                     "homepage": "https://symfony.com/contributors"
                 }
             ],
-            "description": "Symfony mechanism for exploring and dumping PHP variables",
+            "description": "Provides mechanisms for walking through any arbitrary PHP variable",
             "homepage": "https://symfony.com",
             "keywords": [
                 "debug",
                 "dump"
             ],
             "support": {
-                "source": "https://github.com/symfony/var-dumper/tree/3.3"
+                "source": "https://github.com/symfony/var-dumper/tree/v5.2.3"
             },
-            "time": "2017-07-28T06:06:09+00:00"
-        },
-        {
-            "name": "tubalmartin/cssmin",
-            "version": "v4.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/tubalmartin/YUI-CSS-compressor-PHP-port.git",
-                "reference": "3cbf557f4079d83a06f9c3ff9b957c022d7805cf"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/tubalmartin/YUI-CSS-compressor-PHP-port/zipball/3cbf557f4079d83a06f9c3ff9b957c022d7805cf",
-                "reference": "3cbf557f4079d83a06f9c3ff9b957c022d7805cf",
-                "shasum": ""
-            },
-            "require": {
-                "ext-pcre": "*",
-                "php": ">=5.3.2"
-            },
-            "require-dev": {
-                "cogpowered/finediff": "0.3.*",
-                "phpunit/phpunit": "4.8.*"
-            },
-            "bin": [
-                "cssmin"
-            ],
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "tubalmartin\\CssMin\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
+            "funding": [
                 {
-                    "name": "Túbal Martín",
-                    "homepage": "http://tubalmartin.me/"
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
                 }
             ],
-            "description": "A PHP port of the YUI CSS compressor",
-            "homepage": "https://github.com/tubalmartin/YUI-CSS-compressor-PHP-port",
-            "keywords": [
-                "compress",
-                "compressor",
-                "css",
-                "cssmin",
-                "minify",
-                "yui"
-            ],
-            "support": {
-                "issues": "https://github.com/tubalmartin/YUI-CSS-compressor-PHP-port/issues",
-                "source": "https://github.com/tubalmartin/YUI-CSS-compressor-PHP-port"
-            },
-            "time": "2018-01-15T15:26:51+00:00"
+            "time": "2021-01-27T10:15:41+00:00"
         },
         {
             "name": "yiisoft/yii2-shell",
@@ -7685,5 +6456,5 @@
     "platform-overrides": {
         "php": "7.2.5"
     },
-    "plugin-api-version": "1.1.0"
+    "plugin-api-version": "2.0.0"
 }

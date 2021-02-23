@@ -1,0 +1,21 @@
+contentColumnType: string
+fieldGroup: d02f32f2-f820-46c5-9608-74584920a700
+handle: relatedProducts
+instructions: ''
+name: 'Related products'
+searchable: false
+settings:
+  allowSelfRelations: false
+  limit: ''
+  localizeRelations: false
+  selectionLabel: 'Add a related product'
+  showSiteMenu: false
+  source: null
+  sources:
+    - 'section:6a5d8388-4e65-4388-ad8c-b1ef16476a2c'
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

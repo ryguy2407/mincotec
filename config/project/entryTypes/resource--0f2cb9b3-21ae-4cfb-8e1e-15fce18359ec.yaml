@@ -1,5 +1,5 @@
 fieldLayouts:
-  4b3c3327-e140-4021-b9a0-228cba322bd5:
+  9d5215f7-7c28-43b7-a896-a87718210563:
     tabs:
       -
         elements:
@@ -10,8 +10,8 @@ fieldLayouts:
             class: null
             disabled: false
             id: null
-            instructions: ''
-            label: __blank__
+            instructions: null
+            label: null
             max: null
             min: null
             name: null
@@ -27,57 +27,6 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 2abe91b5-47eb-4941-8146-d0560ee7eea5
-            instructions: ''
-            label: ''
-            required: '1'
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: 62a8a8c8-f29e-458d-a829-ef9f02530871
-            instructions: ''
-            label: ''
-            required: '1'
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: 9b582b25-7dfb-41fd-b219-d81cc2417b9c
-            instructions: ''
-            label: ''
-            required: '1'
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            type: craft\fieldlayoutelements\HorizontalRule
-          -
-            fieldUid: e5b7cbd6-9eaa-4871-b2a5-184a9607b329
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            type: craft\fieldlayoutelements\HorizontalRule
-          -
-            fieldUid: 165a6142-37ca-4d4a-8adb-9b2903c38600
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            type: craft\fieldlayoutelements\HorizontalRule
-          -
             fieldUid: 84f72373-7818-40d1-94a1-7bed11823504
             instructions: null
             label: null
@@ -92,18 +41,9 @@ fieldLayouts:
         elements:
           -
             fieldUid: 27a6b2f7-125f-4435-89f3-c86ece6fae10
-            instructions: ''
-            label: ''
-            required: '1'
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: d458148a-cac9-4331-8450-c852bb68f250
-            instructions: ''
-            label: ''
-            required: '1'
+            instructions: null
+            label: null
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
@@ -118,10 +58,19 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            fieldUid: d458148a-cac9-4331-8450-c852bb68f250
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
             fieldUid: 7f92ebb9-d48f-483c-ad92-06b7390a5421
-            instructions: ''
-            label: ''
-            required: '1'
+            instructions: null
+            label: null
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
@@ -137,11 +86,11 @@ fieldLayouts:
             width: 100
         name: SEO
         sortOrder: 2
-handle: resources
-hasTitleField: true
-name: Resources
-section: e892d3ce-39c6-4f38-b352-1cdc5d7be1a8
+handle: resource
+hasTitleField: false
+name: 'Resources page'
+section: 1fbca024-b912-4d45-ab23-b1a9c9b0dbad
 sortOrder: 1
-titleFormat: null
+titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

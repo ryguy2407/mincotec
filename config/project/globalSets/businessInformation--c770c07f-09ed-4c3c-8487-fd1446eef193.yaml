@@ -1,0 +1,27 @@
+fieldLayouts:
+  f1f827e4-0ed9-4450-a567-029bed309c4d:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 7a9468da-f751-442d-8958-309db3bb39c0
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: c1e314f7-0a66-4409-8922-7db1ecad0f54
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Business information'
+        sortOrder: 1
+handle: businessInformation
+name: 'Business information'
