@@ -82,13 +82,13 @@
 
                                     {# Loop through the products that are related to the current category in the main loop and related to the resource we are looking at #}
                                     {% set entries = craft.entries().section('products').relatedTo(category).relatedResource(entry).all() %}
-                                    <div class="flex flex-row space-x-8">
+                                    <div class="flex flex-col lg:flex-row space-x-0 lg:space-x-8">
                                         {% for product in entries %}
-                                            <a href="{{ category.url }}" class="flex flex-col w-1/4">
+                                            <a href="{{ category.url }}" class="flex flex-col w-full mb-4 lg:mb-0 lg:w-1/4">
                                                 {% set optimizedImages = product.seoImage.one().optimizedimages %}
 
-                                                <div class="relative w-full h-40">
-                                                    <img class="absolute inset-0 w-full h-full object-cover" src="{{ optimizedImages.src() }}"
+                                                <div class="relative w-full h-40 overflow-hidden">
+                                                    <img class="absolute inset-0 w-full h-full object-cover transform hover:scale-110 transition duration-500 ease-in-out" src="{{ optimizedImages.src() }}"
                                                          srcset="{{ optimizedImages.srcset() }}"
                                                          sizes="100vw" />
                                                 </div>
