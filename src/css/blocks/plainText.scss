@@ -3,7 +3,11 @@
     @apply text-white;
   }
   li {
-    @apply opacity-75;
+    ul {
+      li {
+        @apply opacity-100;
+      }
+    }
   }
   ul {
     @apply mb-4;

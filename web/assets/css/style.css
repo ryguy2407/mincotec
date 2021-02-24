@@ -26774,8 +26774,8 @@ hr {
   color: rgba(255, 255, 255, var(--text-opacity));
 }
 
-.plainText li {
-  opacity: 0.75;
+.plainText li ul li {
+  opacity: 1;
 }
 
 .plainText ul {
