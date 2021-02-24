@@ -26780,7 +26780,6 @@ hr {
 
 .plainText ul li {
   font-size: 1.125rem;
-  opacity: 0.75;
   list-style-type: disc;
   margin-left: 1rem;
 }
@@ -26791,7 +26790,6 @@ hr {
 
 .plainText ol li {
   font-size: 1.125rem;
-  opacity: 0.75;
   list-style-type: decimal;
   margin-left: 1rem;
 }
