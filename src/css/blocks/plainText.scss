@@ -7,7 +7,10 @@
     li {
       @apply text-lg opacity-75 list-disc ml-4;
     }
-    ol {
+  }
+  ol {
+    @apply mb-4;
+    li {
       @apply text-lg opacity-75 list-decimal ml-4;
     }
   }
