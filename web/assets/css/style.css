@@ -26774,10 +26774,6 @@ hr {
   color: rgba(255, 255, 255, var(--text-opacity));
 }
 
-.plainText li ul li {
-  opacity: 1;
-}
-
 .plainText ul {
   margin-bottom: 1rem;
 }
@@ -26786,6 +26782,7 @@ hr {
   font-size: 1.125rem;
   list-style-type: disc;
   margin-left: 1rem;
+  opacity: 0.75;
 }
 
 .plainText ol {
@@ -26796,6 +26793,7 @@ hr {
   font-size: 1.125rem;
   list-style-type: decimal;
   margin-left: 1rem;
+  opacity: 0.75;
 }
 
 .plainText.bg-white h1, .plainText.bg-white h2, .plainText.bg-white h3, .plainText.bg-white h4, .plainText.bg-white h5, .plainText.bg-white h6, .plainText.bg-white p, .plainText.bg-white a, .plainText.bg-white li, .plainText.bg-white ol {
