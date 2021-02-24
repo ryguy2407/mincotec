@@ -10,7 +10,8 @@ module.exports = {
       navy: '#0F2D52',
       mustard: '#CD8215',
       blue: '#005AAA',
-      opaque_navy: '#293A5B'
+      opaque_navy: '#293A5B',
+      body_copy: '#5E7694'
     },
     fontFamily: {
       'sans': ['"Neutrif Studio Regular"', 'Helvetica', 'Arial', 'sans-serif'],

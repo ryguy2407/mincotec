@@ -2,18 +2,6 @@
   h1,h2,h3,h4,h5,h6,p,a,li,ol {
     @apply text-white;
   }
-  ul {
-    @apply mb-4;
-    li {
-      @apply text-lg list-disc ml-4 opacity-75;
-    }
-  }
-  ol {
-    @apply mb-4;
-    li {
-      @apply text-lg list-decimal ml-4 opacity-75;
-    }
-  }
 }
 .plainText.bg-white {
   h1,h2,h3,h4,h5,h6,p,a,li,ol {
@@ -30,5 +18,17 @@
 
   hr {
     @apply border-light_grey border-t my-8;
+  }
+
+  li {
+    @apply text-lg ml-4;
+    color: #4B627E !important;
+  }
+
+  ul {
+    @apply mb-4 list-disc;
+  }
+  ol {
+    @apply mb-4 list-decimal;
   }
 }
