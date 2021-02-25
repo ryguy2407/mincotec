@@ -80,10 +80,11 @@
     </div>
 
     {% include 'partials/footer/_homeFooter.twig' %}
-
+    
     <script src="https://unpkg.com/es6-promise@4.2.4/dist/es6-promise.auto.min.js"></script>
     <script src="https://unpkg.com/@mapbox/mapbox-sdk/umd/mapbox-sdk.min.js"></script>
     <script>
+
         mapboxgl.accessToken = 'pk.eyJ1Ijoicnlhbm53byIsImEiOiJja2VtbnlodW4wNWU1MnFsajQ1bTl2dnhvIn0.NMZP89hoKD1hVlPshKGY5g';
         var mapboxClient = mapboxSdk({ accessToken: mapboxgl.accessToken });
 

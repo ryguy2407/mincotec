@@ -1,8 +1,10 @@
 {% for entry in entries %}
     <div class="w-full relative lg:w-1/3 px-12 py-32 bg-gradient-to-l {% if alt %}from-input_bg{% else %}from-opaque_white{% endif %} flex flex-col group relative">
         {% set img = entry.seoImage.one().optimizedimages %}
+        {% set originalImg = entry.seoImage.one() %}
         <img src="{{ img.src() }}"
              class="absolute inset-0 w-full h-full object-cover {% if alt %}opacity-100 group-hover:opacity-0{% else %}opacity-0 group-hover:opacity-25{% endif %} transition duration-500 ease-in-out"
+             alt="{{ originalImg.title }}"
              srcset="{{ img.srcset() }}"
              sizes="100vw" />
 

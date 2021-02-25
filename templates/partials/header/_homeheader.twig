@@ -21,9 +21,11 @@
     </div>
     <div class="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-9/12 lg:h-full kenburns">
         {% set image = hero.heroImage.one().optimizedimages %}
+        {% set originalImage = hero.heroImage.one() %}
         {% if image | length %}
             <img src="{{ image.src() }}"
-                 class="absolute inset-0 w-full h-full object-cover animate"
+                 alt="{{ originalImage.title }}"
+                 class="absolute inset-0 w-full h-full object-cover kenburns"
                  srcset="{{ image.srcset() }}"
                  sizes="100vw" />
             <img class="absolute w-full h-full object-cover right-0 top-0" src="/assets/img/main-watermark.svg" alt="MincoTech">
