@@ -1,8 +1,11 @@
 <div class="relative textAndMedia {{ block.backgroundColour }}">
     <div class="hidden md:block h-56 sm:h-64 md:absolute md:{{ block.mediaAlignment }}-0 md:h-full md:{{ block.mediaWidth }}">
         {% if block.image | length %}
-            {% set img = block.image.one() %}
-            <img class="w-full h-full object-cover" src="{{ img.url }}" alt="{{ img.title }}">
+            {% set img = block.image.one().optimizedimages %}
+            <img src="{{ img.src() }}"
+                 class="w-full h-full object-cover"
+                 srcset="{{ img.srcset() }}"
+                 sizes="100vw" />
         {% endif %}
     </div>
     <div class="relative max-w-screen-xl mx-auto px-4 py-12 sm:px-6 lg:px-8 lg:py-24">

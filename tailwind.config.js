@@ -1,5 +1,12 @@
 module.exports = {
-  purge: [],
+  purge: {
+    mode: 'all',
+    preserveHtmlElements: true,
+    content: [
+      './templates/*.twig',
+      './templates/**/*.twig'
+    ],
+  },
   theme: {
     colors: {
       white: '#FFFFFF',
@@ -14,7 +21,7 @@ module.exports = {
       body_copy: '#5E7694'
     },
     fontFamily: {
-      'sans': ['"Neutrif Studio Regular"', 'Helvetica', 'Arial', 'sans-serif'],
+      'sans': ['Neutrif', 'Helvetica', 'Arial', 'sans-serif'],
     },
     extend: {
       backgroundOpacity: {
