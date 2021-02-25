@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "783aa79ba8ea5134c1919873a1819e6a",
+    "content-hash": "db72cecfe084d5943de8037dfa9df6a5",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -5377,11 +5377,11 @@
         },
         {
             "name": "verbb/formie",
-            "version": "1.3.19",
+            "version": "1.3.19.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/verbb/formie/zipball/539e5d1b2b8991f698024a3ba14873b94c6ee875",
-                "reference": "539e5d1b2b8991f698024a3ba14873b94c6ee875",
+                "url": "https://api.github.com/repos/verbb/formie/zipball/72ee4bf8c3bc65061e901d5f443ebeaf6c3005ee",
+                "reference": "72ee4bf8c3bc65061e901d5f443ebeaf6c3005ee",
                 "shasum": ""
             },
             "require": {
@@ -5436,7 +5436,7 @@
                 "docs": "https://github.com/verbb/formie",
                 "rss": "https://github.com/verbb/formie/commits/v2.atom"
             },
-            "time": "2021-02-24T03:28:15+00:00"
+            "time": "2021-02-24T05:51:21+00:00"
         },
         {
             "name": "verbb/navigation",
