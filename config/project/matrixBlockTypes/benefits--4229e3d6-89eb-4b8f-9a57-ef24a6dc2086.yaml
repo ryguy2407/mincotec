@@ -45,139 +45,24 @@ fields:
     translationMethod: none
     type: craft\fields\PlainText
   acf421ad-05b0-4496-a152-aa4784ffbc14:
-    contentColumnType: string
+    contentColumnType: text
     fieldGroup: null
     handle: icon
     instructions: ''
     name: 'Benefit icon'
     searchable: false
     settings:
-      optgroups: true
-      options:
-        -
-          __assoc__:
-            -
-              - label
-              - Clock
-            -
-              - value
-              - 'fal fa-clock'
-            -
-              - default
-              - ''
-        -
-          __assoc__:
-            -
-              - label
-              - Cog
-            -
-              - value
-              - 'fal fa-cog'
-            -
-              - default
-              - ''
-        -
-          __assoc__:
-            -
-              - label
-              - Users
-            -
-              - value
-              - 'fal fa-users'
-            -
-              - default
-              - ''
-        -
-          __assoc__:
-            -
-              - label
-              - 'Australia Globe'
-            -
-              - value
-              - 'fal fa-globe-asia'
-            -
-              - default
-              - ''
-        -
-          __assoc__:
-            -
-              - label
-              - Chart
-            -
-              - value
-              - 'fal fa-chart-line'
-            -
-              - default
-              - ''
-        -
-          __assoc__:
-            -
-              - label
-              - Microscope
-            -
-              - value
-              - 'fal fa-microscope'
-            -
-              - default
-              - ''
-        -
-          __assoc__:
-            -
-              - label
-              - Mountains
-            -
-              - value
-              - 'fal fa-mountains'
-            -
-              - default
-              - ''
-        -
-          __assoc__:
-            -
-              - label
-              - Fast
-            -
-              - value
-              - 'fal fa-rabbit-fast'
-            -
-              - default
-              - ''
-        -
-          __assoc__:
-            -
-              - label
-              - Hourglass
-            -
-              - value
-              - 'fal fa-hourglass'
-            -
-              - default
-              - ''
-        -
-          __assoc__:
-            -
-              - label
-              - Crosshairs
-            -
-              - value
-              - 'fal fa-crosshairs'
-            -
-              - default
-              - ''
-        -
-          __assoc__:
-            -
-              - label
-              - 'Set square'
-            -
-              - value
-              - 'fal fa-ruler-combined'
-            -
-              - default
-              - ''
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
-    type: craft\fields\Dropdown
+    type: craft\fields\PlainText
 handle: benefits
 name: Benefits
 sortOrder: 1
