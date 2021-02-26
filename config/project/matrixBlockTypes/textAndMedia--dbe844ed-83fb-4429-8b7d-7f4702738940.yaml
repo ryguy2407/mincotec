@@ -32,6 +32,15 @@ fieldLayouts:
             warning: null
             width: 25
           -
+            fieldUid: 0705587e-3a71-445b-9fdc-f58c9b8f3de8
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 25
+          -
             fieldUid: c226b997-c58c-42e9-906a-4089abfa7f5a
             instructions: null
             label: null
@@ -70,6 +79,25 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
+  0705587e-3a71-445b-9fdc-f58c9b8f3de8:
+    contentColumnType: text
+    fieldGroup: null
+    handle: idSlug
+    instructions: 'This is optional, it is used if you need to link to this particular section, append a # and the slug name, for example mincotech.com.au/about#our-history'
+    name: 'ID Slug'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
   2e8c2d72-0992-4133-824d-8398f0d80292:
     contentColumnType: string
     fieldGroup: null

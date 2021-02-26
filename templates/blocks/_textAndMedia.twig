@@ -1,4 +1,4 @@
-<div class="relative textAndMedia {{ block.backgroundColour }}">
+<div id="{{ block.idSlug }}" class="relative textAndMedia {{ block.backgroundColour }}">
     <div class="hidden md:block h-56 sm:h-64 md:absolute md:{{ block.mediaAlignment }}-0 md:h-full md:{{ block.mediaWidth }}">
         {% if block.image | length %}
             {% set img = block.image.one().optimizedimages %}
