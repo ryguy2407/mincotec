@@ -4,44 +4,46 @@
 
     {% include '/partials/header/_nav.twig' %}
 
-    <header class="w-full bg-blue h-64 relative flex flex-row justify-center items-center">
+    <header class="w-full bg-navy h-64 relative flex flex-row justify-center items-center">
         <img class="absolute h-full" src="/assets/img/header-logo-overlay.svg" alt="{{ entry.title }}">
         <h1 class="text-5xl text-white font-bold relative">{{ entry.title }}</h1>
     </header>
 
-    {# Get all the product categoreies #}
-    {% set productCategories = craft.categories().group('productCategories').all() %}
+    <section class="py-16">
+        {# Get all the product categoreies #}
+        {% set productCategories = craft.categories().group('productCategories').all() %}
 
-    {% for category in productCategories %}
-        <section class="border-b-2 border-light_grey border-opacity-25 py-8">
-            <div class="container mx-auto">
-                <h3 class="text-navy font-bold mb-4">
-                    {{ category.title }}
-                </h3>
+        {% for category in productCategories %}
+            <section class="{% if not loop.last %}border-b-2{% endif %} border-light_grey border-opacity-25 py-8">
+                <div class="container mx-auto">
+                    <h3 class="text-navy font-bold mb-4">
+                        {{ category.title }}
+                    </h3>
 
-                {# Get all the products that belong to that category in the loop #}
+                    {# Get all the products that belong to that category in the loop #}
 
-                {% set products = craft.entries().section('products').relatedTo(category).all() %}
-                {% set batches = products|batch(3) %}
+                    {% set products = craft.entries().section('products').relatedTo(category).all() %}
+                    {% set batches = products|batch(3) %}
 
-                {% for products in batches %}
-                    <div class="w-full flex flex-row flex-wrap border-t {% if loop.last %}border-b{% endif %} border-light_grey border-opacity-50">
-                    {% for product in products %}
-                        {% set download = product.downloads.one() %}
-                        <a href="#" class="triggerForm w-1/3 flex flex-row pr-4 hover:text-blue items-center text-xl text-navy py-4">
-                            <i class="fal fa-arrow-to-bottom mr-4"></i>{{ product.title }}
-                        </a>
-                        {% if download | length %}
-                            {% include 'partials/_popupForm.twig' %}
-                        {% endif %}
+                    {% for products in batches %}
+                        <div class="w-full flex flex-row flex-wrap border-t {% if loop.last %}border-b{% endif %} border-light_grey border-opacity-50">
+                        {% for product in products %}
+                            {% set download = product.downloads.one() %}
+                            <a href="#" class="triggerForm w-1/3 flex flex-row pr-4 hover:text-blue items-center text-xl text-navy py-4">
+                                <i class="fal fa-arrow-to-bottom mr-4"></i>{{ product.title }}
+                            </a>
+                            {% if download | length %}
+                                {% include 'partials/_popupForm.twig' %}
+                            {% endif %}
+                        {% endfor %}
+                        </div>
                     {% endfor %}
-                    </div>
-                {% endfor %}
 
-            </div>
-        </section>
+                </div>
+            </section>
 
-    {% endfor %}
+        {% endfor %}
+    </section>
 
     {% include 'partials/footer/_footer.twig' %}
 
