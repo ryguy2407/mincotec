@@ -8,12 +8,12 @@
              srcset="{{ img.srcset() }}"
              sizes="100vw" />
 
-        <div class="relative z-50 {% if alt %}opacity-0 group-hover:opacity-100 transition ease-in-out duration-500{% else %}{% endif %}">
+        <div class="relative z-50 flex flex-col h-full {% if alt %}opacity-0 group-hover:opacity-100 transition ease-in-out duration-500{% else %}{% endif %}">
             <h3 class="{% if bgColour == 'bg-white' %}text-navy{% else %}text-white{% endif %} text-3xl font-bold mb-8">{{ entry.title }}</h3>
-            <p class="{% if bgColour == 'bg-white' %}text-navy{% else %}text-white{% endif %} opacity-75 text-lg">
+            <p class="{% if bgColour == 'bg-white' %}text-navy{% else %}text-white{% endif %} opacity-75 text-lg mb-8">
                 {{ entry.seoDescription }}
             </p>
-            <div class="mt-8">
+            <div class="mt-auto">
                 <a href="{{ entry.url }}" class="{% if bgColour == 'bg-white' %}text-navy{% else %}text-white{% endif %} btn-white {% if bgColour == 'bg-white' %}border-navy hover:bg-navy hover:text-white{% else %}border-white hover:bg-white hover:text-navy{% endif %}">
                     Learn more
                 </a>
