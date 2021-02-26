@@ -1,4 +1,4 @@
-dateModified: 1614310092
+dateModified: 1614312538
 email:
   fromEmail: ryan@newwordorder.com.au
   fromName: Mincotec
@@ -31,7 +31,7 @@ plugins:
             - concurrency
             - '3'
       cacheWarmerType: putyourlightson\blitz\drivers\warmers\GuzzleWarmer
-      cachingEnabled: '1'
+      cachingEnabled: ''
       clearCacheAutomatically: '1'
       customSiteUris: ''
       debug: false
