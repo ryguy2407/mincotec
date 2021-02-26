@@ -23,7 +23,7 @@
                     {% if category.benefitsMatrix | length %}
                         {% set benefits = category.benefitsMatrix.all() %}
                         <h5 class="uppercase font-bold text-navy mt-16">Benefits</h5>
-                        <div class="flex flex-col space-y-2 my-4">
+                        <div class="flex flex-col my-4">
                         {% for benefit in benefits %}
                             <div class="flex flex-row space-x-2 items-center">
                                 <div class="text-mustard text-4xl w-12 text-center">
