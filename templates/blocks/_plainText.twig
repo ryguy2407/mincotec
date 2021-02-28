@@ -1,6 +1,6 @@
 <div class="lg:relative plainText {{ block.backgroundColour }} py-16 lg:py-24">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
-        <div class="w-full lg:w-3/4">
+        <div data-aos="fade-up" class="w-full lg:w-3/4">
             <div class="w-full {% if block.textAlignment == 'text-left' %}lg:w-3/4{% endif %} {{ block.textAlignment }}">
                 {{ block.plainText | markdown }}
             </div>
