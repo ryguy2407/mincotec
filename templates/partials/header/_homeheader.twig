@@ -1,5 +1,5 @@
 <div class="lg:relative bg-navy">
-    <div data-aos="fade-right" class="relative mx-auto px-16 w-full pt-16 pb-20 text-center lg:py-48 lg:text-left z-10">
+    <div data-aos-duration="800" data-aos="fade-right" class="relative mx-auto px-16 w-full pt-16 pb-20 text-center lg:py-48 lg:text-left z-10">
         <div class="px-4 lg:w-7/12 sm:px-8 xl:pr-16">
             {% set hero = entry.homeHeroSection.one() %}
             <h2 class="text-4xl tracking-tight leading-10 font-extrabold text-white sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl">
@@ -19,7 +19,7 @@
             </div>
         </div>
     </div>
-    <div data-aos="fade-left" class="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-9/12 lg:h-full kenburns">
+    <div data-aos-duration="800" data-aos="fade-left" class="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-9/12 lg:h-full kenburns">
         {% set image = hero.heroImage.one().optimizedimages %}
         {% set originalImage = hero.heroImage.one() %}
         {% if image | length %}

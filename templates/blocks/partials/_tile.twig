@@ -1,5 +1,5 @@
 {% for entry in entries %}
-    <div data-aos="fade-up" data-aos-delay="{{ loop.index * 100 }}" class="w-full relative lg:w-1/3 px-12 py-32 bg-gradient-to-l {% if alt %}from-input_bg{% else %}from-opaque_white{% endif %} flex flex-col group relative">
+    <div data-aos-duration="800" data-aos="fade-up" data-aos-delay="{{ loop.index * 200 }}" class="w-full relative lg:w-1/3 px-12 py-32 bg-gradient-to-l {% if alt %}from-input_bg{% else %}from-opaque_white{% endif %} flex flex-col group relative">
         {% set img = entry.seoImage.one().optimizedimages %}
         {% set originalImg = entry.seoImage.one() %}
         <img src="{{ img.src() }}"
