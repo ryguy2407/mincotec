@@ -1,5 +1,5 @@
 contentColumnType: text
-fieldGroup: bd1a122e-69e2-4d18-b94b-59798d4f3041
+fieldGroup: bd1a122e-69e2-4d18-b94b-59798d4f3041 # SEO
 handle: seoKeywords
 instructions: 'Include a comma separated list of keywords you''d like search engines to use for this page. Note that Google doesn''t do this anymore but other search engines still do.'
 name: 'SEO Keywords'

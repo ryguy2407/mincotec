@@ -1,5 +1,5 @@
 contentColumnType: string
-fieldGroup: 1ec61136-2f61-415d-b611-53f0d990dd34
+fieldGroup: 1ec61136-2f61-415d-b611-53f0d990dd34 # Resource fields
 handle: relatedResource
 instructions: ''
 name: 'Related resource'

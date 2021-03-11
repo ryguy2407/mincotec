@@ -1,5 +1,5 @@
 contentColumnType: string
-fieldGroup: d02f32f2-f820-46c5-9608-74584920a700
+fieldGroup: d02f32f2-f820-46c5-9608-74584920a700 # Product fields
 handle: relatedProducts
 instructions: ''
 name: 'Related products'

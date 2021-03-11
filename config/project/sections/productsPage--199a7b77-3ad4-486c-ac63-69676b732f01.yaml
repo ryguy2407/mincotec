@@ -1,6 +1,6 @@
 enableVersioning: true
-handle: solutions
-name: Solutions
+handle: productsPage
+name: 'Products Page'
 previewTargets:
   -
     __assoc__:
@@ -15,9 +15,9 @@ previewTargets:
         - '1'
 propagationMethod: all
 siteSettings:
-  3cc4705b-9d87-4251-bf19-e831c181126f:
+  3cc4705b-9d87-4251-bf19-e831c181126f: # Mincotech
     enabledByDefault: true
     hasUrls: true
-    template: solutions/index.twig
-    uriFormat: solutions
+    template: products/index.twig
+    uriFormat: products
 type: single

@@ -27,7 +27,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 84f72373-7818-40d1-94a1-7bed11823504
+            fieldUid: 84f72373-7818-40d1-94a1-7bed11823504 # Page builder
             instructions: null
             label: null
             required: false
@@ -40,7 +40,7 @@ fieldLayouts:
       -
         elements:
           -
-            fieldUid: 27a6b2f7-125f-4435-89f3-c86ece6fae10
+            fieldUid: 27a6b2f7-125f-4435-89f3-c86ece6fae10 # SEO Title
             instructions: ''
             label: ''
             required: '1'
@@ -49,7 +49,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: d458148a-cac9-4331-8450-c852bb68f250
+            fieldUid: d458148a-cac9-4331-8450-c852bb68f250 # SEO Description
             instructions: ''
             label: ''
             required: '1'
@@ -58,7 +58,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 7f92ebb9-d48f-483c-ad92-06b7390a5421
+            fieldUid: 7f92ebb9-d48f-483c-ad92-06b7390a5421 # SEO Image
             instructions: null
             label: null
             required: false
@@ -67,7 +67,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: e8194a63-8d8f-44d2-a059-2c166d82a4c2
+            fieldUid: e8194a63-8d8f-44d2-a059-2c166d82a4c2 # SEO Image description
             instructions: null
             label: null
             required: false
@@ -76,7 +76,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 751f9ff7-baa1-4994-82a0-653b81eeb5a7
+            fieldUid: 751f9ff7-baa1-4994-82a0-653b81eeb5a7 # SEO Keywords
             instructions: null
             label: null
             required: false
@@ -86,10 +86,10 @@ fieldLayouts:
             width: 100
         name: SEO
         sortOrder: 2
-handle: solutions
+handle: productsPage
 hasTitleField: false
-name: Solutions
-section: 199a7b77-3ad4-486c-ac63-69676b732f01
+name: 'Products Page'
+section: 199a7b77-3ad4-486c-ac63-69676b732f01 # Products Page
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
