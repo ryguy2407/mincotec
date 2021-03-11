@@ -10,8 +10,8 @@ fieldLayouts:
             class: null
             disabled: false
             id: null
-            instructions: null
-            label: null
+            instructions: ''
+            label: Title
             max: null
             min: null
             name: null
@@ -87,7 +87,7 @@ fieldLayouts:
         name: SEO
         sortOrder: 2
 handle: productsPage
-hasTitleField: false
+hasTitleField: true
 name: 'Products Page'
 section: 199a7b77-3ad4-486c-ac63-69676b732f01 # Products Page
 sortOrder: 1
