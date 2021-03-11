@@ -4,12 +4,7 @@
 
     {% include '/partials/header/_nav.twig' %}
 
-    {% set headerImg = entry.seoImage.one() %}
-
     <header class="w-full bg-navy h-64 relative flex flex-row justify-center items-center" style="height: 300px;">
-        {% if headerImg | length %}
-            <img class="absolute inset-0 w-full h-full object-cover" style="z-index: 1;" src="{{ headerImg.url }}" alt="{{ headerImg.title }}">
-        {% endif %}
         <div class="absolute w-full h-full opacity-75 bg-gradient-to-r from-navy z-10"></div>
         <img class="absolute h-full z-10" src="/assets/img/header-logo-overlay.svg" alt="{{ entry.title }}">
         <h1 class="text-5xl text-white font-bold relative z-50">{{ entry.title }}</h1>
