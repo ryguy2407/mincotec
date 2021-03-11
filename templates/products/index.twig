@@ -28,9 +28,9 @@
                 {% set categories = craft.categories()
                     .group('productCategories').all() %}
                 {% for category in categories %}
-                    <div class="w-full relative lg:w-1/3 px-12 py-32 bg-gradient-to-l from-opaque_white flex flex-col group relative">
+                    <div class="w-full relative lg:w-1/3 px-12 py-32 bg-gradient-to-r from-white to-light_navy flex flex-col group relative">
                         {% set img = category.seoImage.one().optimizedimages %}
-                        <div class="absolute w-full h-full inset-0 flex items-center justify-center" style="z-index: 1;">
+                        <div class="absolute w-full h-full inset-0 flex items-center justify-center group-hover:opacity-0 transition duration-500 ease-in-out" style="z-index: 1;">
                             <h2 class="text-white font-bold leading-tight transform rotate-90 text-6xl text-center">
                                 {{ category.title }}
                             </h2>
