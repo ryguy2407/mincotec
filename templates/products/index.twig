@@ -6,7 +6,7 @@
 
     {% set headerImg = entry.seoImage.one() %}
 
-    <header class="w-full bg-navy h-64 relative flex flex-row justify-center items-center">
+    <header class="w-full bg-navy h-64 relative flex flex-row justify-center items-center" style="height: 300px;">
         {% if headerImg | length %}
             <img class="absolute inset-0 w-full h-full object-cover" style="z-index: 1;" src="{{ headerImg.url }}" alt="{{ headerImg.title }}">
         {% endif %}
