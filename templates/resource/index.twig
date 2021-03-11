@@ -4,10 +4,13 @@
 
     {% include '/partials/header/_nav.twig' %}
 
-    <header class="w-full bg-navy h-64 relative flex flex-row justify-center items-center">
-        <div class="absolute w-full h-full bg-navy bg-opacity-50"></div>
-        <img class="absolute h-full" src="/assets/img/header-logo-overlay.svg" alt="{{ entry.title }}">
-        <h1 class="text-5xl text-white font-bold relative">{{ entry.seoTitle }}</h1>
+    {% set headerImg = entry.seoImage.one() %}
+
+    <header class="w-full bg-mustard relative flex flex-row justify-center items-center" style="height: 300px;">
+        <img class="absolute inset-0 w-full h-full object-cover" style="z-index: 1;" src="{{ headerImg.url }}" alt="{{ headerImg.title }}">
+        <div class="absolute w-full h-full opacity-50 bg-gradient-to-r from-mustard to-navy z-10"></div>
+        <img class="absolute h-full z-10" src="/assets/img/header-logo-overlay.svg" alt="{{ entry.title }}">
+        <h1 class="text-5xl text-white font-bold relative z-50">{{ entry.seoTitle }}</h1>
     </header>
 
 
@@ -17,15 +20,15 @@
         {% include 'blocks/_'~block.type %}
     {% endfor %}
 
-    <div class="lg:relative bg-white border-opaque_navy border-t">
+    <div class="lg:relative bg-white border-off_white border-t-2">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 relative">
             <div class="w-full mx-auto flex flex-col lg:flex-row flex-wrap justify-start relative">
                 {% set categories = craft.entries()
                     .section('resources').all() %}
                 {% for category in categories %}
-                    <div class="w-full relative lg:w-1/3 px-12 py-32 bg-gradient-to-l from-opaque_white flex flex-col group relative">
+                    <div class="w-full relative lg:w-1/3 px-12 py-32 bg-gradient-to-r from-white to-light_navy flex flex-col group relative">
                         {% set img = category.seoImage.one().optimizedimages %}
-                        <div class="absolute w-full h-full inset-0 flex items-center justify-center" style="z-index: 1;">
+                        <div class="absolute w-full h-full inset-0 flex items-center justify-center group-hover:opacity-0 transition duration-500 ease-in-out" style="z-index: 1;">
                             <h2 class="text-white font-bold leading-tight transform rotate-90">
                                 {{ category.title }}
                             </h2>
@@ -34,7 +37,8 @@
                              src="{{ img.src() }}"
                              srcset="{{ img.srcset() }}"
                              sizes="100vw">
-                        <div class="relative z-50 flex flex-col h-full opacity-0 group-hover:opacity-100 transition duration-500 ease-in-out">
+                        <div
+                                class="relative z-50 flex flex-col h-full opacity-0 group-hover:opacity-100 transition duration-500 ease-in-out">
                             <h3 class="text-navy text-3xl font-bold mb-8">{{ category.title }}</h3>
                             <p class="text-navy opacity-75 text-lg mb-8">
                                 {{ category.seoDescription }}

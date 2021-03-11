@@ -1,4 +1,4 @@
-dateModified: 1614312538
+dateModified: 1615436844
 email:
   fromEmail: ryan@newwordorder.com.au
   fromName: Mincotec
@@ -72,7 +72,7 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: I80VQEXPC2HSWMBXUNGTARLL
-    schemaVersion: 1.1.6
+    schemaVersion: 1.1.7
     settings:
       captchas:
         duplicate:
@@ -123,7 +123,7 @@ system:
   live: true
   name: Mincotech
   retryDuration: null
-  schemaVersion: 3.6.4
+  schemaVersion: 3.6.6
   timeZone: Australia/Brisbane
 users:
   allowPublicRegistration: false

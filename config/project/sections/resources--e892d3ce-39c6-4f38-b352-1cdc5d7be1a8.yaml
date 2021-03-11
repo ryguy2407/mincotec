@@ -20,4 +20,7 @@ siteSettings:
     hasUrls: true
     template: resource/_entry
     uriFormat: 'resources/{slug}'
-type: channel
+structure:
+  maxLevels: null
+  uid: 9e7f20b8-5851-4551-9907-fab15b110bed
+type: structure

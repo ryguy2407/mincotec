@@ -10,8 +10,10 @@ module.exports = {
   theme: {
     colors: {
       white: '#FFFFFF',
+      off_white: '#f4f4f4',
       input_bg: '#F0F0F0',
       light_grey: '#D2D2D2',
+      light_navy: '#E8EBEE',
       black: '#333333',
       opaque_white: 'rgba(255,255,255,0.05)',
       navy: '#0F2D52',
