@@ -1,0 +1,68 @@
+field: 334c03aa-313f-4dbe-a62a-8c714bd1f30c # Content page builder
+fieldLayouts:
+  4ddf9fe9-7fd6-40d9-9363-67a9e276e7d7:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 600b2823-c93d-41f7-b4b7-78a2be3c19f3 # Main callout heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 5164cc47-5c1d-4a30-baea-29c215b139f5 # Main callout text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  5164cc47-5c1d-4a30-baea-29c215b139f5: # Main callout text
+    contentColumnType: text
+    fieldGroup: null
+    handle: mainCalloutText
+    instructions: ''
+    name: 'Main callout text'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: '1'
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  600b2823-c93d-41f7-b4b7-78a2be3c19f3: # Main callout heading
+    contentColumnType: text
+    fieldGroup: null
+    handle: mainCalloutHeading
+    instructions: ''
+    name: 'Main callout heading'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: mainCallout
+name: 'Main callout'
+sortOrder: 1
