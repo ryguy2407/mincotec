@@ -15,7 +15,7 @@ previewTargets:
         - '1'
 propagationMethod: all
 siteSettings:
-  3cc4705b-9d87-4251-bf19-e831c181126f: # Mincotech
+  3cc4705b-9d87-4251-bf19-e831c181126f:
     enabledByDefault: true
     hasUrls: true
     template: services/_entry

@@ -1,5 +1,5 @@
 contentColumnType: string
-fieldGroup: 1ec61136-2f61-415d-b611-53f0d990dd34 # Resource fields
+fieldGroup: 1ec61136-2f61-415d-b611-53f0d990dd34
 handle: resourceImage
 instructions: ''
 name: 'Resource image'
@@ -8,7 +8,7 @@ settings:
   allowSelfRelations: false
   allowedKinds:
     - image
-  defaultUploadLocationSource: 'volume:a6e1cc63-ec74-4588-9aab-3144ee60307e' # Uploads
+  defaultUploadLocationSource: 'volume:a6e1cc63-ec74-4588-9aab-3144ee60307e'
   defaultUploadLocationSubpath: ''
   limit: '1'
   localizeRelations: false
@@ -17,7 +17,7 @@ settings:
   showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
-  singleUploadLocationSource: 'volume:a6e1cc63-ec74-4588-9aab-3144ee60307e' # Uploads
+  singleUploadLocationSource: 'volume:a6e1cc63-ec74-4588-9aab-3144ee60307e'
   singleUploadLocationSubpath: ''
   source: null
   sources: '*'

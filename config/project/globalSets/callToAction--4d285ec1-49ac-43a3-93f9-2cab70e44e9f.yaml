@@ -4,7 +4,7 @@ fieldLayouts:
       -
         elements:
           -
-            fieldUid: e832cff2-c266-4684-8edb-ef87f2fece4a # Form title
+            fieldUid: e832cff2-c266-4684-8edb-ef87f2fece4a
             instructions: null
             label: null
             required: false
@@ -13,7 +13,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: dd550f12-608f-41f1-8dd7-38b9ee687b37 # Form description
+            fieldUid: dd550f12-608f-41f1-8dd7-38b9ee687b37
             instructions: null
             label: null
             required: false
@@ -22,7 +22,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: b442e8d9-3f6d-4be7-8aff-07e31db53b19 # Form
+            fieldUid: b442e8d9-3f6d-4be7-8aff-07e31db53b19
             instructions: null
             label: null
             required: false

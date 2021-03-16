@@ -27,7 +27,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 4a6c9c13-07fb-4898-97ba-dc85f57d10f2 # Link
+            fieldUid: 4a6c9c13-07fb-4898-97ba-dc85f57d10f2
             instructions: null
             label: null
             required: false
@@ -36,7 +36,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: d458148a-cac9-4331-8450-c852bb68f250 # SEO Description
+            fieldUid: d458148a-cac9-4331-8450-c852bb68f250
             instructions: null
             label: null
             required: false
@@ -45,7 +45,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 72c96e87-7c76-4a45-b109-0a431e247ba6 # OptimizedImages
+            fieldUid: 72c96e87-7c76-4a45-b109-0a431e247ba6
             instructions: null
             label: null
             required: false

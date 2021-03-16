@@ -16,46 +16,44 @@
     <section class="plainText bg-white">
         <div class="lg:relative py-16 lg:py-24">
             <div class="max-w-7xl mx-auto px-4 sm:px-6">
-                <div class="w-full lg:w-3/4">
-                    {% set blocks = category.productCategoryPageBuilder.all() %}
-                    {% if blocks | length %}
-                        {% for block in blocks %}
-                            {% if block.type == 'mainCallout' %}
-                                <div class="w-full lg:w-5/6 mx-auto">
-                                    {% if block.mainCalloutHeading | length %}
-                                        <h2 class="font-bold">{{ block.mainCalloutHeading }}</h2>
-                                    {% endif %}
-                                    {% if block.mainCalloutText %}
-                                        <h5>{{ block.mainCalloutText }}</h5>
-                                    {% endif %}
-                                </div>
-                            {% endif %}
-
-                            {% if block.type == 'headingAndText' %}
-                                <div class="mt-12 lg:mt-16">
-                                    <div class="w-full lg:w-5/6 mx-auto">
-                                        {% if block.heading | length %}
-                                            <h5 class="uppercase text-navy mb-8 font-bold">{{ block.heading }}</h5>
-                                        {% endif %}
-                                        {% if block.text | length %}
-                                            {{ block.text | markdown }}
-                                        {% endif %}
-                                    </div>
-                                </div>
-                            {% endif %}
-
-                            {% if block.type == 'image' %}
-                                {% if block.image.one() | length %}
-                                    {% set optimizedImages = block.image.one().optimizedimages %}
-                                    <img class="w-full ml-20 mt-12 lg:mt-16"
-                                         src="{{ optimizedImages.src() }}"
-                                         srcset="{{ optimizedImages.srcset() }}"
-                                         sizes="100vw" />
+                {% set blocks = category.productCategoryPageBuilder.all() %}
+                {% if blocks | length %}
+                    {% for block in blocks %}
+                        {% if block.type == 'mainCallout' %}
+                            <div class="w-full lg:w-5/6 mx-auto">
+                                {% if block.mainCalloutHeading | length %}
+                                    <h2 class="font-bold">{{ block.mainCalloutHeading }}</h2>
                                 {% endif %}
+                                {% if block.mainCalloutText %}
+                                    <h5>{{ block.mainCalloutText }}</h5>
+                                {% endif %}
+                            </div>
+                        {% endif %}
+
+                        {% if block.type == 'headingAndText' %}
+                            <div class="mt-12 lg:mt-16">
+                                <div class="w-full lg:w-5/6 mx-auto">
+                                    {% if block.heading | length %}
+                                        <h5 class="uppercase text-navy mb-8 font-bold">{{ block.heading }}</h5>
+                                    {% endif %}
+                                    {% if block.text | length %}
+                                        {{ block.text | markdown }}
+                                    {% endif %}
+                                </div>
+                            </div>
+                        {% endif %}
+
+                        {% if block.type == 'image' %}
+                            {% if block.image.one() | length %}
+                                {% set optimizedImages = block.image.one().optimizedimages %}
+                                <img class="w-full ml-20 mt-12 lg:mt-16"
+                                     src="{{ optimizedImages.src() }}"
+                                     srcset="{{ optimizedImages.srcset() }}"
+                                     sizes="100vw" />
                             {% endif %}
-                        {% endfor %}
-                    {% endif %}
-                </div>
+                        {% endif %}
+                    {% endfor %}
+                {% endif %}
             </div>
         </div>
     </section>
