@@ -13,33 +13,64 @@
     <section class="border-b border-light_grey plainText bg-white">
         <div class="lg:relative py-16 lg:py-24">
             <div class="max-w-7xl mx-auto px-4 sm:px-6">
-                <div class="w-full lg:w-5/6 mx-auto">
-                    <div class="w-full lg:w-3/4">
-                        {{ entry.productDescription | markdown }}
-                    </div>
+                <div class="w-full lg:w-3/4">
+                    {% set blocks = entry.productPageBuilder.all() %}
+                    {% if blocks | length %}
+                        {% for block in blocks %}
+                            {% if block.type == 'mainCallout' %}
+                                <div class="w-full lg:w-5/6 mx-auto">
+                                    {% if block.mainCalloutHeading | length %}
+                                        <h2 class="font-bold">{{ block.mainCalloutHeading }}</h2>
+                                    {% endif %}
+                                    {% if block.mainCallout %}
+                                        <h5>{{ block.mainCallout }}</h5>
+                                    {% endif %}
+                                </div>
+                            {% endif %}
+
+                            {% if block.type == 'headingAndText' %}
+                                <div class="mt-12 lg:mt-16">
+                                    <div class="w-full lg:w-5/6 mx-auto">
+                                        {% if block.heading | length %}
+                                            <h5 class="uppercase text-navy mb-8 font-bold">{{ block.heading }}</h5>
+                                        {% endif %}
+                                        {% if block.text | length %}
+                                            {{ block.text | markdown }}
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            {% endif %}
+
+                            {% if block.type == 'image' %}
+                                {% if block.image.one() | length %}
+                                {% set optimizedImages = block.image.one().optimizedimages %}
+                                    <img class="w-full ml-20 mt-12 lg:mt-16"
+                                            src="{{ optimizedImages.src() }}"
+                                         srcset="{{ optimizedImages.srcset() }}"
+                                         sizes="100vw" />
+                                {% endif %}
+                            {% endif %}
+                        {% endfor %}
+                    {% endif %}
                 </div>
             </div>
         </div>
     </section>
 
     {% if entry.downloads | length %}
-        <section>
+        <section class="bg-blue">
             <div class="lg:relative py-16 lg:py-24">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6">
-                    <div class="w-full lg:w-5/6 mx-auto">
+                    <div class="w-full ml-20">
                         <div class="w-full lg:w-3/4">
-                            <h2 class="text-navy"><strong>Downloads</strong></h2>
                             {% set downloads = entry.downloads.all() %}
                             {% for download in downloads %}
-                                <div class="w-full">
-                                    <a target="_blank" class="block py-8 text-navy {% if not loop.last %}border-b border-light_grey{% endif %} flex flex-row items-center group transition duration-500 ease-in-out" href="{{ download.url }}">
-                                        {% if download.kind == 'image' %}
-                                            <i class="far fa-file-image mr-4 text-4xl group-hover:text-blue"></i>
-                                        {% else %}
-                                            <i class="fas fa-download mr-4 text-4xl group-hover:text-blue"></i>
-                                        {% endif %}
-                                        <h4 class="mb-0 hover:text-blue group-hover:text-blue">{{ download.title }}</h4>
-                                    </a>
+                                <div class="w-full flex flex-row items-center justify-between">
+                                    <div>
+                                        <h4 class="text-white uppercase mb-2"><strong>{{ download.title }}</strong></h4>
+                                        <p class="text-white text-2xl">{{ download.seoDescription }}</p>
+                                    </div>
+                                    <a href="{{ download.url }}" class="uppercase text-lg font-bold text-white px-12 py-4 border border-white rounded-md hover:bg-navy transition duration-500 ease-in-out" target="_blank">Download</a>
                                 </div>
                             {% endfor %}
                         </div>
@@ -49,6 +80,6 @@
         </section>
     {% endif %}
 
-    {% include 'partials/footer/_footer.twig' %}
+    {% include 'partials/footer/_productFooter.twig' %}
 
 {% endblock %}

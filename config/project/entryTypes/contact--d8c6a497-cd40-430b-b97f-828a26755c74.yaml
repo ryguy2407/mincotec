@@ -89,7 +89,7 @@ fieldLayouts:
 handle: contact
 hasTitleField: false
 name: Contact
-section: 7195e45b-bba6-4d74-99d9-b6f407e3f1cd
+section: 7195e45b-bba6-4d74-99d9-b6f407e3f1cd # Contact
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

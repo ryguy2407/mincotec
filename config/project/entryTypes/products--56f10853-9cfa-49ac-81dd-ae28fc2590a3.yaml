@@ -39,7 +39,16 @@ fieldLayouts:
             fieldUid: 3210f19a-694e-4a45-a586-e28cef8b5cc7 # Product description
             instructions: ''
             label: ''
-            required: '1'
+            required: ''
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: ea214855-af90-41b4-b50f-59f85b4ac9f0 # Product page builder
+            instructions: null
+            label: null
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
@@ -138,7 +147,7 @@ fieldLayouts:
 handle: products
 hasTitleField: true
 name: Products
-section: 6a5d8388-4e65-4388-ad8c-b1ef16476a2c
+section: 6a5d8388-4e65-4388-ad8c-b1ef16476a2c # Products
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null

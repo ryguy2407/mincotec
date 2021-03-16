@@ -12,7 +12,7 @@ settings:
   showSiteMenu: false
   source: null
   sources:
-    - 'section:6a5d8388-4e65-4388-ad8c-b1ef16476a2c'
+    - 'section:6a5d8388-4e65-4388-ad8c-b1ef16476a2c' # Products
   targetSiteId: null
   validateRelatedElements: false
   viewMode: null

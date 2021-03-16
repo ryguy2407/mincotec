@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: d02f32f2-f820-46c5-9608-74584920a700 # Product fields
+handle: productPageBuilder
+instructions: ''
+name: 'Product page builder'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_productpagebuilder}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

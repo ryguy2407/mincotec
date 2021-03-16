@@ -1,10 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="1440px" height="300px" viewBox="0 0 1440 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Artboard</title>
-    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group" transform="translate(492.000000, -734.000000)" stroke="#CD8215" stroke-width="3">
-            <path d="M1216.0113,990.31878 L562.410636,0 L417.117636,220.142782 C324.975299,359.674457 324.975299,531.580071 417.117636,671.003833 L921.940015,1436 C1183.33672,1436 1346.70965,1188.33937 1216.0113,990.31878" id="Fill-40"></path>
-            <path d="M214.238417,526.91155 L69.05475,747.13545 C-23.01825,886.54225 -23.01825,1058.42695 69.05475,1197.94165 L225.44825,1434.99795 C486.64825,1434.99795 649.89825,1187.47535 519.29825,989.47885 L214.238417,526.91155 Z" id="Fill-42"></path>
-        </g>
-    </g>
+<svg width="1440" height="300" viewBox="0 0 1440 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M1935.01 572.319L1281.43 -418L1136.03 -197.857C1044 -58.3255 1044 113.58 1136.03 253.004L1640.84 1018C1902.34 1018 2065.71 770.339 1935.01 572.319" stroke="#CD8215" stroke-width="3"/>
+<path d="M1246.01 572.319L592.411 -418L447.118 -197.857C354.975 -58.3255 354.975 113.58 447.118 253.004L951.94 1018C1213.34 1018 1376.71 770.339 1246.01 572.319" stroke="#CD8215" stroke-width="3"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M244.238 108.912L99.0547 329.136C6.98175 468.542 6.98175 640.427 99.0547 779.942L255.448 1017C516.648 1017 679.898 769.475 549.298 571.479L244.238 108.912Z" stroke="#CD8215" stroke-width="3"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="1440" height="300" fill="white"/>
+</clipPath>
+</defs>
 </svg>

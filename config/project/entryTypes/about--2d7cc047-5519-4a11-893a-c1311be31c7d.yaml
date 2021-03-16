@@ -89,7 +89,7 @@ fieldLayouts:
 handle: about
 hasTitleField: false
 name: About
-section: 55ea498c-1cf3-4b50-9caa-e1fb00588ddf
+section: 55ea498c-1cf3-4b50-9caa-e1fb00588ddf # About
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

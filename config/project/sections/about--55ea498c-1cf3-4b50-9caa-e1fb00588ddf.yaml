@@ -18,6 +18,6 @@ siteSettings:
   3cc4705b-9d87-4251-bf19-e831c181126f: # Mincotech
     enabledByDefault: true
     hasUrls: true
-    template: single/page
+    template: about/index
     uriFormat: about
 type: single
