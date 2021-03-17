@@ -74,7 +74,9 @@
                     <div class="w-full">
                         {% for product in entries %}
                             <div class="pb-8 flex flex-row justify-between">
-                                <h4 class="text-navy uppercase font-bold leading-none">{{ product.title }}</h4>
+                                <h4 class="text-navy uppercase font-bold leading-none">
+                                    <a href="{{ product.url }}">{{ product.title }}</a>
+                                </h4>
                                 {% set download = product.downloads.one() %}
                                 {% if download | length %}
                                     <a

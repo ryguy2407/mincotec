@@ -22,7 +22,9 @@
                         {% for download in downloads %}
                             <div class="w-full flex flex-col md:flex-row items-center justify-between">
                                 <div class="mb-8 md:mb-0">
-                                    <h4 class="text-white uppercase mb-2"><strong>{{ download.title }}</strong></h4>
+                                    <h4 class="text-white uppercase mb-2">
+                                        <strong>{{ download.title }}</strong>
+                                    </h4>
                                     <p class="text-white text-2xl">{{ download.seoDescription }}</p>
                                 </div>
                                 <a href="{{ download.url }}" class="uppercase text-lg font-bold text-white px-12 py-4 border border-white rounded-md hover:bg-navy transition duration-500 ease-in-out" target="_blank">Download</a>

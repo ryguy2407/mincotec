@@ -11,10 +11,10 @@
                                 <h2 class="font-bold text-3xl md:text-5xl">{{ block.mainCalloutHeading }}</h2>
                             {% endif %}
                             {% if block.mainCalloutText %}
-                                <h5>{{ block.mainCalloutText }}</h5>
+                                <h5>{{ block.mainCalloutText | nl2br }}</h5>
                             {% endif %}
                             {% if block.mainCallout %}
-                                <h5>{{ block.mainCallout }}</h5>
+                                <h5>{{ block.mainCallout | nl2br }}</h5>
                             {% endif %}
                         </div>
                     </div>
