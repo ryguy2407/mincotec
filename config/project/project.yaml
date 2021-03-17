@@ -1,4 +1,4 @@
-dateModified: 1615878158
+dateModified: 1615943854
 email:
   fromEmail: ryan@newwordorder.com.au
   fromName: Mincotec
@@ -158,6 +158,10 @@ plugins:
     enabled: true
     licenseKey: QG5X7OQ8MLM3VR9O0MF1QPW9
     schemaVersion: 3.0.9
+  super-table:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.2.1
 system:
   edition: pro
   live: true

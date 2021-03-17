@@ -1,5 +1,5 @@
 contentColumnType: string
-fieldGroup: d02f32f2-f820-46c5-9608-74584920a700
+fieldGroup: d02f32f2-f820-46c5-9608-74584920a700 # Product fields
 handle: productCategories
 instructions: ''
 name: 'Product categories'
@@ -13,7 +13,7 @@ settings:
   localizeRelations: false
   selectionLabel: 'Add a product category'
   showSiteMenu: true
-  source: 'group:383b76b2-e831-4eb6-bb22-34172a77784d'
+  source: 'group:383b76b2-e831-4eb6-bb22-34172a77784d' # Product Categories
   sources: '*'
   targetSiteId: null
   validateRelatedElements: false

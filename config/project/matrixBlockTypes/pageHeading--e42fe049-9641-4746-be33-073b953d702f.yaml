@@ -1,4 +1,4 @@
-field: 6efe897a-82bc-431e-bc24-8590f3b66163
+field: 6efe897a-82bc-431e-bc24-8590f3b66163 # Page heading
 fieldLayouts:
   957ab6a6-b4e0-4365-9a90-6e9601f6c59e:
     tabs:
@@ -36,7 +36,7 @@ fields:
       allowSelfRelations: false
       allowedKinds:
         - image
-      defaultUploadLocationSource: 'volume:a6e1cc63-ec74-4588-9aab-3144ee60307e'
+      defaultUploadLocationSource: 'volume:a6e1cc63-ec74-4588-9aab-3144ee60307e' # Uploads
       defaultUploadLocationSubpath: ''
       limit: '1'
       localizeRelations: false
@@ -45,7 +45,7 @@ fields:
       showSiteMenu: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
-      singleUploadLocationSource: 'volume:a6e1cc63-ec74-4588-9aab-3144ee60307e'
+      singleUploadLocationSource: 'volume:a6e1cc63-ec74-4588-9aab-3144ee60307e' # Uploads
       singleUploadLocationSubpath: ''
       source: null
       sources: '*'

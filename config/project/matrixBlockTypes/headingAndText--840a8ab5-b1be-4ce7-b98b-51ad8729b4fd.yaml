@@ -1,11 +1,11 @@
-field: ea214855-af90-41b4-b50f-59f85b4ac9f0
+field: ea214855-af90-41b4-b50f-59f85b4ac9f0 # Product page builder
 fieldLayouts:
   9ca7f37a-c3e9-4f7a-9dd3-e82fa4b6d05d:
     tabs:
       -
         elements:
           -
-            fieldUid: ec3bcde6-c468-4aed-8441-8b432faa786b
+            fieldUid: ec3bcde6-c468-4aed-8441-8b432faa786b # Heading
             instructions: null
             label: null
             required: false
@@ -14,7 +14,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 83a6df68-d73d-4d55-bbde-323640eb656a
+            fieldUid: 83a6df68-d73d-4d55-bbde-323640eb656a # Text
             instructions: null
             label: null
             required: false
@@ -25,7 +25,7 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  83a6df68-d73d-4d55-bbde-323640eb656a:
+  83a6df68-d73d-4d55-bbde-323640eb656a: # Text
     contentColumnType: text
     fieldGroup: null
     handle: text
@@ -44,7 +44,7 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  ec3bcde6-c468-4aed-8441-8b432faa786b:
+  ec3bcde6-c468-4aed-8441-8b432faa786b: # Heading
     contentColumnType: text
     fieldGroup: null
     handle: heading

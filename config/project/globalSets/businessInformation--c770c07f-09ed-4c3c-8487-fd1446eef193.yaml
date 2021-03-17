@@ -4,7 +4,7 @@ fieldLayouts:
       -
         elements:
           -
-            fieldUid: 7a9468da-f751-442d-8958-309db3bb39c0
+            fieldUid: 7a9468da-f751-442d-8958-309db3bb39c0 # Email address
             instructions: null
             label: null
             required: false
@@ -13,7 +13,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: c1e314f7-0a66-4409-8922-7db1ecad0f54
+            fieldUid: c1e314f7-0a66-4409-8922-7db1ecad0f54 # Phone number
             instructions: null
             label: null
             required: false

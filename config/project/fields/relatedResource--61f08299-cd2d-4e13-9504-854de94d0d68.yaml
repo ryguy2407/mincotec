@@ -1,5 +1,5 @@
 contentColumnType: string
-fieldGroup: 1ec61136-2f61-415d-b611-53f0d990dd34
+fieldGroup: 1ec61136-2f61-415d-b611-53f0d990dd34 # Resource fields
 handle: relatedResource
 instructions: ''
 name: 'Related resource'
@@ -12,7 +12,7 @@ settings:
   showSiteMenu: true
   source: null
   sources:
-    - 'section:e892d3ce-39c6-4f38-b352-1cdc5d7be1a8'
+    - 'section:e892d3ce-39c6-4f38-b352-1cdc5d7be1a8' # Resources
   targetSiteId: null
   validateRelatedElements: false
   viewMode: null

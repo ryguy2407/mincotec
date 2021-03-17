@@ -1,11 +1,11 @@
-field: ea214855-af90-41b4-b50f-59f85b4ac9f0
+field: ea214855-af90-41b4-b50f-59f85b4ac9f0 # Product page builder
 fieldLayouts:
   7b9022b0-8a82-470e-9a7a-e75a81edeb2e:
     tabs:
       -
         elements:
           -
-            fieldUid: d7492ca9-fb4c-4f4c-aab5-b281e04cfcf2
+            fieldUid: d7492ca9-fb4c-4f4c-aab5-b281e04cfcf2 # Image
             instructions: null
             label: null
             required: false
@@ -16,7 +16,7 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  d7492ca9-fb4c-4f4c-aab5-b281e04cfcf2:
+  d7492ca9-fb4c-4f4c-aab5-b281e04cfcf2: # Image
     contentColumnType: string
     fieldGroup: null
     handle: image
@@ -28,7 +28,7 @@ fields:
       allowUploads: true
       allowedKinds:
         - image
-      defaultUploadLocationSource: 'volume:a6e1cc63-ec74-4588-9aab-3144ee60307e'
+      defaultUploadLocationSource: 'volume:a6e1cc63-ec74-4588-9aab-3144ee60307e' # Uploads
       defaultUploadLocationSubpath: ''
       limit: '1'
       localizeRelations: false
@@ -38,7 +38,7 @@ fields:
       showSiteMenu: false
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
-      singleUploadLocationSource: 'volume:a6e1cc63-ec74-4588-9aab-3144ee60307e'
+      singleUploadLocationSource: 'volume:a6e1cc63-ec74-4588-9aab-3144ee60307e' # Uploads
       singleUploadLocationSubpath: ''
       source: null
       sources: '*'

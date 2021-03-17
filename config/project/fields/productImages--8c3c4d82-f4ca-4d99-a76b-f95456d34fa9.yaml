@@ -1,5 +1,5 @@
 contentColumnType: string
-fieldGroup: d02f32f2-f820-46c5-9608-74584920a700
+fieldGroup: d02f32f2-f820-46c5-9608-74584920a700 # Product fields
 handle: productImages
 instructions: ''
 name: 'Product images'
@@ -8,7 +8,7 @@ settings:
   allowSelfRelations: false
   allowedKinds:
     - image
-  defaultUploadLocationSource: 'volume:a6e1cc63-ec74-4588-9aab-3144ee60307e'
+  defaultUploadLocationSource: 'volume:a6e1cc63-ec74-4588-9aab-3144ee60307e' # Uploads
   defaultUploadLocationSubpath: ''
   limit: ''
   localizeRelations: false
@@ -17,7 +17,7 @@ settings:
   showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
-  singleUploadLocationSource: 'volume:a6e1cc63-ec74-4588-9aab-3144ee60307e'
+  singleUploadLocationSource: 'volume:a6e1cc63-ec74-4588-9aab-3144ee60307e' # Uploads
   singleUploadLocationSubpath: ''
   source: null
   sources: '*'

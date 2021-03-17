@@ -1,5 +1,5 @@
 contentColumnType: string
-fieldGroup: 066213dd-5fa5-4164-ae9e-f0d636f41d32
+fieldGroup: 066213dd-5fa5-4164-ae9e-f0d636f41d32 # Common
 handle: downloads
 instructions: ''
 name: Downloads
@@ -8,7 +8,7 @@ settings:
   allowSelfRelations: false
   allowUploads: true
   allowedKinds: null
-  defaultUploadLocationSource: 'volume:a6e1cc63-ec74-4588-9aab-3144ee60307e'
+  defaultUploadLocationSource: 'volume:a6e1cc63-ec74-4588-9aab-3144ee60307e' # Uploads
   defaultUploadLocationSubpath: ''
   limit: '1'
   localizeRelations: false
@@ -18,7 +18,7 @@ settings:
   showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
-  singleUploadLocationSource: 'volume:a6e1cc63-ec74-4588-9aab-3144ee60307e'
+  singleUploadLocationSource: 'volume:a6e1cc63-ec74-4588-9aab-3144ee60307e' # Uploads
   singleUploadLocationSubpath: ''
   source: null
   sources: '*'

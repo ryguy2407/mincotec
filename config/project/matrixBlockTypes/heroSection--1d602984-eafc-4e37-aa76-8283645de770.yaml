@@ -1,4 +1,4 @@
-field: e2175f04-ca8b-48c2-b4e8-552b41e48033
+field: e2175f04-ca8b-48c2-b4e8-552b41e48033 # Home hero section
 fieldLayouts:
   6ef488c3-6f4a-445c-a5b4-346ef075ae96:
     tabs:
@@ -63,7 +63,7 @@ fields:
       allowSelfRelations: false
       allowedKinds:
         - image
-      defaultUploadLocationSource: 'volume:a6e1cc63-ec74-4588-9aab-3144ee60307e'
+      defaultUploadLocationSource: 'volume:a6e1cc63-ec74-4588-9aab-3144ee60307e' # Uploads
       defaultUploadLocationSubpath: ''
       limit: '1'
       localizeRelations: false
@@ -72,7 +72,7 @@ fields:
       showSiteMenu: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
-      singleUploadLocationSource: 'volume:a6e1cc63-ec74-4588-9aab-3144ee60307e'
+      singleUploadLocationSource: 'volume:a6e1cc63-ec74-4588-9aab-3144ee60307e' # Uploads
       singleUploadLocationSubpath: ''
       source: null
       sources: '*'

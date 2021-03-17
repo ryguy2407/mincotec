@@ -1,5 +1,5 @@
 contentColumnType: text
-fieldGroup: d02f32f2-f820-46c5-9608-74584920a700
+fieldGroup: d02f32f2-f820-46c5-9608-74584920a700 # Product fields
 handle: productDescription
 instructions: ''
 name: 'Product description'
