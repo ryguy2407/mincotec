@@ -13,7 +13,7 @@
 
     <section class="py-16">
         {# Get all the product categoreies #}
-        {% set productCategories = craft.categories().group('productCategories').all() %}
+        {% set productCategories = craft.categories().group('productCategories').slug('not *solutions*').all() %}
 
         {% for category in productCategories %}
             <section class="{% if not loop.last %}border-b-2{% endif %} border-light_grey border-opacity-25 py-8">
