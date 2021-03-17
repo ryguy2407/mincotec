@@ -10,7 +10,7 @@
         <div class="absolute w-full h-full bg-navy"></div>
         <img class="absolute inset-0 w-full h-full object-cover opacity-25" src="{{ headerImg.url }}" alt="{{ headerImg.title }}">
         <img class="absolute h-full w-full object-cover z-10" src="/assets/img/header-logo-overlay.svg" alt="{{ category.title }}">
-        <h1 class="text-3xl lg:text-5xl text-white font-bold relative z-50">{{ category.title }}</h1>
+        <h1 class="text-5xl text-white font-bold relative z-50">{{ category.title }}</h1>
     </header>
 
     {% include 'blocks/_contentPageBuilder.twig' with { 'customQuery': category.productCategoryPageBuilder.all() } %}
@@ -46,7 +46,11 @@
 
     {% if category.productBlockquote %}
 
-        <section class="bg-blue py-16 lg:py-24 w-full relative flex flex-row justify-center items-center">
+        {% set relatedEntries = craft.entries()
+            .section('products')
+            .relatedTo(category)
+            .all() %}
+        <section class="{% if relatedEntries | length %}bg-blue{% else %}bg-mustard{% endif %} py-16 lg:py-24 w-full relative flex flex-row justify-center items-center">
             <img class="hidden lg:block absolute mx-auto h-full object-cover inset-0 py-8" src="/assets/img/blue-quote.svg" alt="{{ category.title }}">
             <div class="max-w-7xl mx-auto px-4 sm:px-6">
                 <div class="w-full lg:w-5/6 mx-auto">
