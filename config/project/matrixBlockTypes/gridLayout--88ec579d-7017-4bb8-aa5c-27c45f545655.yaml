@@ -1,0 +1,56 @@
+field: 6421bc18-1f6d-4898-bdb4-528c7af942f4 # Product category page builder
+fieldLayouts:
+  2240acb1-5b4e-4ff1-ba94-514103eb287d:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 09404e88-8841-4f1e-a3a9-79054188b8c9 # Blocks
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  09404e88-8841-4f1e-a3a9-79054188b8c9: # Blocks
+    contentColumnType: string
+    fieldGroup: null
+    handle: blocks
+    instructions: ''
+    name: Blocks
+    searchable: false
+    settings:
+      columns:
+        __assoc__:
+          -
+            - fd2dc536-470d-4558-8361-cf8f4abfb619 # Heading
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - 1ffdbb06-9874-4457-8d5f-86b307049c51 # Text
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+      contentTable: '{{%stc_21_blocks}}'
+      fieldLayout: row
+      maxRows: ''
+      minRows: ''
+      placeholderKey: null
+      propagationMethod: all
+      selectionLabel: ''
+      staticField: ''
+    translationKeyFormat: null
+    translationMethod: site
+    type: verbb\supertable\fields\SuperTableField
+handle: gridLayout
+name: 'Grid layout'
+sortOrder: 3

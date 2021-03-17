@@ -35,7 +35,7 @@ fields:
       previewMode: full
       restrictFiles: '1'
       selectionLabel: 'Add an image'
-      showSiteMenu: false
+      showSiteMenu: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
       singleUploadLocationSource: 'volume:a6e1cc63-ec74-4588-9aab-3144ee60307e' # Uploads
