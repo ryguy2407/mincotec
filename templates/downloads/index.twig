@@ -39,7 +39,7 @@
                                 <i class="fal fa-arrow-to-bottom mr-4"></i>{{ product.title }}
                             </a>
                             {% if download | length %}
-                                {% include 'partials/_popupForm.twig' %}
+                                {% include 'partials/_popupForm.twig' with { 'downloadUrl': download.url } %}
                             {% endif %}
                         {% endfor %}
                         </div>
