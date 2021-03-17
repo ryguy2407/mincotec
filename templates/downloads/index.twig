@@ -24,7 +24,7 @@
 
                     {# Get all the products that belong to that category in the loop #}
 
-                    {% set products = craft.entries().section('products').relatedTo(category).all() %}
+                    {% set products = craft.entries().section('products').orderBy('dateCreated asc').relatedTo(category).all() %}
                     {% set batches = products|batch(3) %}
 
                     {% for products in batches %}
