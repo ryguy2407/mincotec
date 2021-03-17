@@ -5,7 +5,7 @@
         {% if blocks | length %}
             {% for block in blocks %}
                 {% if block.type == 'mainCallout' %}
-                    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 {% if not loop.first %}pt-12{% endif %}">
                         <div class="w-full lg:w-5/6">
                             {% if block.mainCalloutHeading | length %}
                                 <h2 class="font-bold text-3xl md:text-5xl">{{ block.mainCalloutHeading }}</h2>
@@ -52,7 +52,7 @@
 
                 {% if block.type == 'gridLayout' %}
 
-                    <div class="mt-16 relative">
+                    <div class="{% if not loop.first %}mt-16{% endif %} relative">
                         <div class="absolute top-0 bg-input_bg" style="height: 2px;left:0;width: 100%;z-index: 1;"></div>
                         {% for batches in block.blocks|batch(3, null) %}
                             <div class="max-w-7xl mx-auto px-4 sm:px-6">
