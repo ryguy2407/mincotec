@@ -2,71 +2,27 @@
 
 {% block content %}
 
-    {% include '/partials/header/_nav.twig' %}
+    {% include 'partials/_nav.twig' with { 'colour': 'white', 'logo': 'logo.svg', 'navColour' : 'navy', 'includeDropdowns': true } %}
 
     <header class="w-full bg-navy h-64 relative flex flex-row justify-center items-center px-4">
         <div class="absolute w-full h-full bg-navy bg-opacity-50"></div>
-        <img class="absolute h-full" src="/assets/img/header-logo-overlay.svg" alt="{{ entry.resourceTitle }}">
+        <img class="absolute h-full w-full object-cover z-10" src="/assets/img/header-logo-overlay.svg" alt="{{ entry.title }}">
         <h1 class="text-3xl lg:text-5xl text-white font-bold relative">{{ entry.title }}</h1>
     </header>
 
-    <section class="border-b border-light_grey plainText bg-white">
-        <div class="lg:relative py-16 lg:py-24">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6">
-                <div class="w-full lg:w-3/4">
-                    {% set blocks = entry.productPageBuilder.all() %}
-                    {% if blocks | length %}
-                        {% for block in blocks %}
-                            {% if block.type == 'mainCallout' %}
-                                <div class="w-full lg:w-5/6 mx-auto">
-                                    {% if block.mainCalloutHeading | length %}
-                                        <h2 class="font-bold">{{ block.mainCalloutHeading }}</h2>
-                                    {% endif %}
-                                    {% if block.mainCallout %}
-                                        <h5>{{ block.mainCallout }}</h5>
-                                    {% endif %}
-                                </div>
-                            {% endif %}
 
-                            {% if block.type == 'headingAndText' %}
-                                <div class="mt-12 lg:mt-16">
-                                    <div class="w-full lg:w-5/6 mx-auto">
-                                        {% if block.heading | length %}
-                                            <h5 class="uppercase text-navy mb-8 font-bold">{{ block.heading }}</h5>
-                                        {% endif %}
-                                        {% if block.text | length %}
-                                            {{ block.text | markdown }}
-                                        {% endif %}
-                                    </div>
-                                </div>
-                            {% endif %}
-
-                            {% if block.type == 'image' %}
-                                {% if block.image.one() | length %}
-                                {% set optimizedImages = block.image.one().optimizedimages %}
-                                    <img class="w-full ml-20 mt-12 lg:mt-16"
-                                            src="{{ optimizedImages.src() }}"
-                                         srcset="{{ optimizedImages.srcset() }}"
-                                         sizes="100vw" />
-                                {% endif %}
-                            {% endif %}
-                        {% endfor %}
-                    {% endif %}
-                </div>
-            </div>
-        </div>
-    </section>
+    {% include 'blocks/_contentPageBuilder.twig' with { 'customQuery': entry.productPageBuilder.all() } %}
 
     {% if entry.downloads | length %}
         <section class="bg-blue">
             <div class="lg:relative py-16 lg:py-24">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6">
-                    <div class="w-full ml-20">
+                    <div class="w-full ml-0 md:ml-20">
                         <div class="w-full lg:w-3/4">
                             {% set downloads = entry.downloads.all() %}
                             {% for download in downloads %}
-                                <div class="w-full flex flex-row items-center justify-between">
-                                    <div>
+                                <div class="w-full flex flex-col md:flex-row items-center justify-between">
+                                    <div class="mb-8 md:mb-0">
                                         <h4 class="text-white uppercase mb-2"><strong>{{ download.title }}</strong></h4>
                                         <p class="text-white text-2xl">{{ download.seoDescription }}</p>
                                     </div>

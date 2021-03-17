@@ -2,7 +2,7 @@
 
 {% block content %}
 
-    {% include '/partials/header/_nav.twig' %}
+    {% include 'partials/_nav.twig' with { 'colour': 'white', 'logo': 'logo.svg', 'navColour' : 'navy', 'includeDropdowns': true } %}
 
     {% set headerImg = entry.seoImage.one() %}
 

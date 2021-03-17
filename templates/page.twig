@@ -2,7 +2,7 @@
 
 {% block content %}
 
-    {% include '/partials/header/_nav.twig' %}
+    {% include 'partials/_nav.twig' with { 'colour': 'white', 'logo': 'logo.svg', 'navColour' : 'navy', 'includeDropdowns': true } %}
 
     <div class="lg:relative bg-navy py-16 lg:py-24">
         <img src="/assets/img/coal-header.jpg" class="absolute h-full w-full object-cover inset-0" alt="Coal header">

@@ -2,7 +2,7 @@
 
 {% block content %}
 
-    {% include '/partials/header/_nav.twig' %}
+    {% include 'partials/_nav.twig' with { 'colour': 'white', 'logo': 'logo.svg', 'navColour' : 'navy', 'includeDropdowns': true } %}
 
     <header class="w-full bg-navy h-64 relative flex flex-row justify-center items-center">
         <div class="absolute w-full h-full bg-navy bg-opacity-50"></div>

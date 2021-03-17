@@ -2,7 +2,7 @@
 
 {% block content %}
 
-    {% include '/partials/header/_nav.twig' %}
+    {% include 'partials/_nav.twig' with { 'colour': 'white', 'logo': 'logo.svg', 'navColour' : 'navy', 'includeDropdowns': true } %}
 
     {% set headerImg = entry.seoImage.one() %}
 
@@ -11,7 +11,7 @@
             <img class="absolute inset-0 w-full h-full object-cover" style="z-index: 1;" src="{{ headerImg.url }}" alt="{{ headerImg.title }}">
         {% endif %}
         <div class="absolute w-full h-full opacity-75 bg-gradient-to-r from-navy z-10"></div>
-        <img class="absolute h-full z-10" src="/assets/img/header-logo-overlay.svg" alt="{{ entry.title }}">
+        <img class="absolute h-full w-full object-cover z-10" src="/assets/img/header-logo-overlay.svg" alt="{{ entry.title }}">
         <h1 class="text-5xl text-white font-bold relative z-50">{{ entry.title }}</h1>
     </header>
 
@@ -21,7 +21,7 @@
 
         {% for category in productCategories %}
             <section class="{% if not loop.last %}border-b-2{% endif %} border-light_grey border-opacity-25 py-8">
-                <div class="container mx-auto">
+                <div class="max-w-7xl px-4 lg:px-0 mx-auto">
                     <h3 class="text-navy font-bold mb-4">
                         {{ category.title }}
                     </h3>
@@ -32,10 +32,10 @@
                     {% set batches = products|batch(3) %}
 
                     {% for products in batches %}
-                        <div class="w-full flex flex-row flex-wrap border-t {% if loop.last %}border-b{% endif %} border-light_grey border-opacity-50">
+                        <div class="w-full flex flex-row flex-wrap md:border-t {% if loop.last %}md:border-b{% endif %} border-light_grey border-opacity-50">
                         {% for product in products %}
                             {% set download = product.downloads.one() %}
-                            <a href="#" class="triggerForm w-1/3 flex flex-row pr-4 hover:text-blue items-center text-xl text-navy py-4">
+                            <a href="#" class="triggerForm w-full md:w-1/3 flex flex-row pr-4 hover:text-blue items-center text-xl text-navy py-4">
                                 <i class="fal fa-arrow-to-bottom mr-4"></i>{{ product.title }}
                             </a>
                             {% if download | length %}

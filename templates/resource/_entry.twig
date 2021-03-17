@@ -2,13 +2,13 @@
 
 {% block content %}
 
-    {% include '/partials/header/_nav.twig' %}
+    {% include 'partials/_nav.twig' with { 'colour': 'white', 'logo': 'logo.svg', 'navColour' : 'navy', 'includeDropdowns': true } %}
 
     <header class="w-full h-64 relative flex flex-row justify-center items-center">
         {% set headerImg = entry.resourceImage.one() %}
         <img class="absolute inset-0 w-full h-full object-cover" src="{{ headerImg.url }}" alt="{{ headerImg.title }}">
         <div class="absolute w-full h-full bg-navy bg-opacity-50"></div>
-        <img class="absolute h-full" src="/assets/img/header-logo-overlay.svg" alt="{{ entry.resourceTitle }}">
+        <img class="absolute h-full w-full object-cover z-10" src="/assets/img/header-logo-overlay.svg" alt="{{ entry.title }}">
         <h1 class="text-5xl text-white font-bold relative">{{ entry.resourceTitle }}</h1>
     </header>
 
