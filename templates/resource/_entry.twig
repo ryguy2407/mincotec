@@ -9,7 +9,7 @@
         <img class="absolute inset-0 w-full h-full object-cover" src="{{ headerImg.url }}" alt="{{ headerImg.title }}">
         <div class="absolute w-full h-full bg-navy bg-opacity-50"></div>
         <img class="absolute h-full w-full object-cover z-10" src="/assets/img/header-logo-overlay.svg" alt="{{ entry.title }}">
-        <h1 class="text-5xl text-white font-bold relative">{{ entry.resourceTitle }}</h1>
+        <h1 class="text-3xl lg:text-5xl text-white font-bold relative z-50">{{ entry.resourceTitle }}</h1>
     </header>
 
     <section class="border-b border-light_grey">
@@ -70,7 +70,7 @@
 
                     {# Loop through the categories that are related to the products we loaded #}
                     {% for category in productCategories %}
-                        <div class="w-full block text-left flex flex-row space-x-6 py-8 border-light_grey border-b hover:cursor-pointer {% if loop.first %}border-t pt-8{% endif %}">
+                        <div class="w-full block text-left flex flex-row space-x-6 py-8 border-input_bg border-b-2 hover:cursor-pointer {% if loop.first %}border-t pt-8{% endif %}">
                             <div class="flex flex-col space-y-4 w-full">
                                 <h5 class="uppercase leading-none mt-1 text-navy font-bold">{{ category.title }}</h5>
 

@@ -3,6 +3,13 @@
         <div data-aos="fade-up" data-aos-duration="800" class="w-full">
             <div class="w-full {% if block.textAlignment == 'text-left' %}lg:w-5/6{% endif %} {{ block.textAlignment }}">
                 {{ block.plainText | markdown }}
+                {% if block.buttons | length %}
+                    <div class="flex flex-row space-x-8">
+                        {% for button in block.buttons.all() %}
+                            <a href="{{ button.buttonLink }}" class="btn btn-{{ button.buttonColour }}">{{ button.buttonText }}</a>
+                        {% endfor %}
+                    </div>
+                {% endif %}
             </div>
         </div>
     </div>

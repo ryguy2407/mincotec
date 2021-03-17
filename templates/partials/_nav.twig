@@ -23,7 +23,9 @@
                         {{- node.title -}}
                         </a>
 
-                        <div class="{% if not node.active %}hidden{% endif %} group-hover:block bg-mustard absolute left-0 w-full" style="bottom:0px;height: 9px;"></div>
+                        {% if includeDropdowns %}
+                            <div class="{% if not node.active %}hidden{% endif %} group-hover:block bg-mustard absolute left-0 w-full" style="bottom:0px;height: 9px;"></div>
+                        {% endif %}
 
                         {% if node.hasDescendants() and includeDropdowns %}
                             <ul class="hidden absolute left-0 hover:flex group-hover:flex flex-col bg-navy w-40 overflow-hidden shadow-lg z-50">
@@ -37,8 +39,8 @@
                         {% endif %}
                     </li>
                 {% endnav %}
-                <li><a href="mailto:{{ businessInformation.emailAddress }}" class="text-mustard hover:text-navy transition duration-500 ease-in-out"><i class="fas fa-envelope text-3xl"></i></a></li>
-                <li><a href="tel:{{ businessInformation.phoneNumber }}" class="text-mustard hover:text-navy transition duration-500 ease-in-out"><i class="fas fa-phone text-3xl"></i></a></li>
+                <li><a href="mailto:{{ businessInformation.emailAddress }}" class="text-mustard hover:text-{{ navColour}} transition duration-500 ease-in-out"><i class="fas fa-envelope text-3xl"></i></a></li>
+                <li><a href="tel:{{ businessInformation.phoneNumber }}" class="text-mustard hover:text-{{ navColour }} transition duration-500 ease-in-out"><i class="fas fa-phone text-3xl"></i></a></li>
             </ul>
             </nav>
         </div>
