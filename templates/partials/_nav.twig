@@ -28,7 +28,7 @@
                         {% endif %}
 
                         {% if node.hasDescendants() and includeDropdowns %}
-                            <ul class="hidden absolute left-0 hover:flex group-hover:flex flex-col bg-navy w-40 overflow-hidden shadow-lg z-50">
+                            <ul class="hidden absolute left-0 hover:flex group-hover:flex flex-col bg-navy w-40 overflow-hidden shadow-lg" style="z-index: 100;">
                                 {% set children = node.children.all() %}
                                 {% for child in children %}
                                     <li class="w-full ml-0">
