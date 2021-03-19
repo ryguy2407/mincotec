@@ -4,7 +4,7 @@
     <div class="{% if url == '/' %}bg-white{% else %}bg-blue{% endif %} formAndText">
         <div class="max-w-screen-xl mx-auto py-24 px-4 sm:px-6 lg:px-8">
             <div class="w-5/6 mx-auto">
-                <h2 class="text-navy text-3xl text-center lg:text-5xl font-bold" style="margin-bottom: 30px;">
+                <h2 class="text-navy text-3xl text-center lg:text-5xl font-bold leading-tight" style="margin-bottom: 30px;">
                     {{ callToAction.formTitle | nl2br }}
                 </h2>
                 {{ callToAction.formDescription | markdown }}
