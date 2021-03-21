@@ -1,11 +1,11 @@
-field: 84f72373-7818-40d1-94a1-7bed11823504 # Page builder
+field: b0d9c953-0023-42e0-94d4-fcc464891c0c # Buttons
 fieldLayouts:
-  e0ebe028-6d2c-4a17-9f55-6eee29f7ebd3:
+  abe4c8f5-2d1b-4307-ac44-903744bc3bc7:
     tabs:
       -
         elements:
           -
-            fieldUid: 4d693b5d-0903-4834-897e-761a87469c01 # Form title
+            fieldUid: 305978ed-0367-4d6e-b99a-6a0593a86670 # Button text
             instructions: null
             label: null
             required: false
@@ -14,7 +14,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 2e441d7e-9286-41ca-aaa9-c581778dda06 # Form description
+            fieldUid: 6326a671-71dc-41b2-a8d6-61356e4543b3 # Button link
             instructions: null
             label: null
             required: false
@@ -23,10 +23,10 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: a7e44ad5-cc8e-4abe-9060-561b15a549fa # Form
+            fieldUid: d7995a8c-0068-4fa0-acc8-7b72aa116a83 # Button colour
             instructions: null
             label: null
-            required: true
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
@@ -34,31 +34,12 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  2e441d7e-9286-41ca-aaa9-c581778dda06: # Form description
+  305978ed-0367-4d6e-b99a-6a0593a86670: # Button text
     contentColumnType: text
     fieldGroup: null
-    handle: formDescription
+    handle: buttonText
     instructions: ''
-    name: 'Form description'
-    searchable: false
-    settings:
-      byteLimit: null
-      charLimit: null
-      code: ''
-      columnType: null
-      initialRows: '4'
-      multiline: '1'
-      placeholder: null
-      uiMode: normal
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\PlainText
-  4d693b5d-0903-4834-897e-761a87469c01: # Form title
-    contentColumnType: text
-    fieldGroup: null
-    handle: formTitle
-    instructions: ''
-    name: 'Form title'
+    name: 'Button text'
     searchable: false
     settings:
       byteLimit: null
@@ -72,27 +53,57 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  a7e44ad5-cc8e-4abe-9060-561b15a549fa: # Form
-    contentColumnType: string
+  6326a671-71dc-41b2-a8d6-61356e4543b3: # Button link
+    contentColumnType: text
     fieldGroup: null
-    handle: form
+    handle: buttonLink
     instructions: ''
-    name: Form
+    name: 'Button link'
     searchable: false
     settings:
-      allowSelfRelations: false
-      limit: '1'
-      localizeRelations: false
-      selectionLabel: ''
-      showSiteMenu: true
-      source: null
-      sources: '*'
-      targetSiteId: null
-      validateRelatedElements: false
-      viewMode: null
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
     translationKeyFormat: null
-    translationMethod: site
-    type: verbb\formie\fields\Forms
-handle: formAndText
-name: 'Form and text'
-sortOrder: 5
+    translationMethod: none
+    type: craft\fields\PlainText
+  d7995a8c-0068-4fa0-acc8-7b72aa116a83: # Button colour
+    contentColumnType: string
+    fieldGroup: null
+    handle: buttonColour
+    instructions: ''
+    name: 'Button colour'
+    searchable: false
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - White
+            -
+              - value
+              - white
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Navy
+            -
+              - value
+              - navy
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown

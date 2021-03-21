@@ -1,11 +1,11 @@
-field: 0d1d3396-4421-42e8-85bd-cb65e886c293 # Benefits matrix
+field: a3c732b0-09bc-4e9e-9bba-3c7bdf5c050b # blocks
 fieldLayouts:
-  b0ed0582-8eeb-4448-8d47-6ad5d5ca51c6:
+  2a6f39f9-e203-4983-8f87-ca0dca6bb52e:
     tabs:
       -
         elements:
           -
-            fieldUid: 2f7f35e2-38a7-45f4-9a1b-cbdb84e72ae0 # Benefit
+            fieldUid: bf58bb6d-252e-4193-9375-6c2d02406232 # Heading
             instructions: null
             label: null
             required: false
@@ -14,7 +14,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: acf421ad-05b0-4496-a152-aa4784ffbc14 # Benefit icon
+            fieldUid: fca73b00-6cb6-4ad7-bb7a-b25900f09349 # Text
             instructions: null
             label: null
             required: false
@@ -25,12 +25,12 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  2f7f35e2-38a7-45f4-9a1b-cbdb84e72ae0: # Benefit
+  bf58bb6d-252e-4193-9375-6c2d02406232: # Heading
     contentColumnType: text
     fieldGroup: null
-    handle: benefit
+    handle: heading
     instructions: ''
-    name: Benefit
+    name: Heading
     searchable: false
     settings:
       byteLimit: null
@@ -39,17 +39,17 @@ fields:
       columnType: null
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
       uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  acf421ad-05b0-4496-a152-aa4784ffbc14: # Benefit icon
+  fca73b00-6cb6-4ad7-bb7a-b25900f09349: # Text
     contentColumnType: text
     fieldGroup: null
-    handle: icon
+    handle: text
     instructions: ''
-    name: 'Benefit icon'
+    name: Text
     searchable: false
     settings:
       byteLimit: null
@@ -57,12 +57,9 @@ fields:
       code: ''
       columnType: null
       initialRows: '4'
-      multiline: ''
-      placeholder: ''
+      multiline: '1'
+      placeholder: null
       uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-handle: benefits
-name: Benefits
-sortOrder: 1

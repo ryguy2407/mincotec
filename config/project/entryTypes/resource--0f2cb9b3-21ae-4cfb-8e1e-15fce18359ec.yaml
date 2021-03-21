@@ -89,7 +89,7 @@ fieldLayouts:
 handle: resource
 hasTitleField: false
 name: 'Resources page'
-section: 1fbca024-b912-4d45-ab23-b1a9c9b0dbad
+section: 1fbca024-b912-4d45-ab23-b1a9c9b0dbad # Resources page
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

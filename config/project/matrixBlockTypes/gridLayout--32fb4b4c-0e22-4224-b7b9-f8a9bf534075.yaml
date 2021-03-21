@@ -1,0 +1,56 @@
+field: 334c03aa-313f-4dbe-a62a-8c714bd1f30c # Content page builder
+fieldLayouts:
+  3579f3cd-3a31-4d02-8006-9bd8ceca7658:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: a3c732b0-09bc-4e9e-9bba-3c7bdf5c050b # blocks
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  a3c732b0-09bc-4e9e-9bba-3c7bdf5c050b: # blocks
+    contentColumnType: string
+    fieldGroup: null
+    handle: blocks
+    instructions: ''
+    name: blocks
+    searchable: false
+    settings:
+      columns:
+        __assoc__:
+          -
+            - bf58bb6d-252e-4193-9375-6c2d02406232 # Heading
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - fca73b00-6cb6-4ad7-bb7a-b25900f09349 # Text
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+      contentTable: '{{%stc_22_blocks}}'
+      fieldLayout: row
+      maxRows: ''
+      minRows: ''
+      placeholderKey: null
+      propagationMethod: all
+      selectionLabel: ''
+      staticField: ''
+    translationKeyFormat: null
+    translationMethod: site
+    type: verbb\supertable\fields\SuperTableField
+handle: gridLayout
+name: 'Grid layout'
+sortOrder: 3

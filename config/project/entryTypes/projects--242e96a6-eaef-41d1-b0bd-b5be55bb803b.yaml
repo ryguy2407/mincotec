@@ -107,7 +107,7 @@ fieldLayouts:
 handle: projects
 hasTitleField: true
 name: Projects
-section: 9f8b8ea6-c2cc-40b6-a5ee-3da1e79ef5db
+section: 9f8b8ea6-c2cc-40b6-a5ee-3da1e79ef5db # Projects
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null

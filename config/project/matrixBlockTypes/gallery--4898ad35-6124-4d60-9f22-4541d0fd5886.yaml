@@ -5,7 +5,7 @@ fieldLayouts:
       -
         elements:
           -
-            fieldUid: 23a7fb42-37f8-4eea-abc6-69628f409e72
+            fieldUid: 23a7fb42-37f8-4eea-abc6-69628f409e72 # Gallery title
             instructions: null
             label: null
             required: false
@@ -14,7 +14,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: fc8b508d-d68a-4128-ad01-084b7e0d986f
+            fieldUid: fc8b508d-d68a-4128-ad01-084b7e0d986f # Gallery intro
             instructions: null
             label: null
             required: false
@@ -23,7 +23,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: b53003da-07dd-4324-a6f6-bcf4e52ecd8e
+            fieldUid: b53003da-07dd-4324-a6f6-bcf4e52ecd8e # Gallery images
             instructions: null
             label: null
             required: false
@@ -32,7 +32,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 21112316-603d-48d4-b595-455d750a2ef2
+            fieldUid: 21112316-603d-48d4-b595-455d750a2ef2 # Items per row
             instructions: null
             label: null
             required: false
@@ -43,7 +43,7 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  21112316-603d-48d4-b595-455d750a2ef2:
+  21112316-603d-48d4-b595-455d750a2ef2: # Items per row
     contentColumnType: string
     fieldGroup: null
     handle: itemsPerRow
@@ -111,7 +111,7 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Dropdown
-  23a7fb42-37f8-4eea-abc6-69628f409e72:
+  23a7fb42-37f8-4eea-abc6-69628f409e72: # Gallery title
     contentColumnType: text
     fieldGroup: null
     handle: galleryTitle
@@ -125,12 +125,12 @@ fields:
       columnType: null
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
       uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  b53003da-07dd-4324-a6f6-bcf4e52ecd8e:
+  b53003da-07dd-4324-a6f6-bcf4e52ecd8e: # Gallery images
     contentColumnType: string
     fieldGroup: null
     handle: galleryImages
@@ -163,7 +163,7 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
-  fc8b508d-d68a-4128-ad01-084b7e0d986f:
+  fc8b508d-d68a-4128-ad01-084b7e0d986f: # Gallery intro
     contentColumnType: text
     fieldGroup: null
     handle: galleryIntro
@@ -177,7 +177,7 @@ fields:
       columnType: null
       initialRows: '4'
       multiline: '1'
-      placeholder: ''
+      placeholder: null
       uiMode: normal
     translationKeyFormat: null
     translationMethod: none

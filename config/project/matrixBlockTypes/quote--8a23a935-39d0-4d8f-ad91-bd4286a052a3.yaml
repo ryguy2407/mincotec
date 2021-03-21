@@ -1,0 +1,40 @@
+field: ea214855-af90-41b4-b50f-59f85b4ac9f0 # Product page builder
+fieldLayouts:
+  68ac462f-2ab7-4d17-acfc-409d7302a565:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 24785ef4-07aa-4963-b1db-08e834378a05 # Quote text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  24785ef4-07aa-4963-b1db-08e834378a05: # Quote text
+    contentColumnType: text
+    fieldGroup: null
+    handle: quoteText
+    instructions: ''
+    name: 'Quote text'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: '1'
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: quote
+name: Quote
+sortOrder: 4

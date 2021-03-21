@@ -5,7 +5,7 @@ fieldLayouts:
       -
         elements:
           -
-            fieldUid: 7e358e6c-31c0-4b58-a4c4-60abe0302443
+            fieldUid: 7e358e6c-31c0-4b58-a4c4-60abe0302443 # Plain text
             instructions: null
             label: null
             required: false
@@ -14,7 +14,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 46d14d7b-5407-49aa-9b08-aa0b3784938c
+            fieldUid: 46d14d7b-5407-49aa-9b08-aa0b3784938c # Background Colour
             instructions: null
             label: null
             required: false
@@ -23,7 +23,7 @@ fieldLayouts:
             warning: null
             width: 50
           -
-            fieldUid: e8035954-666e-4499-b592-8095f6a17d61
+            fieldUid: e8035954-666e-4499-b592-8095f6a17d61 # Text alignment
             instructions: null
             label: null
             required: false
@@ -31,10 +31,19 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 50
+          -
+            fieldUid: b0d9c953-0023-42e0-94d4-fcc464891c0c # Buttons
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 fields:
-  46d14d7b-5407-49aa-9b08-aa0b3784938c:
+  46d14d7b-5407-49aa-9b08-aa0b3784938c: # Background Colour
     contentColumnType: string
     fieldGroup: null
     handle: backgroundColour
@@ -91,7 +100,7 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Dropdown
-  7e358e6c-31c0-4b58-a4c4-60abe0302443:
+  7e358e6c-31c0-4b58-a4c4-60abe0302443: # Plain text
     contentColumnType: text
     fieldGroup: null
     handle: plainText
@@ -105,12 +114,31 @@ fields:
       columnType: null
       initialRows: '4'
       multiline: '1'
-      placeholder: ''
+      placeholder: null
       uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  e8035954-666e-4499-b592-8095f6a17d61:
+  b0d9c953-0023-42e0-94d4-fcc464891c0c: # Buttons
+    contentColumnType: string
+    fieldGroup: null
+    handle: buttons
+    instructions: ''
+    name: Buttons
+    searchable: false
+    settings:
+      contentTable: '{{%stc_3_buttons}}'
+      fieldLayout: row
+      maxRows: ''
+      minRows: ''
+      placeholderKey: null
+      propagationMethod: all
+      selectionLabel: ''
+      staticField: ''
+    translationKeyFormat: null
+    translationMethod: site
+    type: verbb\supertable\fields\SuperTableField
+  e8035954-666e-4499-b592-8095f6a17d61: # Text alignment
     contentColumnType: string
     fieldGroup: null
     handle: textAlignment

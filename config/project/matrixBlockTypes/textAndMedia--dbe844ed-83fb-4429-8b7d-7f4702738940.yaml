@@ -5,7 +5,7 @@ fieldLayouts:
       -
         elements:
           -
-            fieldUid: c3dfd38a-2354-4654-ac85-1daf800e35f3
+            fieldUid: c3dfd38a-2354-4654-ac85-1daf800e35f3 # Image
             instructions: null
             label: null
             required: false
@@ -14,7 +14,7 @@ fieldLayouts:
             warning: null
             width: 25
           -
-            fieldUid: dcd87c31-8602-4d0b-b36a-de8f51c3cadd
+            fieldUid: dcd87c31-8602-4d0b-b36a-de8f51c3cadd # Media width
             instructions: null
             label: null
             required: false
@@ -23,7 +23,7 @@ fieldLayouts:
             warning: null
             width: 25
           -
-            fieldUid: 456d6491-f7f6-46ef-9871-b71cf6f8246d
+            fieldUid: 456d6491-f7f6-46ef-9871-b71cf6f8246d # Media alignment
             instructions: null
             label: null
             required: false
@@ -32,7 +32,7 @@ fieldLayouts:
             warning: null
             width: 25
           -
-            fieldUid: 0705587e-3a71-445b-9fdc-f58c9b8f3de8
+            fieldUid: 0705587e-3a71-445b-9fdc-f58c9b8f3de8 # ID Slug
             instructions: null
             label: null
             required: false
@@ -41,7 +41,7 @@ fieldLayouts:
             warning: null
             width: 25
           -
-            fieldUid: c226b997-c58c-42e9-906a-4089abfa7f5a
+            fieldUid: c226b997-c58c-42e9-906a-4089abfa7f5a # Text
             instructions: null
             label: null
             required: false
@@ -50,7 +50,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 2e8c2d72-0992-4133-824d-8398f0d80292
+            fieldUid: 2e8c2d72-0992-4133-824d-8398f0d80292 # Background Colour
             instructions: null
             label: null
             required: false
@@ -59,7 +59,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 774a8d88-ebee-4be9-a34b-55d12783d5b1
+            fieldUid: 774a8d88-ebee-4be9-a34b-55d12783d5b1 # Link text
             instructions: null
             label: null
             required: false
@@ -68,7 +68,7 @@ fieldLayouts:
             warning: null
             width: 50
           -
-            fieldUid: 60eb1b8a-39c0-4bb4-ab3b-11fa940bfa1d
+            fieldUid: 60eb1b8a-39c0-4bb4-ab3b-11fa940bfa1d # Link URL
             instructions: null
             label: null
             required: false
@@ -79,7 +79,7 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  0705587e-3a71-445b-9fdc-f58c9b8f3de8:
+  0705587e-3a71-445b-9fdc-f58c9b8f3de8: # ID Slug
     contentColumnType: text
     fieldGroup: null
     handle: idSlug
@@ -93,12 +93,12 @@ fields:
       columnType: null
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
       uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  2e8c2d72-0992-4133-824d-8398f0d80292:
+  2e8c2d72-0992-4133-824d-8398f0d80292: # Background Colour
     contentColumnType: string
     fieldGroup: null
     handle: backgroundColour
@@ -155,7 +155,7 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Dropdown
-  456d6491-f7f6-46ef-9871-b71cf6f8246d:
+  456d6491-f7f6-46ef-9871-b71cf6f8246d: # Media alignment
     contentColumnType: string
     fieldGroup: null
     handle: mediaAlignment
@@ -190,7 +190,7 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Dropdown
-  60eb1b8a-39c0-4bb4-ab3b-11fa940bfa1d:
+  60eb1b8a-39c0-4bb4-ab3b-11fa940bfa1d: # Link URL
     contentColumnType: text
     fieldGroup: null
     handle: linkUrl
@@ -204,12 +204,12 @@ fields:
       columnType: null
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
       uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  774a8d88-ebee-4be9-a34b-55d12783d5b1:
+  774a8d88-ebee-4be9-a34b-55d12783d5b1: # Link text
     contentColumnType: text
     fieldGroup: null
     handle: linkText
@@ -223,12 +223,12 @@ fields:
       columnType: null
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
       uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  c226b997-c58c-42e9-906a-4089abfa7f5a:
+  c226b997-c58c-42e9-906a-4089abfa7f5a: # Text
     contentColumnType: text
     fieldGroup: null
     handle: text
@@ -242,12 +242,12 @@ fields:
       columnType: null
       initialRows: '4'
       multiline: '1'
-      placeholder: ''
+      placeholder: null
       uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  c3dfd38a-2354-4654-ac85-1daf800e35f3:
+  c3dfd38a-2354-4654-ac85-1daf800e35f3: # Image
     contentColumnType: string
     fieldGroup: null
     handle: image
@@ -279,7 +279,7 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
-  dcd87c31-8602-4d0b-b36a-de8f51c3cadd:
+  dcd87c31-8602-4d0b-b36a-de8f51c3cadd: # Media width
     contentColumnType: string
     fieldGroup: null
     handle: mediaWidth

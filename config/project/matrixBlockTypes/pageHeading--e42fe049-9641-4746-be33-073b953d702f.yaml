@@ -5,7 +5,7 @@ fieldLayouts:
       -
         elements:
           -
-            fieldUid: e55cebd3-bc75-4761-a6ef-3a197583ea3e
+            fieldUid: e55cebd3-bc75-4761-a6ef-3a197583ea3e # Headline
             instructions: null
             label: null
             required: false
@@ -14,7 +14,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 78e93ae5-9945-44e7-bdcc-978f6e813d78
+            fieldUid: 78e93ae5-9945-44e7-bdcc-978f6e813d78 # Background image
             instructions: null
             label: null
             required: false
@@ -25,7 +25,7 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  78e93ae5-9945-44e7-bdcc-978f6e813d78:
+  78e93ae5-9945-44e7-bdcc-978f6e813d78: # Background image
     contentColumnType: string
     fieldGroup: null
     handle: backgroundImage
@@ -56,7 +56,7 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
-  e55cebd3-bc75-4761-a6ef-3a197583ea3e:
+  e55cebd3-bc75-4761-a6ef-3a197583ea3e: # Headline
     contentColumnType: text
     fieldGroup: null
     handle: headline

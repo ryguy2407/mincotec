@@ -5,7 +5,7 @@ fieldLayouts:
       -
         elements:
           -
-            fieldUid: fa4cbc50-095e-4534-9f80-148f40fc2c7e
+            fieldUid: fa4cbc50-095e-4534-9f80-148f40fc2c7e # Heading
             instructions: null
             label: null
             required: false
@@ -14,7 +14,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 55d66246-a4eb-4446-80c5-2c91a2e2ba7f
+            fieldUid: 55d66246-a4eb-4446-80c5-2c91a2e2ba7f # Text
             instructions: null
             label: null
             required: false
@@ -23,7 +23,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: c22b25ea-7fdf-4e21-afac-10d80d8e9b66
+            fieldUid: c22b25ea-7fdf-4e21-afac-10d80d8e9b66 # Button text
             instructions: null
             label: null
             required: false
@@ -32,7 +32,7 @@ fieldLayouts:
             warning: null
             width: 50
           -
-            fieldUid: d1faffc0-18e5-495e-9dfc-322857b1f966
+            fieldUid: d1faffc0-18e5-495e-9dfc-322857b1f966 # Button URL
             instructions: null
             label: null
             required: false
@@ -41,7 +41,7 @@ fieldLayouts:
             warning: null
             width: 50
           -
-            fieldUid: 54a55fb3-c3f9-449b-bbc4-c7a988bb27b4
+            fieldUid: 54a55fb3-c3f9-449b-bbc4-c7a988bb27b4 # Hero image
             instructions: null
             label: null
             required: false
@@ -52,7 +52,7 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  54a55fb3-c3f9-449b-bbc4-c7a988bb27b4:
+  54a55fb3-c3f9-449b-bbc4-c7a988bb27b4: # Hero image
     contentColumnType: string
     fieldGroup: null
     handle: heroImage
@@ -83,7 +83,7 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
-  55d66246-a4eb-4446-80c5-2c91a2e2ba7f:
+  55d66246-a4eb-4446-80c5-2c91a2e2ba7f: # Text
     contentColumnType: text
     fieldGroup: null
     handle: heroText
@@ -102,7 +102,7 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  c22b25ea-7fdf-4e21-afac-10d80d8e9b66:
+  c22b25ea-7fdf-4e21-afac-10d80d8e9b66: # Button text
     contentColumnType: text
     fieldGroup: null
     handle: buttonText
@@ -121,7 +121,7 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  d1faffc0-18e5-495e-9dfc-322857b1f966:
+  d1faffc0-18e5-495e-9dfc-322857b1f966: # Button URL
     contentColumnType: text
     fieldGroup: null
     handle: buttonUrl
@@ -140,7 +140,7 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  fa4cbc50-095e-4534-9f80-148f40fc2c7e:
+  fa4cbc50-095e-4534-9f80-148f40fc2c7e: # Heading
     contentColumnType: text
     fieldGroup: null
     handle: heading

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4f7bcae945837e44ef83b3eec016b87f",
+    "content-hash": "64d5760200e30b1b8d91a731379086e0",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -1102,11 +1102,11 @@
         },
         {
             "name": "giggsey/libphonenumber-for-php",
-            "version": "8.12.19",
+            "version": "8.12.20",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/f3c196dcb3e76e456783a38bab87d99b4d727918",
-                "reference": "f3c196dcb3e76e456783a38bab87d99b4d727918",
+                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/743585979ef96f2be123518c0a58083cf678bd47",
+                "reference": "743585979ef96f2be123518c0a58083cf678bd47",
                 "shasum": ""
             },
             "require": {
@@ -1151,7 +1151,7 @@
                 "phonenumber",
                 "validation"
             ],
-            "time": "2021-03-01T16:07:56+00:00"
+            "time": "2021-03-17T11:05:55+00:00"
         },
         {
             "name": "giggsey/locale",
@@ -2799,11 +2799,11 @@
         },
         {
             "name": "mikehaertl/php-shellcommand",
-            "version": "1.6.3",
+            "version": "1.6.4",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mikehaertl/php-shellcommand/zipball/fe86ec847877b83bf61a96719e7f2e3b3e516a6b",
-                "reference": "fe86ec847877b83bf61a96719e7f2e3b3e516a6b",
+                "url": "https://api.github.com/repos/mikehaertl/php-shellcommand/zipball/3488d7803df1e8f1a343d3d0ca452d527ad8d5e5",
+                "reference": "3488d7803df1e8f1a343d3d0ca452d527ad8d5e5",
                 "shasum": ""
             },
             "require": {
@@ -2828,7 +2828,7 @@
             "keywords": [
                 "shell"
             ],
-            "time": "2020-11-23T17:31:15+00:00"
+            "time": "2021-03-17T06:54:33+00:00"
         },
         {
             "name": "mtdowling/jmespath.php",
@@ -5370,11 +5370,11 @@
         },
         {
             "name": "verbb/base",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/verbb/verbb-base/zipball/85a11791c811c90ea58a3718488af0e60e12ba2c",
-                "reference": "85a11791c811c90ea58a3718488af0e60e12ba2c",
+                "url": "https://api.github.com/repos/verbb/verbb-base/zipball/006cc4979e2b7669234a90bb7347129fe0185eb8",
+                "reference": "006cc4979e2b7669234a90bb7347129fe0185eb8",
                 "shasum": ""
             },
             "require": {
@@ -5396,7 +5396,7 @@
                 }
             ],
             "description": "Common utilities and building-blocks for Verbb plugins for Craft CMS.",
-            "time": "2020-04-14T23:40:29+00:00"
+            "time": "2021-03-17T20:54:49+00:00"
         },
         {
             "name": "verbb/field-manager",
@@ -5463,11 +5463,11 @@
         },
         {
             "name": "verbb/formie",
-            "version": "1.3.23",
+            "version": "1.3.24",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/verbb/formie/zipball/622b91236d3bc85a17643212d8f33f32f9d888b3",
-                "reference": "622b91236d3bc85a17643212d8f33f32f9d888b3",
+                "url": "https://api.github.com/repos/verbb/formie/zipball/ab5f9a860f053206f9da6c62b50d861d622bab5a",
+                "reference": "ab5f9a860f053206f9da6c62b50d861d622bab5a",
                 "shasum": ""
             },
             "require": {
@@ -5522,7 +5522,7 @@
                 "docs": "https://github.com/verbb/formie",
                 "rss": "https://github.com/verbb/formie/commits/v2.atom"
             },
-            "time": "2021-03-16T00:31:46+00:00"
+            "time": "2021-03-17T20:47:38+00:00"
         },
         {
             "name": "verbb/navigation",
