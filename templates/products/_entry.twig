@@ -49,6 +49,7 @@
             .all() %}
         <section class="{% if relatedEntries | length %}bg-blue{% else %}bg-mustard{% endif %} py-16 lg:py-24 w-full relative flex flex-row justify-center items-center">
             <img class="hidden lg:block absolute mx-auto h-full object-cover inset-0 py-8" src="/assets/img/blue-quote.svg" alt="{{ category.title }}">
+            <img class="block lg:hidden absolute mx-auto h-full inset-0 p-8" src="/assets/img/clipped-quote.svg" alt="{{ category.title }}">
             <div class="max-w-7xl mx-auto px-4 sm:px-6">
                 <div class="w-full lg:w-5/6 mx-auto">
                     <div class="w-full text-center">
