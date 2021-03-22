@@ -17,6 +17,7 @@
         {% include 'blocks/_'~block.type %}
     {% endfor %}
 
+    <div class="max-w-7x mx-auto">
     {% set form = craft.freeform.form("contactPageForm") %}
 
     {% if form.submittedSuccessfully %}
@@ -24,6 +25,7 @@
     {% endif %}
 
     {{ form.render }}
+    </div>
 
     <div class="bg-white flex flex-col lg:flex-row space-x-0 space-y-8 lg:space-y-0 lg:space-x-4">
         <div class="w-full w-1/2">
