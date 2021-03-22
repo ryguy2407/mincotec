@@ -5,6 +5,8 @@ module.exports = {
     content: [
       './templates/*.twig',
       './templates/blocks/partials/*.twig',
+      './templates/partials/*.twig',
+      './templates/partials/**/*.twig',
       './templates/blocks/*.twig',
       './templates/**/*.twig'
     ],

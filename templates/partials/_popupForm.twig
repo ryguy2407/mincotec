@@ -1,4 +1,4 @@
-<div class="form fixed w-full h-full bg-white p-8 flex justify-center items-center z-50" style="display:none;top:0px;left:0px;margin-left: 0px;">
+<div class="form fixed w-full h-full bg-white p-8 flex justify-center items-center" style="display:none;top:0px;left:0px;margin-left: 0px;z-index: 1000;">
     <div class="w-full lg:w-1/2">
         <h5 class="text-navy text-center mb-8 font-bold">Please fill out the form to download {{ product.title }} specs</h5>
         {% set form = craft.formie.forms({ handle: 'gatedDownload' }).one() %}

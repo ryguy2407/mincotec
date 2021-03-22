@@ -99,8 +99,10 @@
                                             sizes="100vw" />
                                     </a>
                                 </div>
-                                <div class="w-full lg:w-2/3 bg-gradient-to-r from-input_bg p-8 text-lg opacity-75 text-navy">
-                                    {{ product.seoDescription | markdown }}
+                                <div class="w-full lg:w-2/3 bg-gradient-to-r from-input_bg p-8 text-lg">
+                                    <div class="opacity-75 text-navy">
+                                        {{ product.seoDescription | markdown }}
+                                    </div>
                                     {% if download | length %}
                                         <a
                                                 class="block lg:hidden mt-8 triggerForm inline-flex uppercase items-center justify-center px-8 py-2 border border-navy leading-6 font-medium rounded-md text-navy font-bold text-sm hover:bg-navy hover:text-white transition ease-in-out duration-500"
