@@ -17,7 +17,7 @@
         {% include 'blocks/_'~block.type %}
     {% endfor %}
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-8 lg:py-24">
     {% set form = craft.freeform.form("contactPageForm") %}
 
     {% if form.submittedSuccessfully %}
