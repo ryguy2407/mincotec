@@ -1,9 +1,13 @@
 {% for entry in entries %}
-    <div data-aos-duration="800" data-aos="fade-up" data-aos-delay="{{ loop.index * 200 }}" class="w-full relative lg:w-1/3 px-12 py-32 bg-gradient-to-l {% if alt %}from-input_bg{% else %}from-opaque_white{% endif %} flex flex-col group relative">
+
+
+
+
+    <div data-aos-duration="800" data-aos="fade-up" data-aos-delay="{{ loop.index * 200 }}" class="w-full relative lg:w-1/3 px-0 lg:px-12 py-0 lg:py-32 mt-16 lg:mt-0 bg-none lg:bg-gradient-to-l {% if alt %}from-input_bg{% else %}from-opaque_white{% endif %} flex flex-col group relative {% if loop.last %}mb-12 lg:mb-0{% endif %}">
         {% set img = entry.seoImage.one().optimizedimages %}
         {% set originalImg = entry.seoImage.one() %}
         <img src="{{ img.src() }}"
-             class="absolute inset-0 w-full h-full object-cover {% if alt %}opacity-100 group-hover:opacity-0{% else %}opacity-0 group-hover:opacity-25{% endif %} transition duration-500 ease-in-out"
+             class="hidden lg:block absolute inset-0 w-full h-full object-cover {% if alt %}opacity-100 group-hover:opacity-0{% else %}opacity-0 group-hover:opacity-25{% endif %} transition duration-500 ease-in-out"
              alt="{{ originalImg.title }}"
              srcset="{{ img.srcset() }}"
              sizes="100vw" />
@@ -14,7 +18,7 @@
                 {{ entry.seoDescription }}
             </p>
             <div class="mt-auto">
-                <a href="{{ entry.url }}" class="{% if bgColour == 'bg-white' %}text-navy{% else %}text-white{% endif %} btn-white {% if bgColour == 'bg-white' %}border-navy hover:bg-navy hover:text-white{% else %}border-white hover:bg-white hover:text-navy{% endif %}">
+                <a href="{{ entry.url }}" class="inline-block {% if bgColour == 'bg-white' %}text-navy{% else %}text-white{% endif %} btn-white {% if bgColour == 'bg-white' %}border-navy hover:bg-navy hover:text-white{% else %}border-white hover:bg-white hover:text-navy{% endif %}">
                     Learn more
                 </a>
             </div>

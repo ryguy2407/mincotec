@@ -1,4 +1,4 @@
-<div class="lg:relative bg-navy">
+<div class="lg:relative bg-navy hidden lg:block">
     <div data-aos-duration="800" data-aos="fade-right" class="relative mx-auto px-16 w-full pt-16 pb-20 text-center lg:py-48 lg:text-left z-10">
         <div class="px-4 lg:w-7/12 sm:px-8 xl:pr-16">
             {% set hero = entry.homeHeroSection.one() %}
@@ -31,5 +31,32 @@
             <img class="absolute w-full h-full object-cover right-0 top-0" src="/assets/img/main-watermark.svg" alt="MincoTech">
             <img class="hidden lg:block absolute inset-0 h-full" src="/assets/img/angleoverlay.svg" alt="Angle overlay">
         {% endif %}
+    </div>
+</div>
+
+<div class="flex flex-col lg:hidden">
+    <div class="relative w-full h-64">
+        {% set image = hero.heroImage.one().optimizedimages %}
+        {% set originalImage = hero.heroImage.one() %}
+        {% if image | length %}
+            <img src="{{ image.src() }}"
+                 alt="{{ originalImage.title }}"
+                 class="absolute inset-0 w-full h-full object-cover animate"
+                 srcset="{{ image.srcset() }}"
+                 sizes="100vw" />
+            <img class="absolute w-full h-full object-cover right-0 top-0" src="/assets/img/main-watermark.svg" alt="MincoTech">
+            <img class="hidden lg:block absolute inset-0 h-full" src="/assets/img/angleoverlay.svg" alt="Angle overlay">
+        {% endif %}
+        <h2 class="text-4xl text-white font-bold absolute bottom-0 left-0 px-4 pb-8">
+            {{ hero.heading }}
+        </h2>
+    </div>
+    <div class="w-full bg-navy px-4 py-8">
+        <p class="opacity-75 mb-0 text-white max-w-md mx-auto text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
+            {{ hero.heroText }}
+        </p>
+        <a href="{{ hero.buttonUrl }}" class="btn-white mt-8 inline-block">
+            Learn more
+        </a>
     </div>
 </div>

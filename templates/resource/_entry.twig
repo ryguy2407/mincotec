@@ -41,6 +41,7 @@
 
         <section class="bg-mustard py-16 lg:py-24 w-full relative flex flex-row justify-center items-center">
             <img class="hidden lg:block absolute mx-auto h-full object-cover inset-0" src="/assets/img/quotation.svg" alt="{{ entry.title }}">
+            <img class="block lg:hidden absolute mx-auto h-full inset-0" src="/assets/img/clipped-quote.svg" alt="{{ entry.title }}">
             <div class="max-w-7xl mx-auto px-4 sm:px-6">
                 <div class="w-full lg:w-5/6 mx-auto">
                     <div class="w-full text-center">
@@ -70,7 +71,7 @@
 
                     {# Loop through the categories that are related to the products we loaded #}
                     {% for category in productCategories %}
-                        <div class="w-full block text-left flex flex-row space-x-6 py-8 border-input_bg border-b-2 hover:cursor-pointer {% if loop.first %}border-t pt-8{% endif %}">
+                        <div class="w-full block text-left flex flex-row space-x-6 py-8 hover:cursor-pointer {% if loop.first %}border-t pt-8{% endif %}">
                             <div class="flex flex-col space-y-4 w-full">
                                 <h5 class="uppercase leading-none mt-1 text-navy font-bold">{{ category.title }}</h5>
 
@@ -82,9 +83,9 @@
 
                                     {# Loop through the products that are related to the current category in the main loop and related to the resource we are looking at #}
                                     {% set entries = craft.entries().section('products').relatedTo(category).relatedResource(entry).all() %}
-                                    <div class="flex flex-col lg:flex-row space-x-0 lg:space-x-8">
+                                    <div class="hidden lg:inline-flex flex-col lg:flex-row space-x-0 lg:space-x-8">
                                         {% for product in entries %}
-                                            <a href="{{ category.url }}" class="flex bg-input_bg flex-col w-full h-56 mb-4 lg:mb-0 lg:w-1/4">
+                                            <a href="{{ product.url }}" class="flex bg-input_bg flex-col w-full h-56 mb-4 lg:mb-0 lg:w-1/4">
                                                 {% set optimizedImages = product.seoImage.one().optimizedimages %}
 
                                                 <div class="relative w-full h-full flex-grow overflow-hidden">
@@ -100,9 +101,28 @@
                                             </a>
                                         {% endfor %}
                                     </div>
+                                    <div class="block lg:hidden grid grid-cols-2 gap-4 -mx-4">
+                                        {% for product in entries %}
+                                            <a href="{{ category.url }}" class="flex bg-input_bg flex-col w-full h-56">
+                                                {% set optimizedImages = product.seoImage.one().optimizedimages %}
+
+                                                <div class="relative w-full h-full flex-grow overflow-hidden">
+                                                    <img class="absolute inset-0 w-full h-full object-cover transform hover:scale-110 transition duration-500 ease-in-out" src="{{ optimizedImages.src() }}"
+                                                         srcset="{{ optimizedImages.srcset() }}"
+                                                         sizes="100vw" />
+                                                </div>
+                                                <div class="w-full text-center p-4 mt-auto">
+                                                    <div class="uppercase text-sm text-navy text-navy font-bold">
+                                                        {{ product.title }}
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        {% endfor %}
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="bg-input_bg -mx-4" style="height: 2px;"></div>
                     {% endfor %}
                 </div>
             </div>

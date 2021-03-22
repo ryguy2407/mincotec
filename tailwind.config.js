@@ -4,6 +4,8 @@ module.exports = {
     preserveHtmlElements: true,
     content: [
       './templates/*.twig',
+      './templates/blocks/partials/*.twig',
+      './templates/blocks/*.twig',
       './templates/**/*.twig'
     ],
   },

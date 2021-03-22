@@ -1,0 +1,37 @@
+<div class="bg-navy w-full py-4 px-16">
+    <div class="flex md:hidden w-5/6 mx-auto flex-col">
+        <img class="w-full pt-4" src="/assets/img/logo-white.svg" alt="Mincotech">
+        <div class="flex flex-row justify-center items-center pt-8 space-x-8">
+            <a href="mailto:{{ businessInformation.emailAddress }}" class="text-mustard hover:text-mustard transition duration-500 ease-in-out"><i class="fas fa-envelope text-3xl"></i></a>
+            <a href="tel:{{ businessInformation.phoneNumber }}" class="text-mustard hover:text-mustard transition duration-500 ease-in-out"><i class="fas fa-phone text-3xl"></i></a>
+        </div>
+        <div class="pt-8 mb-8 text-center text-white opacity-75">
+            <p>Postal: PO Box 142, Cardiff NSW 2285</p>
+            <p>Delivery: 7 Pavilion Place, Cardiff NSW 2285</p>
+            <p>Telephone: (02) 4954 6988</p>
+            <p>Email: minco@minco-tech.com</p>
+        </div>
+    </div>
+
+    <div class="hidden md:flex flex-row justify-between items-center">
+        <a href="/">
+            <img class="block lg:hidden" src="/assets/img/mobile-icon.svg" alt="Mincotech">
+            <img class="hidden lg:block" src="/assets/img/logo-white.svg" alt="Mincotech">
+        </a>
+
+        {% set nodes = craft.navigation.nodes('mainNavigation').level(1).all() %}
+
+        <ul class="flex flex-col md:flex-row space-x-8 items-center text-xl h-full">
+            {% nav node in nodes %}
+                <li class="h-full {% if node.classes | length %}{{ node.classes }}{% endif %} group relative">
+                    <a {% if node.url %}href="{{ node.url }}"{% endif %} class="py-8 {% if node.active or node.hasActiveChild %}bg-darkHover font-bold{% endif %} text-white inline-flex items-center space-x-2 text-base leading-6 font-medium transition ease-in-out duration-150"{% if node.newWindow %} target="_blank" rel="noopener"{% endif %} {% for attribute in node.customAttributes %}{{ attribute.attribute }}="{{ attribute.value }}"{% endfor %}>
+                    {{- node.title -}}
+                    </a>
+                </li>
+            {% endnav %}
+            <li><a href="mailto:{{ businessInformation.emailAddress }}" class="text-mustard hover:text-mustard transition duration-500 ease-in-out"><i class="fas fa-envelope text-3xl"></i></a></li>
+            <li><a href="tel:{{ businessInformation.phoneNumber }}" class="text-mustard hover:text-mustard transition duration-500 ease-in-out"><i class="fas fa-phone text-3xl"></i></a></li>
+        </ul>
+    </div>
+
+</div>

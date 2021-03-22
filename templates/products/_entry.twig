@@ -24,13 +24,13 @@
                     <div class="w-full bg-dark_opaque mt-4 mb-8" style="height: 2px;"></div>
                     <div class="grid grid-cols-1 gap-y-8 md:grid-cols-2 lg:gap-y-0 lg:grid-cols-4 my-4">
                         {% for benefit in benefits %}
-                            <div class="flex flex-col space-x-2 items-center">
-                                <div class="bg-white rounded-full mb-8" style="width: 140px;height: 140px;">
-                                    <div class="text-navy hover:text-mustard transition duration-500 ease-in-out text-6xl flex items-center h-full w-full justify-center" style="margin-top: 5px;">
+                            <div class="flex flex-row lg:flex-col space-x-4 space-y-2 items-center">
+                                <div class="bg-white rounded-full px-6 py-5">
+                                    <div class="text-navy hover:text-mustard transition duration-500 ease-in-out text-3xl lg:text-6xl flex items-center h-full w-full justify-center" style="margin-top: 5px;">
                                         {{ benefit.icon | raw }}
                                     </div>
                                 </div>
-                                <p class="uppercase text-navy font-bold text-lg text-center">
+                                <p class="uppercase text-navy font-bold text-lg text-left lg:text-center">
                                     {{ benefit.benefit }}
                                 </p>
                             </div>
@@ -81,25 +81,35 @@
                                 {% set download = product.downloads.one() %}
                                 {% if download | length %}
                                     <a
-                                        class="triggerForm inline-flex uppercase items-center justify-center px-8 py-2 border border-navy leading-6 font-medium rounded-md text-navy font-bold text-sm hover:bg-navy hover:text-white transition ease-in-out duration-500"
+                                        class="hidden lg:block triggerForm inline-flex uppercase items-center justify-center px-8 py-2 border border-navy leading-6 font-medium rounded-md text-navy font-bold text-sm hover:bg-navy hover:text-white transition ease-in-out duration-500"
                                         href="#">
                                         DOWNLOAD
                                     </a>
                                     {% include 'partials/_popupForm.twig' with { 'downloadUrl': download.url } %}
                                 {% endif %}
                             </div>
-                            <a href="{{ product.url }}" class="inline-flex flex-col lg:flex-row w-full relative" style="min-height: 200px;">
+                            <div class="inline-flex flex-col lg:flex-row w-full relative" style="min-height: 200px;">
                                 {% set optimizedImages = product.seoImage.one().optimizedimages %}
                                 <div class="w-full h-64 lg:min-h-full lg:w-1/3 relative overflow-hidden">
-                                    <img src="{{ optimizedImages.src() }}"
-                                         class="absolute object-cover w-full h-full inset-0 transform hover:scale-110 transition duration-500 ease-in-out"
-                                        srcset="{{ optimizedImages.srcset() }}"
-                                        sizes="100vw" />
+                                    <a href="{{ product.url }}">
+                                        <img src="{{ optimizedImages.src() }}"
+                                            class="absolute object-cover w-full h-full inset-0 transform hover:scale-110 transition duration-500 ease-in-out"
+                                            srcset="{{ optimizedImages.srcset() }}"
+                                            sizes="100vw" />
+                                    </a>
                                 </div>
                                 <div class="w-full lg:w-2/3 bg-gradient-to-r from-input_bg p-8 text-lg opacity-75 text-navy">
                                     {{ product.seoDescription | markdown }}
+                                    {% if download | length %}
+                                        <a
+                                                class="block lg:hidden mt-8 triggerForm inline-flex uppercase items-center justify-center px-8 py-2 border border-navy leading-6 font-medium rounded-md text-navy font-bold text-sm hover:bg-navy hover:text-white transition ease-in-out duration-500"
+                                                href="#">
+                                            DOWNLOAD
+                                        </a>
+                                        {% include 'partials/_popupForm.twig' with { 'downloadUrl': download.url } %}
+                                    {% endif %}
                                 </div>
-                            </a>
+                            </div>
                             {% if not loop.last %}
                                 <div class="mt-12 mb-8 bg-input_bg w-full" style="height: 2px;"></div>
                             {% endif %}
