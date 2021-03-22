@@ -24,7 +24,7 @@
         <ul class="flex flex-col md:flex-row space-x-8 items-center text-xl h-full">
             {% nav node in nodes %}
                 <li class="h-full {% if node.classes | length %}{{ node.classes }}{% endif %} group relative">
-                    <a {% if node.url %}href="{{ node.url }}"{% endif %} class="py-8 {% if node.active or node.hasActiveChild %}bg-darkHover font-bold{% endif %} text-white inline-flex items-center space-x-2 text-base leading-6 font-medium transition ease-in-out duration-150"{% if node.newWindow %} target="_blank" rel="noopener"{% endif %} {% for attribute in node.customAttributes %}{{ attribute.attribute }}="{{ attribute.value }}"{% endfor %}>
+                    <a {% if node.url %}href="{{ node.url }}"{% endif %} class="py-8 text-white inline-flex items-center space-x-2 text-base leading-6 font-medium transition ease-in-out duration-150"{% if node.newWindow %} target="_blank" rel="noopener"{% endif %} {% for attribute in node.customAttributes %}{{ attribute.attribute }}="{{ attribute.value }}"{% endfor %}>
                     {{- node.title -}}
                     </a>
                 </li>
