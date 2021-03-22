@@ -17,6 +17,41 @@
         {% include 'blocks/_'~block.type %}
     {% endfor %}
 
+    {% macro errorList(errors) %}
+        {% if errors %}
+            <ul class="errors">
+                {% for error in errors %}
+                    <li>{{ error }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endmacro %}
+
+    {% from _self import errorList %}
+    <form method="post" action="" accept-charset="UTF-8" class="py-8 lg:py-16">
+        {{ csrfInput() }}
+        <input type="hidden" name="action" value="contact-form/send">
+        {{ redirectInput('contact/thanks') }}
+
+        <div class="flex flex-col w-3/4 mx-auto">
+            {{ message is defined and message ? errorList(message.getErrors('fromEmail')) }}
+            {{ message is defined and message ? errorList(message.getErrors('message')) }}
+        </div>
+
+        <div class="w-full lg:w-3/4 px-4 lg:px-0 mx-auto flex flex-col space-y-4">
+            <div class="flex flex-col lg:flex-row space-x-0 lg:space-x-4 space-y-4 lg:space-y-0">
+                <input placeholder="Full Name" class="w-full py-3 px-4 border border-white bg-input_bg rounded placeholder-black" id="from-name" type="text" name="fromName" value="{{ message.fromName ?? '' }}">
+                {{ message is defined and message ? errorList(message.getErrors('fromName')) }}
+
+                <input placeholder="Email" class="w-full py-3 px-4 border border-white bg-input_bg rounded placeholder-black" id="from-email" type="email" name="fromEmail" value="{{ message.fromEmail ?? '' }}">
+            </div>
+
+            <textarea class="w-full py-3 px-4 border border-white bg-input_bg rounded placeholder-black" id="message" name="message" value="{{ message.message ?? '' }}">How can we help?</textarea>
+
+            <input type="submit" value="Send" class="w-full py-3 px-4 bg-navy text-sm uppercase tracking-widest text-white border border-white rounded font-bold">
+        </div>
+    </form>
+
 
     {% include 'partials/footer/_footer.twig' %}
 

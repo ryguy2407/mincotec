@@ -1,4 +1,4 @@
-dateModified: 1616375627
+dateModified: 1616397544
 email:
   fromEmail: ryan@newwordorder.com.au
   fromName: Mincotec
@@ -60,6 +60,36 @@ plugins:
       refreshCacheWhenElementSavedUnchanged: false
       sendPoweredByHeader: true
       warmCacheAutomatically: '1'
+  contact-form:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+    settings:
+      allowAttachments: ''
+      prependSender: 'On behalf of'
+      prependSubject: 'New message from Mincotech'
+      successFlashMessage: 'Your message has been sent.'
+      toEmail: ryan@newwordorder.com.au
+  contact-form-extensions:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.1
+    settings:
+      confirmationSubject: ''
+      confirmationTemplate: ''
+      enableConfirmationEmail: ''
+      enableDatabase: '1'
+      enableTemplateOverwrite: ''
+      notificationTemplate: ''
+      recaptcha: ''
+      recaptchaDataBadge: bottomright
+      recaptchaDebug: ''
+      recaptchaHideBadge: ''
+      recaptchaSecretKey: ''
+      recaptchaSiteKey: ''
+      recaptchaThreshold: '0.5'
+      recaptchaTimeout: '5'
+      recaptchaVersion: ''
   dospaces:
     edition: standard
     enabled: true
@@ -68,41 +98,76 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
-  formie:
-    edition: standard
+  freeform:
+    edition: pro
     enabled: true
-    licenseKey: I80VQEXPC2HSWMBXUNGTARLL
-    schemaVersion: 1.1.7
+    schemaVersion: 3.3.0
     settings:
-      captchas:
-        duplicate:
-          enabled: false
-          settings:
-            handle: duplicate
-          type: verbb\formie\integrations\captchas\Duplicate
-        honeypot:
-          enabled: true
-          settings:
-            handle: honeypot
-          type: verbb\formie\integrations\captchas\Honeypot
-        javascript:
-          enabled: false
-          settings:
-            handle: javascript
-          type: verbb\formie\integrations\captchas\Javascript
-        recaptcha:
-          enabled: false
-          settings:
-            badge: bottomright
-            handle: recaptcha
-            language: en
-            minScore: '0.5'
-            secretKey: ''
-            siteKey: ''
-            size: normal
-            theme: light
-            type: v3
-          type: verbb\formie\integrations\captchas\Recaptcha
+      ajaxByDefault: true
+      alertNotificationRecipients: digital@newwordorder.com.au
+      autoScrollToErrors: true
+      badgeType: all
+      blockedEmails: null
+      blockedEmailsError: 'Invalid Email Address'
+      blockedIpAddresses: null
+      blockedKeywords: null
+      blockedKeywordsError: 'Invalid Entry Data'
+      clientDigestFrequency: 1
+      clientDigestRecipients: digital@newwordorder.com.au
+      customErrorMessage: null
+      customHoneypotName: null
+      defaultTemplates: true
+      defaultView: dashboard
+      digestFrequency: 1
+      digestOnlyOnProduction: false
+      digestRecipients: digital@newwordorder.com.au
+      displayFeed: true
+      emailTemplateDirectory: null
+      emailTemplateStorage: db
+      fieldDisplayOrder: name
+      fillWithGet: false
+      footerScripts: false
+      formSubmitDisable: true
+      formSubmitExpiration: null
+      formTemplateDirectory: null
+      formattingTemplate: tailwind.html
+      freeformHoneypot: true
+      freeformHoneypotEnhancement: false
+      hideBannerDemo: false
+      hideBannerOldFreeform: false
+      minimumSubmitTime: null
+      pluginName: ''
+      purgableSpamAgeInDays: null
+      purgableSubmissionAgeInDays: null
+      purgableUnfinalizedAssetAgeInMinutes: 180
+      recaptchaBehaviour: display_error
+      recaptchaEnabled: false
+      recaptchaErrorMessage: 'Please verify that you are not a robot.'
+      recaptchaKey: null
+      recaptchaMinScore: 0.5
+      recaptchaSecret: null
+      recaptchaSize: normal
+      recaptchaTheme: light
+      recaptchaType: v2_checkbox
+      removeNewlines: false
+      renderFormHtmlInCpViews: true
+      salesforce_client_id: null
+      salesforce_client_secret: null
+      salesforce_password: null
+      salesforce_username: null
+      scriptInsertLocation: footer
+      sessionEntryMaxCount: 50
+      sessionEntryTTL: 10800
+      showErrorsForBlockedEmails: false
+      showErrorsForBlockedKeywords: false
+      showTutorial: false
+      spamFolderEnabled: true
+      spamProtectionBehaviour: simulate_success
+      submissionThrottlingCount: null
+      submissionThrottlingTimeFrame: null
+      twigInHtml: true
+      twigInHtmlIsolatedMode: true
+      updateSearchIndexes: true
   image-optimize:
     edition: standard
     enabled: true

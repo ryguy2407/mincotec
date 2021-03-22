@@ -9,41 +9,37 @@
                 </h2>
                 {{ callToAction.formDescription | markdown }}
 
-                {% set form = craft.formie.forms({ handle: 'letSCollaborate' }).one() %}
-                {% do craft.formie.registerAssets(form.handle) %}
+                {% macro errorList(errors) %}
+                    {% if errors %}
+                        <ul class="errors">
+                            {% for error in errors %}
+                                <li>{{ error }}</li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                {% endmacro %}
 
-                {# Fetch the current submission - if there is one #}
-                {% set submission = form.getCurrentSubmission() %}
-                {% set submitted = craft.formie.plugin.service.getFlash(form.id, 'submitted') %}
-
-                {# Show any error or success messages for the submission #}
-                {% set flashNotice = craft.formie.plugin.service.getFlash(form.id, 'notice') %}
-                {% set flashError = craft.formie.plugin.service.getFlash(form.id, 'error') %}
-
-                {% if flashNotice %}
-                    <div role="alert">
-                        {{ flashNotice | raw }}
-                    </div>
-                {% endif %}
-
-                {% if flashError %}
-                    <div role="alert">
-                        {{ flashError | raw }}
-                    </div>
-                {% endif %}
-
-                <form id="{{ form.formId }}" method="post" data-config="{{ form.configJson }}">
+                {% from _self import errorList %}
+                <form method="post" action="" accept-charset="UTF-8">
                     {{ csrfInput() }}
-                    {{ actionInput('formie/submissions/submit') }}
-                    {{ hiddenInput('handle', form.handle) }}
+                    <input type="hidden" name="action" value="contact-form/send">
+                    <input type="hidden" name="message[formName]" value="footerCta">
+                    {{ redirectInput('contact/thanks') }}
 
-                    <div class="flex flex-col md:flex-row justify-between space-x-0 space-y-4 md:space-x-2 md:space-y-0">
-                        {% for field in form.getFields() %}
-                            {{ craft.formie.renderField(form, field) }}
-                        {% endfor %}
-                        <div class="fui-field w-full md:w-1/3">
-                            <button class="w-full py-3 px-4 bg-navy text-sm uppercase tracking-widest text-white border border-white rounded font-bold" type="submit">Let's talk</button>
-                        </div>
+                    <div class="flex flex-col w-3/4 mx-auto">
+                        {{ message is defined and message ? errorList(message.getErrors('fromEmail')) }}
+                        {{ message is defined and message ? errorList(message.getErrors('message')) }}
+                    </div>
+
+                    <div class="w-full lg:w-3/4 mx-auto flex flex-col md:flex-row space-x-0 lg:space-x-4 space-y-4 lg:space-y-0">
+                        <input placeholder="Full Name" class="w-full py-3 px-4 border border-white bg-input_bg rounded placeholder-black" id="from-name" type="text" name="fromName" value="{{ message.fromName ?? '' }}">
+                        {{ message is defined and message ? errorList(message.getErrors('fromName')) }}
+
+                        <input placeholder="Email" class="w-full py-3 px-4 border border-white bg-input_bg rounded placeholder-black" id="from-email" type="email" name="fromEmail" value="{{ message.fromEmail ?? '' }}">
+
+                        <input placeholder="How can we help?" type="text" class="w-full py-3 px-4 border border-white bg-input_bg rounded placeholder-black" id="message" name="message" value="{{ message.message ?? '' }}">
+
+                        <input type="submit" value="Send" class="w-full py-3 px-4 bg-navy text-sm uppercase tracking-widest text-white border border-white rounded font-bold">
                     </div>
                 </form>
 
