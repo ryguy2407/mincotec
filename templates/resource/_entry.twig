@@ -71,9 +71,11 @@
 
                     {# Loop through the categories that are related to the products we loaded #}
                     {% for category in productCategories %}
-                        <div class="w-full block text-left flex flex-row space-x-6 py-8 hover:cursor-pointer {% if loop.first %}border-t-2 border-input_bg pt-8{% endif %}">
+                        <div class="w-full block text-left flex flex-row space-x-6 py-8 {% if loop.first %}border-t-2 border-input_bg pt-8{% endif %}">
                             <div class="flex flex-col space-y-4 w-full">
-                                <h5 class="uppercase leading-none mt-1 text-navy font-bold">{{ category.title }}</h5>
+                                <h5 class="uppercase leading-none mt-1 text-navy font-bold">
+                                    <a href="{{ category.url }}">{{ category.title }}</a>
+                                </h5>
 
                                 <div class="flex flex-col panel">
 
@@ -86,7 +88,7 @@
 
                                     <!-- This example requires Tailwind CSS v2.0+ -->
                                     <div class="relative max-w-7xl mx-auto">
-                                        <div class="max-w-lg mx-auto grid gap-8 lg:grid-cols-4 lg:max-w-none">
+                                        <div class="-mx-4 grid gap-8 grid-cols-2 lg:grid-cols-4 lg:mx-auto">
                                             {% for product in entries %}
                                                 <div class="flex flex-col overflow-hidden">
                                                     <div class="flex-shrink-0 overflow-hidden">
@@ -102,7 +104,7 @@
                                                     </div>
                                                     <div class="flex-1 bg-input_bg p-4 flex flex-col justify-between">
                                                         <div class="flex-1">
-                                                            <a href="#" class="block">
+                                                            <a href="{{ product.url }}" class="block">
                                                                 <p class="text-base font-semibold uppercase text-navy mb-0">
                                                                     {{ product.title }}
                                                                 </p>
@@ -112,25 +114,6 @@
                                                 </div>
                                             {% endfor %}
                                         </div>
-                                    </div>
-
-                                    <div class="block lg:hidden grid grid-cols-2 gap-4 -mx-4">
-                                        {% for product in entries %}
-                                            <a href="{{ category.url }}" class="flex bg-input_bg flex-col w-full h-56">
-                                                {% set optimizedImages = product.seoImage.one().optimizedimages %}
-
-                                                <div class="relative w-full h-full flex-grow overflow-hidden">
-                                                    <img class="absolute inset-0 w-full h-full object-cover transform hover:scale-110 transition duration-500 ease-in-out" src="{{ optimizedImages.src() }}"
-                                                         srcset="{{ optimizedImages.srcset() }}"
-                                                         sizes="100vw" />
-                                                </div>
-                                                <div class="w-full text-center p-4 mt-auto">
-                                                    <div class="uppercase text-sm text-navy text-navy font-bold">
-                                                        {{ product.title }}
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        {% endfor %}
                                     </div>
                                 </div>
                             </div>
