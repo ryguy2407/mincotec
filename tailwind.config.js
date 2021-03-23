@@ -25,7 +25,19 @@ module.exports = {
       mustard: '#CD8215',
       blue: '#005AAA',
       opaque_navy: '#293A5B',
-      body_copy: '#5E7694'
+      body_copy: '#5E7694',
+      "red": {
+        "50": "#f44c4c",
+        "100": "#ea4242",
+        "200": "#e03838",
+        "300": "#d62e2e",
+        "400": "#cc2424",
+        "500": "#c21a1a",
+        "600": "#b81010",
+        "700": "#ae0606",
+        "800": "#a40000",
+        "900": "#9a0000"
+      }
     },
     fontFamily: {
       'sans': ['Neutrif', 'Helvetica', 'Arial', 'sans-serif'],
