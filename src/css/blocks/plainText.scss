@@ -1,34 +1,19 @@
 .plainText {
-  h1,h2,h3,h4,h5,h6,p,a,li,ol {
-    @apply text-white;
-  }
-}
-.plainText.bg-white {
-  h1,h2,h3,h4,h5,h6,p,a,li,ol {
-    @apply text-navy;
-  }
-}
-.plainText {
-  h1,h2,h3,h4,h5,h6 {
-    @apply mb-4;
-  }
-  p {
-    @apply text-lg opacity-75 mb-4;
+  @apply text-navy;
+
+  ul {
+    @apply list-disc ml-6;
   }
 
-  hr {
-    @apply border-light_grey border-t my-8;
+  ol {
+    @apply list-decimal ml-6;
   }
 
   li {
-    @apply text-lg ml-5;
-    color: #4B627E !important;
+    @apply text-lg;
   }
+}
 
-  ul {
-    @apply mb-4 list-disc;
-  }
-  ol {
-    @apply mb-4 list-decimal;
-  }
+.plainText.bg-navy {
+  @apply text-white;
 }

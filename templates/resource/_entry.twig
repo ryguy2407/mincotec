@@ -83,24 +83,37 @@
 
                                     {# Loop through the products that are related to the current category in the main loop and related to the resource we are looking at #}
                                     {% set entries = craft.entries().section('products').relatedTo(category).relatedResource(entry).all() %}
-                                    <div class="hidden lg:inline-flex flex-col lg:flex-row space-x-0 lg:space-x-8">
-                                        {% for product in entries %}
-                                            <a href="{{ product.url }}" class="flex bg-input_bg flex-col w-full h-56 mb-4 lg:mb-0 lg:w-1/4">
-                                                {% set optimizedImages = product.seoImage.one().optimizedimages %}
 
-                                                <div class="relative w-full h-full flex-grow overflow-hidden">
-                                                    <img class="absolute inset-0 w-full h-full object-cover transform hover:scale-110 transition duration-500 ease-in-out" src="{{ optimizedImages.src() }}"
-                                                         srcset="{{ optimizedImages.srcset() }}"
-                                                         sizes="100vw" />
-                                                </div>
-                                                <div class="w-full text-center p-4 mt-auto">
-                                                    <div class="uppercase text-sm text-navy text-navy text-base font-bold">
-                                                        {{ product.title }}
+                                    <!-- This example requires Tailwind CSS v2.0+ -->
+                                    <div class="relative max-w-7xl mx-auto">
+                                        <div class="max-w-lg mx-auto grid gap-8 lg:grid-cols-4 lg:max-w-none">
+                                            {% for product in entries %}
+                                                <div class="flex flex-col overflow-hidden">
+                                                    <div class="flex-shrink-0 overflow-hidden">
+                                                        {% if product.seoImage | length %}
+                                                            {% set optimizedImages = product.seoImage.one().optimizedimages %}
+                                                            <a href="{{ product.url }}">
+                                                                <img class="h-48 w-full object-cover transform hover:scale-110 transition duration-500 ease-in-out"
+                                                                     srcset="{{ optimizedImages.srcset() }}"
+                                                                     sizes="100vw"
+                                                                     alt="{{ product.title }}">
+                                                            </a>
+                                                        {% endif %}
+                                                    </div>
+                                                    <div class="flex-1 bg-input_bg p-4 flex flex-col justify-between">
+                                                        <div class="flex-1">
+                                                            <a href="#" class="block">
+                                                                <p class="text-base font-semibold uppercase text-navy mb-0">
+                                                                    {{ product.title }}
+                                                                </p>
+                                                            </a>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </a>
-                                        {% endfor %}
+                                            {% endfor %}
+                                        </div>
                                     </div>
+
                                     <div class="block lg:hidden grid grid-cols-2 gap-4 -mx-4">
                                         {% for product in entries %}
                                             <a href="{{ category.url }}" class="flex bg-input_bg flex-col w-full h-56">
