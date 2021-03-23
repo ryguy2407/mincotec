@@ -1,4 +1,4 @@
-dateModified: 1616397544
+dateModified: 1616460672
 email:
   fromEmail: ryan@newwordorder.com.au
   fromName: Mincotec
@@ -101,6 +101,7 @@ plugins:
   freeform:
     edition: pro
     enabled: true
+    licenseKey: XUMEF3VK7A85Y6B2IRNCLT6W
     schemaVersion: 3.3.0
     settings:
       ajaxByDefault: true
