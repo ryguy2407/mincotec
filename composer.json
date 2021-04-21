@@ -1,12 +1,12 @@
 {
   "require": {
-    "craftcms/cms": "3.6.10",
+    "craftcms/cms": "3.6.12",
     "craftcms/contact-form": "2.2.7",
     "hybridinteractive/craft-contact-form-extensions": "1.2.4",
-    "nystudio107/craft-imageoptimize": "1.6.26",
-    "nystudio107/craft-seomatic": "3.3.35",
+    "nystudio107/craft-imageoptimize": "1.6.32",
+    "nystudio107/craft-seomatic": "3.3.40",
     "putyourlightson/craft-blitz": "3.8.0",
-    "solspace/craft-freeform": "3.10.10",
+    "solspace/craft-freeform": "3.11.0",
     "vaersaagod/dospaces": "1.1.3",
     "verbb/field-manager": "2.2.2",
     "verbb/navigation": "1.4.15",
