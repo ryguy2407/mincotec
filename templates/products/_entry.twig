@@ -66,7 +66,6 @@
     {% set entries = craft.entries()
         .section('products')
         .relatedTo(category)
-        .orderBy('postDate asc')
         .all() %}
 
     {% if entries | length %}
