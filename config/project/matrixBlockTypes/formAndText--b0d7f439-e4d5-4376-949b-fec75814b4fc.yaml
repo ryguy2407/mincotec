@@ -1,11 +1,11 @@
-field: 84f72373-7818-40d1-94a1-7bed11823504 # Page builder
+field: 84f72373-7818-40d1-94a1-7bed11823504
 fieldLayouts:
   e0ebe028-6d2c-4a17-9f55-6eee29f7ebd3:
     tabs:
       -
         elements:
           -
-            fieldUid: 4d693b5d-0903-4834-897e-761a87469c01 # Form title
+            fieldUid: 4d693b5d-0903-4834-897e-761a87469c01
             instructions: null
             label: null
             required: false
@@ -14,7 +14,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 2e441d7e-9286-41ca-aaa9-c581778dda06 # Form description
+            fieldUid: 2e441d7e-9286-41ca-aaa9-c581778dda06
             instructions: null
             label: null
             required: false
@@ -23,7 +23,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: a7e44ad5-cc8e-4abe-9060-561b15a549fa # Form
+            fieldUid: a7e44ad5-cc8e-4abe-9060-561b15a549fa
             instructions: null
             label: null
             required: true
@@ -34,7 +34,7 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  2e441d7e-9286-41ca-aaa9-c581778dda06: # Form description
+  2e441d7e-9286-41ca-aaa9-c581778dda06:
     contentColumnType: text
     fieldGroup: null
     handle: formDescription
@@ -53,7 +53,7 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  4d693b5d-0903-4834-897e-761a87469c01: # Form title
+  4d693b5d-0903-4834-897e-761a87469c01:
     contentColumnType: text
     fieldGroup: null
     handle: formTitle
@@ -72,7 +72,7 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  a7e44ad5-cc8e-4abe-9060-561b15a549fa: # Form
+  a7e44ad5-cc8e-4abe-9060-561b15a549fa:
     contentColumnType: string
     fieldGroup: null
     handle: form

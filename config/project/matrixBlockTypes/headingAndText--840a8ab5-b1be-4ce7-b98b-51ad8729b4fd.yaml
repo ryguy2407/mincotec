@@ -1,11 +1,11 @@
-field: ea214855-af90-41b4-b50f-59f85b4ac9f0 # Product page builder
+field: ea214855-af90-41b4-b50f-59f85b4ac9f0
 fieldLayouts:
   9ca7f37a-c3e9-4f7a-9dd3-e82fa4b6d05d:
     tabs:
       -
         elements:
           -
-            fieldUid: ec3bcde6-c468-4aed-8441-8b432faa786b # Heading
+            fieldUid: ec3bcde6-c468-4aed-8441-8b432faa786b
             instructions: null
             label: null
             required: false
@@ -14,7 +14,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 83a6df68-d73d-4d55-bbde-323640eb656a # Text
+            fieldUid: 83a6df68-d73d-4d55-bbde-323640eb656a
             instructions: null
             label: null
             required: false
@@ -23,7 +23,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 802e0c5a-9f96-4879-a481-5ab3cc0d2dcf # Background colour
+            fieldUid: 802e0c5a-9f96-4879-a481-5ab3cc0d2dcf
             instructions: null
             label: null
             required: false
@@ -34,7 +34,26 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  802e0c5a-9f96-4879-a481-5ab3cc0d2dcf: # Background colour
+  83a6df68-d73d-4d55-bbde-323640eb656a:
+    contentColumnType: text
+    fieldGroup: null
+    handle: text
+    instructions: ''
+    name: Text
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: '1'
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  802e0c5a-9f96-4879-a481-5ab3cc0d2dcf:
     contentColumnType: string
     fieldGroup: null
     handle: backgroundColour
@@ -69,26 +88,7 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Dropdown
-  83a6df68-d73d-4d55-bbde-323640eb656a: # Text
-    contentColumnType: text
-    fieldGroup: null
-    handle: text
-    instructions: ''
-    name: Text
-    searchable: false
-    settings:
-      byteLimit: null
-      charLimit: null
-      code: ''
-      columnType: null
-      initialRows: '4'
-      multiline: '1'
-      placeholder: null
-      uiMode: normal
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\PlainText
-  ec3bcde6-c468-4aed-8441-8b432faa786b: # Heading
+  ec3bcde6-c468-4aed-8441-8b432faa786b:
     contentColumnType: text
     fieldGroup: null
     handle: heading

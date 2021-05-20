@@ -1,11 +1,11 @@
-field: 0d1d3396-4421-42e8-85bd-cb65e886c293 # Benefits matrix
+field: 0d1d3396-4421-42e8-85bd-cb65e886c293
 fieldLayouts:
   b0ed0582-8eeb-4448-8d47-6ad5d5ca51c6:
     tabs:
       -
         elements:
           -
-            fieldUid: 2f7f35e2-38a7-45f4-9a1b-cbdb84e72ae0 # Benefit
+            fieldUid: 2f7f35e2-38a7-45f4-9a1b-cbdb84e72ae0
             instructions: null
             label: null
             required: false
@@ -14,7 +14,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: acf421ad-05b0-4496-a152-aa4784ffbc14 # Benefit icon
+            fieldUid: acf421ad-05b0-4496-a152-aa4784ffbc14
             instructions: null
             label: null
             required: false
@@ -25,7 +25,7 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  2f7f35e2-38a7-45f4-9a1b-cbdb84e72ae0: # Benefit
+  2f7f35e2-38a7-45f4-9a1b-cbdb84e72ae0:
     contentColumnType: text
     fieldGroup: null
     handle: benefit
@@ -44,7 +44,7 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  acf421ad-05b0-4496-a152-aa4784ffbc14: # Benefit icon
+  acf421ad-05b0-4496-a152-aa4784ffbc14:
     contentColumnType: text
     fieldGroup: null
     handle: icon

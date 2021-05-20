@@ -1,11 +1,11 @@
-field: b0d9c953-0023-42e0-94d4-fcc464891c0c # Buttons
+field: b0d9c953-0023-42e0-94d4-fcc464891c0c
 fieldLayouts:
   abe4c8f5-2d1b-4307-ac44-903744bc3bc7:
     tabs:
       -
         elements:
           -
-            fieldUid: 305978ed-0367-4d6e-b99a-6a0593a86670 # Button text
+            fieldUid: 305978ed-0367-4d6e-b99a-6a0593a86670
             instructions: null
             label: null
             required: false
@@ -14,7 +14,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 6326a671-71dc-41b2-a8d6-61356e4543b3 # Button link
+            fieldUid: 6326a671-71dc-41b2-a8d6-61356e4543b3
             instructions: null
             label: null
             required: false
@@ -23,7 +23,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: d7995a8c-0068-4fa0-acc8-7b72aa116a83 # Button colour
+            fieldUid: d7995a8c-0068-4fa0-acc8-7b72aa116a83
             instructions: null
             label: null
             required: false
@@ -34,26 +34,7 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  305978ed-0367-4d6e-b99a-6a0593a86670: # Button text
-    contentColumnType: text
-    fieldGroup: null
-    handle: buttonText
-    instructions: ''
-    name: 'Button text'
-    searchable: false
-    settings:
-      byteLimit: null
-      charLimit: null
-      code: ''
-      columnType: null
-      initialRows: '4'
-      multiline: ''
-      placeholder: null
-      uiMode: normal
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\PlainText
-  6326a671-71dc-41b2-a8d6-61356e4543b3: # Button link
+  6326a671-71dc-41b2-a8d6-61356e4543b3:
     contentColumnType: text
     fieldGroup: null
     handle: buttonLink
@@ -72,7 +53,26 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  d7995a8c-0068-4fa0-acc8-7b72aa116a83: # Button colour
+  305978ed-0367-4d6e-b99a-6a0593a86670:
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttonText
+    instructions: ''
+    name: 'Button text'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  d7995a8c-0068-4fa0-acc8-7b72aa116a83:
     contentColumnType: string
     fieldGroup: null
     handle: buttonColour

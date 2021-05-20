@@ -1,11 +1,11 @@
-field: 334c03aa-313f-4dbe-a62a-8c714bd1f30c # Content page builder
+field: 334c03aa-313f-4dbe-a62a-8c714bd1f30c
 fieldLayouts:
   3579f3cd-3a31-4d02-8006-9bd8ceca7658:
     tabs:
       -
         elements:
           -
-            fieldUid: a3c732b0-09bc-4e9e-9bba-3c7bdf5c050b # blocks
+            fieldUid: a3c732b0-09bc-4e9e-9bba-3c7bdf5c050b
             instructions: null
             label: null
             required: false
@@ -16,7 +16,7 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  a3c732b0-09bc-4e9e-9bba-3c7bdf5c050b: # blocks
+  a3c732b0-09bc-4e9e-9bba-3c7bdf5c050b:
     contentColumnType: string
     fieldGroup: null
     handle: blocks
@@ -27,14 +27,14 @@ fields:
       columns:
         __assoc__:
           -
-            - bf58bb6d-252e-4193-9375-6c2d02406232 # Heading
+            - bf58bb6d-252e-4193-9375-6c2d02406232
             -
               __assoc__:
                 -
                   - width
                   - ''
           -
-            - fca73b00-6cb6-4ad7-bb7a-b25900f09349 # Text
+            - fca73b00-6cb6-4ad7-bb7a-b25900f09349
             -
               __assoc__:
                 -

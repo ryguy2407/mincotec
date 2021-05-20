@@ -1,5 +1,5 @@
 contentColumnType: string
-fieldGroup: 60d265fe-4e19-4fb7-8444-54d559d58ef3 # Project fields
+fieldGroup: 60d265fe-4e19-4fb7-8444-54d559d58ef3
 handle: projectImages
 instructions: ''
 name: 'Project images'
@@ -8,7 +8,7 @@ settings:
   allowSelfRelations: false
   allowedKinds:
     - image
-  defaultUploadLocationSource: 'volume:a6e1cc63-ec74-4588-9aab-3144ee60307e' # Uploads
+  defaultUploadLocationSource: 'volume:a6e1cc63-ec74-4588-9aab-3144ee60307e'
   defaultUploadLocationSubpath: ''
   limit: ''
   localizeRelations: false
@@ -17,7 +17,7 @@ settings:
   showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
-  singleUploadLocationSource: 'volume:a6e1cc63-ec74-4588-9aab-3144ee60307e' # Uploads
+  singleUploadLocationSource: 'volume:a6e1cc63-ec74-4588-9aab-3144ee60307e'
   singleUploadLocationSubpath: ''
   source: null
   sources: '*'

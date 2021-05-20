@@ -1,11 +1,11 @@
-field: 84f72373-7818-40d1-94a1-7bed11823504 # Page builder
+field: 84f72373-7818-40d1-94a1-7bed11823504
 fieldLayouts:
   0c58b4f1-8532-4e29-9842-d846675936f3:
     tabs:
       -
         elements:
           -
-            fieldUid: 23a7fb42-37f8-4eea-abc6-69628f409e72 # Gallery title
+            fieldUid: 23a7fb42-37f8-4eea-abc6-69628f409e72
             instructions: null
             label: null
             required: false
@@ -14,7 +14,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: fc8b508d-d68a-4128-ad01-084b7e0d986f # Gallery intro
+            fieldUid: fc8b508d-d68a-4128-ad01-084b7e0d986f
             instructions: null
             label: null
             required: false
@@ -23,7 +23,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: b53003da-07dd-4324-a6f6-bcf4e52ecd8e # Gallery images
+            fieldUid: b53003da-07dd-4324-a6f6-bcf4e52ecd8e
             instructions: null
             label: null
             required: false
@@ -32,7 +32,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 21112316-603d-48d4-b595-455d750a2ef2 # Items per row
+            fieldUid: 21112316-603d-48d4-b595-455d750a2ef2
             instructions: null
             label: null
             required: false
@@ -43,7 +43,26 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  21112316-603d-48d4-b595-455d750a2ef2: # Items per row
+  23a7fb42-37f8-4eea-abc6-69628f409e72:
+    contentColumnType: text
+    fieldGroup: null
+    handle: galleryTitle
+    instructions: ''
+    name: 'Gallery title'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  21112316-603d-48d4-b595-455d750a2ef2:
     contentColumnType: string
     fieldGroup: null
     handle: itemsPerRow
@@ -111,26 +130,7 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Dropdown
-  23a7fb42-37f8-4eea-abc6-69628f409e72: # Gallery title
-    contentColumnType: text
-    fieldGroup: null
-    handle: galleryTitle
-    instructions: ''
-    name: 'Gallery title'
-    searchable: false
-    settings:
-      byteLimit: null
-      charLimit: null
-      code: ''
-      columnType: null
-      initialRows: '4'
-      multiline: ''
-      placeholder: null
-      uiMode: normal
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\PlainText
-  b53003da-07dd-4324-a6f6-bcf4e52ecd8e: # Gallery images
+  b53003da-07dd-4324-a6f6-bcf4e52ecd8e:
     contentColumnType: string
     fieldGroup: null
     handle: galleryImages
@@ -142,7 +142,7 @@ fields:
       allowUploads: true
       allowedKinds:
         - image
-      defaultUploadLocationSource: 'volume:a6e1cc63-ec74-4588-9aab-3144ee60307e' # Uploads
+      defaultUploadLocationSource: 'volume:a6e1cc63-ec74-4588-9aab-3144ee60307e'
       defaultUploadLocationSubpath: ''
       limit: ''
       localizeRelations: false
@@ -152,7 +152,7 @@ fields:
       showSiteMenu: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
-      singleUploadLocationSource: 'volume:a6e1cc63-ec74-4588-9aab-3144ee60307e' # Uploads
+      singleUploadLocationSource: 'volume:a6e1cc63-ec74-4588-9aab-3144ee60307e'
       singleUploadLocationSubpath: ''
       source: null
       sources: '*'
@@ -163,7 +163,7 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
-  fc8b508d-d68a-4128-ad01-084b7e0d986f: # Gallery intro
+  fc8b508d-d68a-4128-ad01-084b7e0d986f:
     contentColumnType: text
     fieldGroup: null
     handle: galleryIntro

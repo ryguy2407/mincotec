@@ -21,7 +21,7 @@ permissions:
     enabled: '1'
 propagateNodes: false
 siteSettings:
-  3cc4705b-9d87-4251-bf19-e831c181126f: null # Mincotech
+  3cc4705b-9d87-4251-bf19-e831c181126f: null
 sortOrder: 1
 structure:
   maxLevels: null

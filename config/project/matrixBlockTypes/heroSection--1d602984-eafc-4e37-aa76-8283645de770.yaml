@@ -1,11 +1,11 @@
-field: e2175f04-ca8b-48c2-b4e8-552b41e48033 # Home hero section
+field: e2175f04-ca8b-48c2-b4e8-552b41e48033
 fieldLayouts:
   6ef488c3-6f4a-445c-a5b4-346ef075ae96:
     tabs:
       -
         elements:
           -
-            fieldUid: fa4cbc50-095e-4534-9f80-148f40fc2c7e # Heading
+            fieldUid: fa4cbc50-095e-4534-9f80-148f40fc2c7e
             instructions: null
             label: null
             required: false
@@ -14,7 +14,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 55d66246-a4eb-4446-80c5-2c91a2e2ba7f # Text
+            fieldUid: 55d66246-a4eb-4446-80c5-2c91a2e2ba7f
             instructions: null
             label: null
             required: false
@@ -23,7 +23,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: c22b25ea-7fdf-4e21-afac-10d80d8e9b66 # Button text
+            fieldUid: c22b25ea-7fdf-4e21-afac-10d80d8e9b66
             instructions: null
             label: null
             required: false
@@ -32,7 +32,7 @@ fieldLayouts:
             warning: null
             width: 50
           -
-            fieldUid: d1faffc0-18e5-495e-9dfc-322857b1f966 # Button URL
+            fieldUid: d1faffc0-18e5-495e-9dfc-322857b1f966
             instructions: null
             label: null
             required: false
@@ -41,7 +41,7 @@ fieldLayouts:
             warning: null
             width: 50
           -
-            fieldUid: 54a55fb3-c3f9-449b-bbc4-c7a988bb27b4 # Hero image
+            fieldUid: 54a55fb3-c3f9-449b-bbc4-c7a988bb27b4
             instructions: null
             label: null
             required: false
@@ -52,7 +52,7 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  54a55fb3-c3f9-449b-bbc4-c7a988bb27b4: # Hero image
+  54a55fb3-c3f9-449b-bbc4-c7a988bb27b4:
     contentColumnType: string
     fieldGroup: null
     handle: heroImage
@@ -63,7 +63,7 @@ fields:
       allowSelfRelations: false
       allowedKinds:
         - image
-      defaultUploadLocationSource: 'volume:a6e1cc63-ec74-4588-9aab-3144ee60307e' # Uploads
+      defaultUploadLocationSource: 'volume:a6e1cc63-ec74-4588-9aab-3144ee60307e'
       defaultUploadLocationSubpath: ''
       limit: '1'
       localizeRelations: false
@@ -72,7 +72,7 @@ fields:
       showSiteMenu: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
-      singleUploadLocationSource: 'volume:a6e1cc63-ec74-4588-9aab-3144ee60307e' # Uploads
+      singleUploadLocationSource: 'volume:a6e1cc63-ec74-4588-9aab-3144ee60307e'
       singleUploadLocationSubpath: ''
       source: null
       sources: '*'
@@ -83,7 +83,7 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
-  55d66246-a4eb-4446-80c5-2c91a2e2ba7f: # Text
+  55d66246-a4eb-4446-80c5-2c91a2e2ba7f:
     contentColumnType: text
     fieldGroup: null
     handle: heroText
@@ -102,7 +102,7 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  c22b25ea-7fdf-4e21-afac-10d80d8e9b66: # Button text
+  c22b25ea-7fdf-4e21-afac-10d80d8e9b66:
     contentColumnType: text
     fieldGroup: null
     handle: buttonText
@@ -121,7 +121,7 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  d1faffc0-18e5-495e-9dfc-322857b1f966: # Button URL
+  d1faffc0-18e5-495e-9dfc-322857b1f966:
     contentColumnType: text
     fieldGroup: null
     handle: buttonUrl
@@ -140,7 +140,7 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  fa4cbc50-095e-4534-9f80-148f40fc2c7e: # Heading
+  fa4cbc50-095e-4534-9f80-148f40fc2c7e:
     contentColumnType: text
     fieldGroup: null
     handle: heading

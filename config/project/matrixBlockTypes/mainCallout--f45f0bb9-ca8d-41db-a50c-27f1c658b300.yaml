@@ -1,11 +1,11 @@
-field: 334c03aa-313f-4dbe-a62a-8c714bd1f30c # Content page builder
+field: 334c03aa-313f-4dbe-a62a-8c714bd1f30c
 fieldLayouts:
   4ddf9fe9-7fd6-40d9-9363-67a9e276e7d7:
     tabs:
       -
         elements:
           -
-            fieldUid: 600b2823-c93d-41f7-b4b7-78a2be3c19f3 # Main callout heading
+            fieldUid: 600b2823-c93d-41f7-b4b7-78a2be3c19f3
             instructions: null
             label: null
             required: false
@@ -14,7 +14,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 5164cc47-5c1d-4a30-baea-29c215b139f5 # Main callout text
+            fieldUid: 5164cc47-5c1d-4a30-baea-29c215b139f5
             instructions: null
             label: null
             required: false
@@ -25,26 +25,7 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  5164cc47-5c1d-4a30-baea-29c215b139f5: # Main callout text
-    contentColumnType: text
-    fieldGroup: null
-    handle: mainCalloutText
-    instructions: ''
-    name: 'Main callout text'
-    searchable: false
-    settings:
-      byteLimit: null
-      charLimit: null
-      code: ''
-      columnType: null
-      initialRows: '4'
-      multiline: '1'
-      placeholder: null
-      uiMode: normal
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\PlainText
-  600b2823-c93d-41f7-b4b7-78a2be3c19f3: # Main callout heading
+  600b2823-c93d-41f7-b4b7-78a2be3c19f3:
     contentColumnType: text
     fieldGroup: null
     handle: mainCalloutHeading
@@ -58,6 +39,25 @@ fields:
       columnType: null
       initialRows: '4'
       multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  5164cc47-5c1d-4a30-baea-29c215b139f5:
+    contentColumnType: text
+    fieldGroup: null
+    handle: mainCalloutText
+    instructions: ''
+    name: 'Main callout text'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: '1'
       placeholder: null
       uiMode: normal
     translationKeyFormat: null

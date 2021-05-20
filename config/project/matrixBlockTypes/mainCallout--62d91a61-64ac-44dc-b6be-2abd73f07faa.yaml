@@ -1,11 +1,11 @@
-field: 6421bc18-1f6d-4898-bdb4-528c7af942f4 # Product category page builder
+field: 6421bc18-1f6d-4898-bdb4-528c7af942f4
 fieldLayouts:
   64a5dad6-5645-4968-9ad3-575aff03a3cb:
     tabs:
       -
         elements:
           -
-            fieldUid: 715798ac-cb78-4906-a172-efef74afe289 # Main callout heading
+            fieldUid: 715798ac-cb78-4906-a172-efef74afe289
             instructions: null
             label: null
             required: false
@@ -14,7 +14,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: d959dc4a-a080-435a-adcc-456661b5c29a # Main callout text
+            fieldUid: d959dc4a-a080-435a-adcc-456661b5c29a
             instructions: null
             label: null
             required: false
@@ -25,7 +25,7 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  715798ac-cb78-4906-a172-efef74afe289: # Main callout heading
+  715798ac-cb78-4906-a172-efef74afe289:
     contentColumnType: text
     fieldGroup: null
     handle: mainCalloutHeading
@@ -44,7 +44,7 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  d959dc4a-a080-435a-adcc-456661b5c29a: # Main callout text
+  d959dc4a-a080-435a-adcc-456661b5c29a:
     contentColumnType: text
     fieldGroup: null
     handle: mainCalloutText

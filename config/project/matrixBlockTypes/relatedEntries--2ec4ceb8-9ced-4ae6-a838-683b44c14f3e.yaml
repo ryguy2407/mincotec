@@ -1,11 +1,11 @@
-field: 84f72373-7818-40d1-94a1-7bed11823504 # Page builder
+field: 84f72373-7818-40d1-94a1-7bed11823504
 fieldLayouts:
   e3d32580-176f-446b-b4d2-a5365d33b016:
     tabs:
       -
         elements:
           -
-            fieldUid: 18daf619-738b-4576-9cd6-6c76e9587d9c # Entries
+            fieldUid: 18daf619-738b-4576-9cd6-6c76e9587d9c
             instructions: null
             label: null
             required: false
@@ -14,7 +14,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: c4f5b69d-0a3c-4f14-a93f-7d4236ba66b8 # Background colour
+            fieldUid: c4f5b69d-0a3c-4f14-a93f-7d4236ba66b8
             instructions: null
             label: null
             required: false
@@ -23,7 +23,7 @@ fieldLayouts:
             warning: null
             width: 50
           -
-            fieldUid: dfc0d4fc-ef48-49be-9dc7-3c44a5da6d32 # Layout
+            fieldUid: dfc0d4fc-ef48-49be-9dc7-3c44a5da6d32
             instructions: null
             label: null
             required: false
@@ -34,7 +34,7 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  18daf619-738b-4576-9cd6-6c76e9587d9c: # Entries
+  18daf619-738b-4576-9cd6-6c76e9587d9c:
     contentColumnType: string
     fieldGroup: null
     handle: relatedEntries
@@ -55,7 +55,7 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Entries
-  c4f5b69d-0a3c-4f14-a93f-7d4236ba66b8: # Background colour
+  c4f5b69d-0a3c-4f14-a93f-7d4236ba66b8:
     contentColumnType: string
     fieldGroup: null
     handle: backgroundColour
@@ -112,7 +112,7 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Dropdown
-  dfc0d4fc-ef48-49be-9dc7-3c44a5da6d32: # Layout
+  dfc0d4fc-ef48-49be-9dc7-3c44a5da6d32:
     contentColumnType: string
     fieldGroup: null
     handle: layout
